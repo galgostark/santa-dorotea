@@ -1,0 +1,1607 @@
+/* ==========================================================================
+   ESTILOS DE ALTA GAMA - 50° ANIVERSARIO CEBE CAJAMARCA (1976 - 2026)
+   ========================================================================== */
+
+/* --- DECLARACIÓN DE VARIABLES Y SISTEMA DE DISEÑO --- */
+:root {
+  /* Paleta de Colores Emocional y Cálida integrada con Santa Dorotea */
+  --bg-darkest: #161513;       /* Carbon profundo */
+  --bg-darker: #1f1d1a;        /* Café oscuro premium */
+  --bg-panel: rgba(28, 25, 22, 0.85); /* Panel de vidrio esmerilado */
+  --border-gold: rgba(247, 202, 68, 0.3); /* Borde dorado translúcido Santa Dorotea */
+  
+  --color-gold: #f7ca44;       /* Amarillo dorado corporativo Santa Dorotea */
+  --color-gold-dark: #d4a726;  /* Oro envejecido */
+  --color-amber: #f39c12;      /* Ámbar festivo */
+  --color-text-cream: #fbf9f5;  /* Crema suave para textos principales */
+  --color-text-sub: #b3aba1;    /* Crema tenue para textos secundarios */
+  --color-red: #d33c2a;        /* Rojo terciopelo para CEE y acentos */
+
+  /* Fuentes oficiales de Santa Dorotea */
+  --font-serif: "Dosis", "Overpass", sans-serif; /* Títulos emotivos e históricos */
+  --font-sans: "Overpass", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; /* Interfaz limpia */
+
+  /* Transiciones y Sombras */
+  --transition-smooth: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --shadow-premium: 0 15px 35px rgba(0, 0, 0, 0.6), 0 5px 15px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 0 25px rgba(247, 202, 68, 0.35);
+}
+
+/* --- ESTILOS GENERALES Y RESET --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-darkest);
+  color: var(--color-text-cream);
+  font-family: var(--font-sans);
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Tipografía de Encabezados */
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  font-weight: normal;
+  color: var(--color-text-cream);
+}
+
+/* Barra de desplazamiento personalizada (para TV) */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-darkest);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold-dark);
+  border-radius: 6px;
+  border: 3px solid var(--bg-darkest);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold);
+}
+
+/* --- BOTONES PREMIUM GENERALES --- */
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: var(--font-sans);
+  outline: none;
+  transition: var(--transition-smooth);
+}
+
+/* ==========================================================================
+   PANTALLA DE BIENVENIDA / MODO KIOSCO (CAROUSEL DE ESPERA AUTOMÁTICO)
+   ========================================================================== */
+.kiosk-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1), visibility 1s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.kiosk-screen.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Carrusel de Diapositivas Ken Burns de Fondo */
+.kiosk-slideshow-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.kiosk-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+  transform: scale(1.05);
+}
+
+.kiosk-slide.active {
+  opacity: 1;
+  animation: kenBurnsEffect 15s forwards;
+}
+
+@keyframes kenBurnsEffect {
+  0% { transform: scale(1.05); }
+  100% { transform: scale(1.12); }
+}
+
+/* Contenido de Bienvenida */
+.kiosk-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 900px;
+  padding: 50px 80px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-gold);
+  border-radius: 24px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: var(--shadow-premium), var(--shadow-glow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  animation: fadeInContainer 1s ease-out;
+}
+
+@keyframes fadeInContainer {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.kiosk-logo-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.anniversary-badge {
+  font-family: var(--font-sans);
+  background-color: var(--color-gold-dark);
+  color: var(--bg-darkest);
+  font-weight: 800;
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.main-title {
+  font-size: 3.8rem;
+  line-height: 1.1;
+  color: var(--color-text-cream);
+  text-shadow: 0 4px 15px rgba(0,0,0,0.8);
+}
+
+.tagline {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.5rem;
+  color: var(--color-gold);
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+/* Separador Elegante */
+.gold-separator {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.gold-separator .line {
+  flex-grow: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--color-gold), transparent);
+}
+
+.gold-separator .diamond {
+  color: var(--color-gold);
+  font-size: 1.2rem;
+  text-shadow: 0 0 10px var(--color-gold);
+}
+
+.cee-mention {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: var(--color-text-sub);
+}
+
+.cee-badge-text {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--color-text-cream);
+  font-weight: bold;
+  border-bottom: 2px solid var(--color-gold);
+  padding-bottom: 2px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+/* Botón Gigante */
+.btn-primary-giant {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: linear-gradient(135deg, var(--color-gold), var(--color-gold-dark));
+  color: var(--bg-darkest);
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 20px 45px;
+  border-radius: 50px;
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+  transition: var(--transition-smooth);
+}
+
+.btn-primary-giant:hover {
+  transform: scale(1.06);
+  box-shadow: 0 12px 35px rgba(212, 175, 55, 0.6), var(--shadow-glow);
+  background: linear-gradient(135deg, #f7d568, var(--color-gold));
+}
+
+.btn-primary-giant svg {
+  transition: var(--transition-smooth);
+}
+
+.btn-primary-giant:hover svg {
+  transform: translateX(4px) scale(1.1);
+}
+
+.kiosk-hint {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-text-sub);
+  font-size: 1.05rem;
+}
+
+.icon-mouse {
+  animation: mouseNudge 2s infinite ease-in-out;
+}
+
+@keyframes mouseNudge {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(4px); }
+}
+
+
+/* ==========================================================================
+   INTERFAZ PRINCIPAL - MAQUETACIÓN (LAYOUT)
+   ========================================================================== */
+.app-layout {
+  display: flex;
+  width: 100vw;
+  height: calc(100vh - 58px);
+  overflow: hidden;
+  background-color: var(--bg-darkest);
+  animation: fadeInApp 0.8s ease-out;
+}
+
+@keyframes fadeInApp {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* --- BARRA LATERAL (SIDEBAR) --- */
+.sidebar {
+  width: 380px; /* Ancho cómodo para TV */
+  background-color: var(--bg-darker);
+  border-right: 1px solid var(--border-gold);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  z-index: 10;
+}
+
+.sidebar-header {
+  padding: 30px 25px;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  cursor: pointer;
+}
+
+.logo-small {
+  width: 55px;
+  height: 55px;
+  background: linear-gradient(135deg, var(--color-gold), var(--color-gold-dark));
+  border-radius: 12px;
+  color: var(--bg-darkest);
+  font-family: var(--font-serif);
+  font-weight: 800;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-title-group h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-text-cream);
+  line-height: 1.2;
+}
+
+.sidebar-title-group p {
+  font-size: 0.85rem;
+  color: var(--color-gold);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Navegación por Categorías (Botones Gigantes) */
+.category-nav {
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.btn-category {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 20px;
+  border-radius: 16px;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  color: var(--color-text-sub);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-category svg {
+  flex-shrink: 0;
+  color: var(--color-text-sub);
+  transition: var(--transition-smooth);
+}
+
+.btn-category .cat-texts {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-category .cat-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text-cream);
+  transition: var(--transition-smooth);
+}
+
+.btn-category .cat-sub {
+  font-size: 0.85rem;
+  color: var(--color-text-sub);
+}
+
+/* Hover e interactividad */
+.btn-category:hover {
+  background-color: rgba(212, 175, 55, 0.05);
+  border-color: rgba(212, 175, 55, 0.2);
+  transform: scale(1.02);
+}
+
+.btn-category:hover svg {
+  color: var(--color-gold);
+  transform: scale(1.1);
+}
+
+/* Categoría Activa */
+.btn-category.active {
+  background-color: rgba(212, 175, 55, 0.12);
+  border-color: var(--color-gold);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-category.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 6px;
+  background-color: var(--color-gold);
+}
+
+.btn-category.active svg {
+  color: var(--color-gold);
+}
+
+.btn-category.active .cat-name {
+  color: var(--color-gold);
+  font-weight: 700;
+}
+
+/* Badge especial para CEE (50 Años) */
+.special-nav-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: var(--color-red);
+  color: var(--color-text-cream);
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 2px 8px;
+  border-radius: 10px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.btn-category.special-nav.active {
+  border-color: var(--color-red);
+  background-color: rgba(192, 57, 43, 0.15);
+}
+.btn-category.special-nav.active .cat-name {
+  color: #ff6b5b;
+}
+.btn-category.special-nav.active::before {
+  background-color: var(--color-red);
+}
+
+/* Pie de Barra Lateral */
+.sidebar-footer {
+  padding: 20px 15px;
+  border-top: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.btn-secondary-sidebar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 12px;
+  background-color: rgba(255,255,255,0.03);
+  color: var(--color-text-sub);
+  border: 1px solid rgba(255,255,255,0.05);
+  font-weight: 600;
+}
+
+.btn-secondary-sidebar:hover {
+  background-color: rgba(255,255,255,0.08);
+  color: var(--color-text-cream);
+  transform: translateY(-2px);
+}
+
+
+/* --- ÁREA DE CONTENIDO CENTRAL --- */
+.content-container {
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Permite que la cabecera y pestañas se desplacen hacia arriba al hacer scroll */
+  scroll-behavior: smooth;
+}
+
+/* Encabezado de la Categoría Activa */
+.category-header {
+  padding: 40px;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(180deg, var(--bg-darker), transparent);
+}
+
+.category-info {
+  max-width: 60%;
+}
+
+.badge-row {
+  margin-bottom: 8px;
+}
+
+.cat-badge {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.current-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.current-subtitle {
+  font-size: 1.4rem;
+  color: var(--color-gold);
+  font-family: var(--font-serif);
+  margin-top: 15px; /* Margen superior porque ahora se ubica debajo de la descripción */
+  margin-bottom: 5px;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.current-subtitle::before {
+  content: "»";
+  color: var(--color-gold-dark);
+}
+
+.current-subtitle.hide {
+  display: none !important;
+}
+
+.current-description {
+  font-size: 1.1rem;
+  color: var(--color-text-sub);
+  line-height: 1.5;
+}
+
+/* Controles de Música y Presentación */
+.quick-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.control-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.control-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.music-btn {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--color-text-cream);
+}
+
+.music-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.music-btn.active {
+  background-color: rgba(46, 204, 113, 0.2);
+  border-color: #2ecc71;
+  color: #2ecc71;
+  box-shadow: 0 0 15px rgba(46, 204, 113, 0.3);
+}
+
+.play-btn {
+  background: linear-gradient(135deg, var(--color-gold), var(--color-gold-dark));
+  color: var(--bg-darkest);
+}
+
+.play-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
+/* Pestañas de Subcategoría (Especial CEE 50 Años - Ubicado en Sidebar) */
+.subcategory-tabs {
+  display: none; /* Por defecto se oculta */
+}
+
+.subcategory-tabs.hide {
+  display: none !important;
+}
+
+/* Estilos de subcategorías integradas en el Sidebar */
+.sidebar .subcategory-tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 10px 15px 10px 30px; /* Sangría a la izquierda para mostrar jerarquía */
+  background-color: rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+  gap: 8px;
+  animation: slideDownMenu 0.3s ease-out;
+}
+
+@keyframes slideDownMenu {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.sidebar .subcategory-tabs .tab-btn {
+  width: 100%;
+  text-align: left;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  color: var(--color-text-sub);
+  white-space: nowrap;
+  transition: var(--transition-smooth);
+}
+
+.sidebar .subcategory-tabs .tab-btn:hover {
+  background-color: rgba(212, 175, 55, 0.05);
+  color: var(--color-text-cream);
+}
+
+.sidebar .subcategory-tabs .tab-btn.active {
+  background-color: rgba(212, 175, 55, 0.12);
+  color: var(--color-gold);
+  border-color: var(--color-gold);
+  font-weight: 700;
+}
+
+
+/* --- REJILLA DE RECUERDOS (MEDIA GRID) --- */
+.media-grid {
+  flex-grow: 1;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+  align-content: start;
+}
+
+/* Tarjetas de Fotos/Videos (Memory Card) */
+.memory-card {
+  position: relative;
+  background-color: var(--bg-darker);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  height: 280px; /* Altura fija para máxima compatibilidad con Smart TVs antiguas */
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition-smooth);
+}
+
+.memory-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: var(--color-gold);
+  box-shadow: var(--shadow-premium), var(--shadow-glow);
+}
+
+/* Contenedor de la Imagen */
+.card-media-wrapper {
+  position: relative;
+  width: 100%;
+  flex-grow: 1;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.card-media-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.8s ease;
+}
+
+.memory-card:hover .card-media-wrapper img {
+  transform: scale(1.08);
+}
+
+/* Insignia de Año (Oculta por solicitud) */
+.card-year {
+  display: none !important;
+}
+
+/* Superposición para Videos */
+.video-overlay-badge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: rgba(192, 57, 43, 0.9); /* Rojo CEE */
+  color: var(--color-text-cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: var(--transition-smooth);
+  border: 2px solid var(--color-text-cream);
+}
+
+.memory-card:hover .video-overlay-badge {
+  transform: translate(-50%, -50%) scale(1.15);
+  background-color: var(--color-red);
+  box-shadow: 0 0 20px var(--color-red);
+}
+
+/* Textos de la Tarjeta */
+.card-details {
+  padding: 20px;
+  background: linear-gradient(180deg, rgba(27, 24, 22, 0.9) 0%, var(--bg-darker) 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.card-details h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-details p {
+  font-size: 0.9rem;
+  color: var(--color-text-sub);
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+/* ==========================================================================
+   VISOR FULLSCREEN (LIGHTBOX MODAL)
+   ========================================================================== */
+.lightbox-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-smooth);
+}
+
+.lightbox-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Fondo oscuro */
+.lightbox-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 9, 8, 0.96);
+  z-index: 1;
+}
+
+/* Flechas y Botones gigantes en Lightbox */
+.lightbox-close-btn,
+.lightbox-arrow-btn {
+  position: relative;
+  z-index: 10;
+  color: var(--color-text-cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: var(--transition-smooth);
+}
+
+/* Cerrar */
+.lightbox-close-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.lightbox-close-btn:hover {
+  background-color: var(--color-red);
+  border-color: var(--color-red);
+  transform: rotate(90deg) scale(1.1);
+  box-shadow: 0 0 20px var(--color-red);
+}
+
+/* Flechas Laterales */
+.lightbox-arrow-btn {
+  width: 90px;
+  height: 100px;
+  border-radius: 15px;
+  margin: 0 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.lightbox-arrow-btn:hover {
+  background-color: var(--color-gold-dark);
+  color: var(--bg-darkest);
+  border-color: var(--color-gold);
+  transform: scale(1.08);
+  box-shadow: var(--shadow-glow);
+}
+
+.lightbox-arrow-btn.left:active {
+  transform: translateX(-5px) scale(1.08);
+}
+.lightbox-arrow-btn.right:active {
+  transform: translateX(5px) scale(1.08);
+}
+
+/* Área de Visualización Central del Lightbox */
+.lightbox-view-area {
+  position: relative;
+  z-index: 5;
+  flex-grow: 1;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  max-width: calc(100vw - 320px);
+}
+
+/* Contenedor del Media en Lightbox */
+.lightbox-media-wrapper {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.lightbox-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8), 0 0 1px var(--color-gold);
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.lightbox-img.active {
+  opacity: 1;
+}
+
+.lightbox-video-wrapper {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-video-wrapper.hide {
+  display: none !important;
+}
+
+.lightbox-video {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+  border: 1px solid rgba(255,255,255,0.1);
+  outline: none;
+}
+
+/* --- SIMULADOR DE CINE ANTIGUO --- */
+.video-simulator {
+  width: 100%;
+  height: 100%;
+  background-color: #0b0a09;
+  border-radius: 16px;
+  border: 2px solid var(--color-gold-dark);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-simulator.hide {
+  display: none !important;
+}
+
+#cinema-reel-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.simulator-overlay-controls {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 600px;
+  padding: 30px;
+  background-color: rgba(18, 17, 16, 0.85);
+  border: 1px solid var(--border-gold);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
+
+.retro-label {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: var(--color-gold);
+}
+
+.retro-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.retro-desc {
+  font-size: 0.95rem;
+  color: var(--color-text-sub);
+  line-height: 1.4;
+}
+
+.small-btn {
+  font-size: 1.1rem;
+  padding: 12px 30px;
+}
+
+
+/* Pie de Página Detallado del Lightbox */
+.lightbox-details {
+  width: 100%;
+  background-color: var(--bg-panel);
+  border: 1px solid var(--border-gold);
+  border-radius: 16px;
+  padding: 12px 24px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow-premium);
+}
+
+.lightbox-text {
+  max-width: 70%;
+}
+
+.lightbox-header-meta {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 4px;
+  align-items: center;
+}
+
+.year-badge {
+  display: none !important;
+}
+
+.lightbox-text h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.lightbox-text p {
+  font-size: 0.9rem;
+  color: var(--color-text-sub);
+  line-height: 1.4;
+}
+
+/* Botón de reproducción del carrusel en Lightbox */
+.slideshow-toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  border-radius: 30px;
+  background-color: var(--color-gold);
+  color: var(--bg-darkest);
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.slideshow-toggle-btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+  background-color: #f7d568;
+}
+
+.slideshow-toggle-btn.playing {
+  background-color: var(--color-red);
+  color: var(--color-text-cream);
+  box-shadow: 0 4px 15px rgba(192, 57, 43, 0.4);
+}
+.slideshow-toggle-btn.playing:hover {
+  background-color: #ff6b5b;
+}
+
+
+/* ==========================================================================
+   RESPONSIVO / COMPATIBILIDAD CON TV LED Y SELECCIONES DE RATÓN
+   ========================================================================== */
+
+/* Optimizaciones generales para Pantalla Completa (TV) */
+@media (min-width: 1920px) {
+  /* En pantallas 1080p o superiores, aumentamos ligeramente los textos para excelente lectura a distancia */
+  :root {
+    --bg-panel: rgba(27, 24, 22, 0.8);
+  }
+  
+  .sidebar {
+    width: 440px;
+  }
+  
+  .logo-small {
+    width: 70px;
+    height: 70px;
+    font-size: 2.2rem;
+  }
+  
+  .sidebar-title-group h2 {
+    font-size: 1.7rem;
+  }
+  
+  .btn-category .cat-name {
+    font-size: 1.45rem;
+  }
+  
+  .btn-category {
+    padding: 26px 22px;
+  }
+  
+  .current-title {
+    font-size: 3rem;
+  }
+  
+  .current-description {
+    font-size: 1.3rem;
+  }
+  
+  .media-grid {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 40px;
+  }
+  
+  .memory-card {
+    height: 380px; /* Mayor altura en pantallas Full HD y 4K */
+  }
+  
+  .memory-card .card-details h3 {
+    font-size: 1.45rem;
+  }
+  
+  .memory-card .card-details p {
+    font-size: 1.05rem;
+  }
+  
+  .btn-primary-giant {
+    font-size: 1.8rem;
+    padding: 25px 60px;
+  }
+  
+  .main-title {
+    font-size: 4.8rem;
+  }
+  
+  .tagline {
+    font-size: 1.9rem;
+  }
+}
+
+/* Soporte para Pantallas medianas (en caso de pruebas locales en laptops) */
+@media (max-width: 1200px) {
+  .sidebar {
+    width: 320px;
+  }
+  
+  .category-header {
+    padding: 25px;
+  }
+  
+  .current-title {
+    font-size: 1.8rem;
+  }
+  
+  .media-grid {
+    padding: 25px;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
+/* Ocultar barra móvil y overlay por defecto en pantallas grandes */
+.mobile-header-bar,
+.sidebar-overlay {
+  display: none;
+}
+
+/* ==========================================================================
+   SOPORTE PARA PANTALLAS DE CELULARES (MÓVILES)
+   ========================================================================== */
+@media (max-width: 768px) {
+  body {
+    overflow-y: auto; /* Permitir scroll en el body completo en móviles */
+    height: auto;
+  }
+
+  /* Mostrar header móvil y overlay (dimmer) en móviles */
+  .mobile-header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-darker);
+    border-bottom: 1px solid var(--border-gold);
+    padding: 10px 15px;
+    position: sticky;
+    top: 0;
+    z-index: 900;
+    height: 60px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  }
+
+  .mobile-logo-text {
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: var(--color-text-cream);
+  }
+
+  .logo-small.mini {
+    width: 32px;
+    height: 32px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+  }
+
+  .btn-mobile-toggle {
+    background: none;
+    border: none;
+    color: var(--color-gold);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+  }
+
+  .sidebar-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 950;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-smooth);
+  }
+
+  .sidebar-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .app-layout {
+    flex-direction: column;
+    height: auto;
+    overflow: visible;
+  }
+
+  /* Barra lateral transformada en Drawer deslizante */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Escondido fuera de pantalla */
+    width: 280px;
+    height: 100vh;
+    z-index: 1000;
+    background-color: var(--bg-darker);
+    border-right: 1px solid var(--border-gold);
+    border-bottom: none;
+    box-shadow: var(--shadow-premium);
+    transition: left 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar.menu-open {
+    left: 0; /* Desliza hacia adentro */
+  }
+
+  .sidebar-header {
+    padding: 20px 15px;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.05);
+  }
+
+  .logo-small {
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+  }
+
+  .sidebar-title-group h2 {
+    font-size: 1.15rem;
+  }
+
+  .sidebar-title-group p {
+    font-size: 0.75rem;
+  }
+
+  /* Menú de categorías vuelve a ser vertical dentro del Drawer */
+  .category-nav {
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 15px 10px;
+    gap: 10px;
+    width: 100%;
+    height: calc(100% - 140px);
+  }
+
+  .btn-category {
+    padding: 14px 15px;
+    border-radius: 12px;
+    white-space: normal;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .btn-category svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .btn-category .cat-name {
+    font-size: 1.05rem;
+  }
+
+  .btn-category .cat-sub {
+    display: block; /* Volvemos a mostrar el subtítulo */
+    font-size: 0.75rem;
+  }
+
+  .special-nav-badge {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    font-size: 0.65rem;
+    padding: 2px 6px;
+  }
+
+  /* Sobreescritura de subcategorías para móvil (lista vertical identada dentro del Drawer) */
+  .sidebar .subcategory-tabs {
+    flex-direction: column !important;
+    overflow-x: visible !important;
+    width: 100% !important;
+    padding: 8px 10px 8px 25px !important;
+    margin-left: 0 !important;
+    background-color: rgba(0, 0, 0, 0.15) !important;
+    border-top: none !important;
+    gap: 6px !important;
+  }
+  
+  .sidebar .subcategory-tabs .tab-btn {
+    width: 100% !important;
+    white-space: normal !important;
+    padding: 10px 14px !important;
+    font-size: 0.9rem !important;
+    border-radius: 8px !important;
+    text-align: left !important;
+  }
+
+  .sidebar-footer {
+    display: block;
+    padding: 15px 10px;
+  }
+
+  /* Área de Contenido */
+  .content-container {
+    height: auto;
+    overflow: visible;
+  }
+
+  .category-header {
+    padding: 20px 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .category-info {
+    max-width: 65%;
+  }
+
+  .current-title {
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+  }
+
+  .current-subtitle {
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+    margin-top: -2px;
+  }
+
+  .current-description {
+    font-size: 0.85rem;
+    line-height: 1.3;
+  }
+
+  /* Controles apilados o adaptados */
+  .quick-controls {
+    width: auto;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-end;
+  }
+
+  .control-btn {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    border-radius: 15px;
+    gap: 6px;
+  }
+
+  .control-btn svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  /* Rejilla de fotos móvil (2 columnas compactas) */
+  .media-grid {
+    padding: 12px;
+    gap: 12px;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en móvil */
+  }
+
+  .memory-card {
+    height: 150px; /* Tamaño compacto para que entren más en pantalla móvil */
+    border-radius: 12px;
+  }
+
+  .card-year {
+    top: 8px;
+    left: 8px;
+    padding: 2px 6px;
+    font-size: 0.7rem;
+    border-radius: 5px;
+  }
+
+  .card-details {
+    padding: 8px 10px;
+  }
+
+  .card-details h3 {
+    font-size: 0.85rem;
+    margin-bottom: 2px;
+  }
+
+  .card-details p {
+    display: none; /* Escondemos descripción en móvil para no saturar la tarjeta */
+  }
+
+  /* Lightbox adaptado a móvil */
+  .lightbox-modal {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lightbox-view-area {
+    width: 100vw;
+    max-width: 100vw;
+    height: 90vh;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .lightbox-arrow-btn {
+    width: 45px;
+    height: 45px;
+    margin: 0 8px;
+    border-radius: 50%;
+  }
+
+  .lightbox-close-btn {
+    top: 10px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .lightbox-media-wrapper {
+    width: 100%;
+    height: 55%;
+  }
+
+  .lightbox-details {
+    padding: 12px;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .lightbox-text {
+    max-width: 100%;
+  }
+
+  .lightbox-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .lightbox-text p {
+    font-size: 0.85rem;
+  }
+
+  .slideshow-toggle-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  /* Pantalla de Kiosco / Bienvenida móvil */
+  .kiosk-content {
+    padding: 25px 15px;
+    max-width: 85%;
+    gap: 15px;
+    border-radius: 12px;
+  }
+
+  .main-title {
+    font-size: 1.8rem;
+  }
+
+  .tagline {
+    font-size: 0.95rem;
+  }
+
+  .btn-primary-giant {
+    font-size: 1rem;
+    padding: 12px 25px;
+  }
+}
+
+/* ==========================================================================
+   INTEGRACIÓN CON ASOCIACIÓN SANTA DOROTEA
+   ========================================================================== */
+.ceec-site-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #12100e;
+  border-bottom: 1px solid rgba(247, 202, 68, 0.25);
+  position: relative;
+  z-index: 100;
+  width: 100%;
+}
+
+.ceec-site-topbar .site-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Dosis", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.ceec-site-topbar .site-brand:hover {
+  color: var(--color-gold);
+}
+
+.ceec-site-topbar .site-brand .brand-badge {
+  background: var(--color-gold);
+  color: #121110;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 2px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.ceec-site-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ceec-site-links a {
+  color: #ddd;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: var(--transition-smooth);
+}
+
+.ceec-site-links a:hover,
+.ceec-site-links a.active {
+  color: var(--color-gold);
+  background: rgba(247, 202, 68, 0.1);
+}
+
+.ceec-site-links a.btn-return-home {
+  background: rgba(247, 202, 68, 0.15);
+  border: 1px solid var(--color-gold);
+  color: var(--color-gold);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+}
+
+.ceec-site-links a.btn-return-home:hover {
+  background: var(--color-gold);
+  color: #121110;
+}
+
+@media (max-width: 991px) {
+  .ceec-site-topbar {
+    padding: 10px 15px;
+  }
+  .ceec-site-links {
+    gap: 8px;
+  }
+  .ceec-site-links a {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+  .ceec-site-links .hide-mobile {
+    display: none;
+  }
+}

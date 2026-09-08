@@ -73,15 +73,16 @@ $(document).ready(function($) {
 		});
 
 		$('.loop-block-31').owlCarousel({
-			loop: false,
-			mouseDrag: false,
-			touchDrag: false,
+			loop: true,
+			mouseDrag: true,
+			touchDrag: true,
 			margin: 0,
 			nav: true,
 			items: 1,
 			autoplay: true,
+			autoplayTimeout: 6000,
+			autoplayHoverPause: true,
 			stagePadding: 0,
-			nav: true,
 			navText: ['<span class="ion-md-arrow-back">', '<span class="ion-md-arrow-forward">'],
 			animateOut: 'fadeOut',
     	animateIn: 'fadeIn',

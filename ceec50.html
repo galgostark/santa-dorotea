@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>50° Aniversario CEEC Cajamarca - Bodas de Oro | Asociación Santa Dorotea</title>
+  <meta name="description" content="Celebración interactiva de los 50 Años de Historia (Bodas de Oro 1976 - 2026) del Centro de Educación Básica Especial (CEEC) Cajamarca y la Asociación Santa Dorotea.">
+
+  <!-- Fuentes e Iconos corporativos Santa Dorotea -->
+  <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,500,600,700|Dosis:400,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+
+  <!-- Estilos del módulo conmemorativo adaptados -->
+  <link rel="stylesheet" href="ceec50/style.css">
+</head>
+<body>
+
+  <!-- ================= BARRA SUPERIOR DE INTEGRACIÓN SANTA DOROTEA ================= -->
+  <header class="ceec-site-topbar">
+    <a href="index.html" class="site-brand">
+      <span class="icon icon-heart text-warning"></span>
+      <span>Santa Dorotea</span>
+      <span class="brand-badge">Bodas de Oro 1976 - 2026</span>
+    </a>
+    
+    <ul class="ceec-site-links">
+      <li><a href="index.html" class="btn-return-home"><span class="icon icon-arrow-left"></span> Volver al Sitio Web</a></li>
+      <li class="hide-mobile"><a href="galeria.html">Galería General</a></li>
+      <li class="hide-mobile"><a href="nosotros.html">Nosotros</a></li>
+      <li class="hide-mobile"><a href="proyectos.html">Proyectos</a></li>
+      <li class="hide-mobile"><a href="donar.html">Donar</a></li>
+      <li class="hide-mobile"><a href="contactos.html">Contactos</a></li>
+    </ul>
+  </header>
+
+  <!-- ================= PANTALLA DE BIENVENIDA / MODO KIOSCO ================= -->
+  <section id="kiosk-screen" class="kiosk-screen active">
+    <!-- Diapositivas de fondo animadas -->
+    <div class="kiosk-slideshow-container">
+      <div class="kiosk-slide active" style="background-image: linear-gradient(rgba(18, 17, 16, 0.75), rgba(18, 17, 16, 0.9)), url('ceec50/assets/escuela1.jpg');"></div>
+      <div class="kiosk-slide" style="background-image: linear-gradient(rgba(18, 17, 16, 0.75), rgba(18, 17, 16, 0.9)), url('ceec50/assets/construccion1.jpg');"></div>
+      <div class="kiosk-slide" style="background-image: linear-gradient(rgba(18, 17, 16, 0.75), rgba(18, 17, 16, 0.9)), url('ceec50/assets/teatro1.jpg');"></div>
+    </div>
+
+    <!-- Contenido de Bienvenida -->
+    <div class="kiosk-content">
+      <div class="kiosk-logo-area">
+        <span class="anniversary-badge">BODAS DE ORO • 50° ANIVERSARIO</span>
+        <h1 class="main-title">Centro de Educación Básica Especial Cajamarca</h1>
+        <p class="tagline">50 Años de Vocación, Amor e Inclusión Educativa (1976 - 2026)</p>
+        
+        <div class="gold-separator">
+          <div class="line"></div>
+          <div class="diamond">♦</div>
+          <div class="line"></div>
+        </div>
+        
+        <p class="cee-mention">
+          Homenaje a nuestros queridos <strong>Maestros, Alumnos, Familias y Colaboradores</strong><br>
+          <span class="cee-badge-text">Medio Siglo Sembrando Esperanza y Futuro</span>
+        </p>
+      </div>
+
+      <button id="btn-start-exploration" class="btn-primary-giant">
+        <svg class="icon-play" viewBox="0 0 24 24" width="32" height="32">
+          <path fill="currentColor" d="M8 5v14l11-7z"/>
+        </svg>
+        <span>EXPLORAR FOTOS Y VIDEOS</span>
+      </button>
+
+      <div class="kiosk-hint">
+        <svg viewBox="0 0 24 24" width="20" height="20" class="icon-mouse">
+          <path fill="none" stroke="currentColor" stroke-width="2" d="M12 2A6 6 0 0 0 6 8v8a6 6 0 0 0 12 0V8a6 6 0 0 0-6-6zm0 2v4"/>
+        </svg>
+        <span>Haz clic o desliza para navegar por cada etapa histórica</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Barra superior exclusiva para móviles -->
+  <header class="mobile-header-bar">
+    <button id="btn-mobile-menu-trigger" class="btn-mobile-toggle" aria-label="Abrir Menú">
+      <svg viewBox="0 0 24 24" width="28" height="28">
+        <path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+      </svg>
+    </button>
+    <span class="mobile-logo-text">CEEC Cajamarca • 50 Años</span>
+    <a href="index.html" class="logo-small mini" title="Volver al Inicio" style="text-decoration: none;">50</a>
+  </header>
+
+  <!-- Overlay para cerrar el menú lateral en móvil -->
+  <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+  <!-- ================= INTERFAZ PRINCIPAL DE LA APLICACIÓN ================= -->
+  <main id="app-main" class="app-layout">
+    
+    <!-- BARRA LATERAL IZQUIERDA (NAVEGACIÓN / CATEGORÍAS) -->
+    <aside class="sidebar" id="sidebar-drawer">
+      <div class="sidebar-header" id="sidebar-logo-trigger">
+        <div class="logo-small">50</div>
+        <div class="sidebar-title-group">
+          <h2>CEEC Cajamarca</h2>
+          <p>Bodas de Oro (1976 - 2026)</p>
+        </div>
+      </div>
+      
+      <nav class="category-nav" id="category-list">
+        <!-- Generado dinámicamente por app.js -->
+      </nav>
+
+      <div class="sidebar-footer">
+        <button id="btn-kiosk-return" class="btn-secondary-sidebar">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/>
+          </svg>
+          <span>Portada Conmemorativa</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- ÁREA DE CONTENIDO CENTRAL -->
+    <section class="content-container">
+      
+      <!-- ENCABEZADO DE LA CATEGORÍA ACTIVA -->
+      <header class="category-header">
+        <div class="category-info">
+          <div class="badge-row">
+            <span id="category-badge" class="cat-badge">50° Aniversario</span>
+          </div>
+          <h2 id="category-title" class="current-title">Cargando Sección...</h2>
+          <p id="category-description" class="current-description">Cargando descripción de la sección...</p>
+        </div>
+        
+        <!-- Controles rápidos: Música y Presentación Auto -->
+        <div class="quick-controls">
+          <button id="btn-play-music" class="control-btn music-btn" title="Activar/Desactivar Música">
+            <svg id="music-icon" viewBox="0 0 24 24" width="24" height="24">
+              <!-- Icono de Música Apagada por defecto -->
+              <path fill="currentColor" d="M4.27 3L3 4.27l9 9v.28c-.53-.21-1.12-.3-1.75-.25-1.78.13-3.1 1.67-2.95 3.44.14 1.76 1.7 3.07 3.48 2.94 1.54-.12 2.74-1.28 2.92-2.73l.03-.95 6 6L21 21.73 4.27 3zM21 3h-7v4.9l2 2V5h3v3h-3v1.88l2 2V3z"/>
+            </svg>
+            <span id="music-text">Música Apagada</span>
+          </button>
+          
+          <button id="btn-slideshow-start" class="control-btn play-btn" title="Iniciar Reproducción Automática">
+            <svg viewBox="0 0 24 24" width="24" height="24">
+              <path fill="currentColor" d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z"/>
+            </svg>
+            <span>Presentación Auto</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- REJILLA PRINCIPAL DE ELEMENTOS -->
+      <div id="media-grid" class="media-grid">
+        <!-- Tarjetas de fotos y videos cargadas dinámicamente -->
+      </div>
+      
+    </section>
+  </main>
+
+  <!-- ================= VISOR FULLSCREEN (LIGHTBOX) ================= -->
+  <section id="lightbox-modal" class="lightbox-modal">
+    <!-- Fondo oscuro -->
+    <div class="lightbox-backdrop"></div>
+    
+    <!-- Botón Cerrar -->
+    <button id="btn-close-lightbox" class="lightbox-close-btn" title="Cerrar Visor">
+      <svg viewBox="0 0 24 24" width="36" height="36">
+        <path fill="none" stroke="currentColor" stroke-width="2.5" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+      </svg>
+    </button>
+
+    <!-- Flecha Izquierda -->
+    <button id="btn-prev-lightbox" class="lightbox-arrow-btn left" title="Anterior">
+      <svg viewBox="0 0 24 24" width="48" height="48">
+        <path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M15 18l-6-6 6-6"/>
+      </svg>
+    </button>
+
+    <!-- Contenido de Visualización -->
+    <div class="lightbox-view-area">
+      <div class="lightbox-media-wrapper">
+        <img id="lightbox-img" class="lightbox-img active" src="" alt="Foto del Recuerdo">
+        
+        <!-- Contenedor del reproductor de video -->
+        <div id="lightbox-video-container" class="lightbox-video-wrapper hide">
+          <!-- Video HTML5 real -->
+          <video id="lightbox-video" controls src="" class="lightbox-video" poster=""></video>
+          
+          <!-- YouTube Fallback Link -->
+          <div id="youtube-fallback-container" class="video-simulator hide">
+            <div class="simulator-overlay-controls">
+              <div class="retro-label">ENLACE DE YOUTUBE</div>
+              <h3 class="retro-title">Construcción de la Escuela</h3>
+              <p class="retro-desc">Haz clic a continuación para reproducir el video histórico digitalizado en YouTube.</p>
+              <button id="btn-open-youtube-external" class="btn-primary-giant small-btn">
+                <svg viewBox="0 0 24 24" width="24" height="24" style="margin-right: 5px;"><path fill="currentColor" d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                <span>VER VIDEO EN YOUTUBE</span>
+              </button>
+            </div>
+          </div>
+          
+          <!-- Simulador de Cine Antiguo -->
+          <div id="video-simulator" class="video-simulator hide">
+            <canvas id="cinema-reel-canvas"></canvas>
+            <div class="simulator-overlay-controls">
+              <div class="retro-label">SALA DE PROYECCIÓN HISTÓRICA</div>
+              <h3 class="retro-title">Construcción de la Escuela (1982)</h3>
+              <p class="retro-desc">Simulador retro interactivo del archivo documental de la escuela.</p>
+              <button id="btn-simulator-play" class="btn-primary-giant small-btn">
+                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>
+                <span>ENCENDER PROYECTOR</span>
+              </button>
+            </div>
+            <audio id="sound-projector" loop src=""></audio>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pie de página del Lightbox (Detalles e información) -->
+      <footer class="lightbox-details">
+        <div class="lightbox-text">
+          <div class="lightbox-header-meta">
+            <span id="lightbox-category" class="category-badge">Categoría</span>
+          </div>
+          <h3 id="lightbox-title">Título del Recuerdo</h3>
+          <p id="lightbox-description">Descripción detallada de la foto...</p>
+        </div>
+        
+        <!-- Controles dentro del Lightbox -->
+        <div class="lightbox-footer-controls">
+          <button id="btn-lightbox-play" class="slideshow-toggle-btn" title="Iniciar presentación automática de esta sección">
+            <svg id="slideshow-icon" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="currentColor" d="M8 5v14l11-7z"/>
+            </svg>
+            <span id="slideshow-status">Reproducir</span>
+          </button>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Flecha Derecha -->
+    <button id="btn-next-lightbox" class="lightbox-arrow-btn right" title="Siguiente">
+      <svg viewBox="0 0 24 24" width="48" height="48">
+        <path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M9 18l6-6-6-6"/>
+      </svg>
+    </button>
+  </section>
+
+  <!-- Elemento de Audio Oculto para música MP3 opcional -->
+  <audio id="audio-bg-music" loop src="ceec50/assets/musica.mp3"></audio>
+
+  <!-- CARGA DE SCRIPTS -->
+  <script src="ceec50/data.js"></script>
+  <script src="ceec50/app.js"></script>
+</body>
+</html>
