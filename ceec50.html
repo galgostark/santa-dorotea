@@ -32,7 +32,14 @@
       <li class="hide-mobile"><a href="proyectos.html">Proyectos</a></li>
       <li class="hide-mobile"><a href="donar.html">Donar</a></li>
       <li class="hide-mobile"><a href="contactos.html">Contactos</a></li>
-      <li><a href="ceec50-de.html" class="lang-switch-link"> Deutsch</a></li>
+      <li>
+        <div class="ceec-lang-switcher" aria-label="Selector de Idioma">
+          <button class="ceec-lang-btn active" data-lang="es" title="Español">ES</button>
+          <button class="ceec-lang-btn" data-lang="de" title="Deutsch">DE</button>
+          <button class="ceec-lang-btn" data-lang="en" title="English">EN</button>
+          <button class="ceec-lang-btn" data-lang="fr" title="Français">FR</button>
+        </div>
+      </li>
     </ul>
   </header>
 
@@ -40,9 +47,9 @@
   <section id="kiosk-screen" class="kiosk-screen active">
     <!-- Diapositivas de fondo animadas -->
     <div class="kiosk-slideshow-container">
-      <div class="kiosk-slide active" style="background-image: linear-gradient(rgba(18, 17, 16, 0.75), rgba(18, 17, 16, 0.9)), url('ceec50/assets/escuela1.jpg');"></div>
-      <div class="kiosk-slide" style="background-image: linear-gradient(rgba(18, 17, 16, 0.75), rgba(18, 17, 16, 0.9)), url('ceec50/assets/construccion1.jpg');"></div>
-      <div class="kiosk-slide" style="background-image: linear-gradient(rgba(18, 17, 16, 0.75), rgba(18, 17, 16, 0.9)), url('ceec50/assets/teatro1.jpg');"></div>
+      <div class="kiosk-slide active" style="background-image: linear-gradient(rgba(253, 251, 247, 0.88), rgba(253, 251, 247, 0.94)), url('ceec50/assets/escuela1.jpg');"></div>
+      <div class="kiosk-slide" style="background-image: linear-gradient(rgba(253, 251, 247, 0.88), rgba(253, 251, 247, 0.94)), url('ceec50/assets/construccion1.jpg');"></div>
+      <div class="kiosk-slide" style="background-image: linear-gradient(rgba(253, 251, 247, 0.88), rgba(253, 251, 247, 0.94)), url('ceec50/assets/teatro1.jpg');"></div>
     </div>
 
     <!-- Contenido de Bienvenida -->
@@ -249,8 +256,11 @@
   <!-- Elemento de Audio Oculto para música MP3 opcional -->
   <audio id="audio-bg-music" loop></audio>
 
-  <!-- CARGA DE SCRIPTS -->
-  <script src="ceec50/data.js"></script>
+  <!-- CARGA DE SCRIPTS MULTI-IDIOMA -->
+  <script src="ceec50/data-es.js"></script>
+  <script src="ceec50/data-de.js"></script>
+  <script src="ceec50/data-en.js"></script>
+  <script src="ceec50/data-fr.js"></script>
   <script src="ceec50/app.js"></script>
 </body>
 </html>

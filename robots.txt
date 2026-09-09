@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://asociacionsantadorotea.org/sitemap.xml

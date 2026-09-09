@@ -1967,3 +1967,67 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+/* ================= SELECTOR DE IDIOMAS Y BOTÓN DONAR DESTACADO ================= */
+.site-lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(247, 202, 68, 0.5);
+  border-radius: 20px;
+  padding: 3px 5px;
+  margin-left: 12px;
+  gap: 3px;
+}
+.site-lang-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 7px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: .25s ease;
+  line-height: 1.2;
+}
+.site-lang-btn:hover {
+  background: rgba(247, 202, 68, 0.3);
+  color: #fff;
+}
+.site-lang-btn.active {
+  background: #f7ca44;
+  color: #121110;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+}
+@media (max-width: 991.98px) {
+  .site-lang-switcher {
+    margin: 15px 0 5px 0;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+  }
+}
+
+/* Realce visual para botón Donar en la barra de navegación */
+.navbar-nav .nav-item.nav-item-donate .nav-link {
+  background: linear-gradient(135deg, #f7ca44, #F96D00) !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+  border-radius: 25px !important;
+  padding: 8px 20px !important;
+  margin: auto 8px !important;
+  box-shadow: 0 3px 12px rgba(249, 109, 0, 0.4) !important;
+  transition: transform .2s ease, box-shadow .2s ease !important;
+}
+.navbar-nav .nav-item.nav-item-donate .nav-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(249, 109, 0, 0.6) !important;
+}
+@media (max-width: 991.98px) {
+  .navbar-nav .nav-item.nav-item-donate .nav-link {
+    display: inline-block;
+    margin: 10px 0 !important;
+  }
+}
+

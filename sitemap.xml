@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://asociacionsantadorotea.org/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://asociacionsantadorotea.org/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://asociacionsantadorotea.org/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://asociacionsantadorotea.org/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://asociacionsantadorotea.org/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://asociacionsantadorotea.org/"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://asociacionsantadorotea.org/donar.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://asociacionsantadorotea.org/donar.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://asociacionsantadorotea.org/donar.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://asociacionsantadorotea.org/donar.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://asociacionsantadorotea.org/donar.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://asociacionsantadorotea.org/donar.html"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://asociacionsantadorotea.org/proyectos.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://asociacionsantadorotea.org/nosotros.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://asociacionsantadorotea.org/galeria.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://asociacionsantadorotea.org/ceec50.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://asociacionsantadorotea.org/ceec50.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://asociacionsantadorotea.org/ceec50.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://asociacionsantadorotea.org/ceec50.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://asociacionsantadorotea.org/ceec50.html?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://asociacionsantadorotea.org/ceec50.html"/>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://asociacionsantadorotea.org/rundbrief.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://asociacionsantadorotea.org/contactos.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+</urlset>

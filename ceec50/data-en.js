@@ -1,62 +1,62 @@
 /**
- * BASE DE DATOS DE RECUERDOS - 50° ANIVERSARIO CEEC CAJAMARCA (DE)
+ * BASE DE DATOS DE RECUERDOS - 50° ANIVERSARIO CEEC CAJAMARCA (EN)
  */
-window.GALLERY_DATA_DE = {
+window.GALLERY_DATA_EN = {
   categories: [
   {
     "id": "escuela-vieja",
-    "title": "Alte Schule",
-    "subtitle": "Die Anfangsjahre",
-    "description": "Die Anfänge des Sonderschulzentrums Cajamarca. Die ersten Klassenräume und Einrichtungen, in denen dieser große Bildungsauftrag begann, bevor das moderne Gebäude errichtet wurde.",
+    "title": "The Old School",
+    "subtitle": "The Early Years",
+    "description": "The beginnings of the Cajamarca Special Basic Education Center. The initial classrooms and facilities where this great educational mission started before the new school building was built.",
     "icon": "school"
   },
   {
     "id": "construccion",
-    "title": "Bau des heutigen Gebäudes",
-    "subtitle": "Historisches Werk",
-    "description": "Das wertvolle audiovisuelle und fotografische Dokument des gemeinschaftlichen Einsatzes, der Errichtung der Mauern, Arbeitseinsätze und Fundamente des heutigen Schulgebäudes.",
+    "title": "Construction of Current Building",
+    "subtitle": "A Historic Undertaking",
+    "description": "The valuable audiovisual and photographic record of community dedication, wall raising, teamwork, and foundations of the current school building.",
     "icon": "tools"
   },
   {
     "id": "instalaciones",
-    "title": "Einrichtungen und Räume",
-    "subtitle": "Lern- und Therapieräume",
-    "description": "Rundgang durch die Klassenzimmer, Bibliothek, Psychomotorikräume, überdachte Höfe und speziell gestaltete Bereiche für die ganzheitliche Entwicklung der Schüler.",
+    "title": "Facilities and Classrooms",
+    "subtitle": "Spaces for Learning and Therapy",
+    "description": "Tour of the classrooms, library, psychomotor therapy rooms, covered courtyards, and environments designed for the comprehensive development of students.",
     "icon": "home"
   },
   {
     "id": "profesores",
-    "title": "Lehrkräfte und Personal",
-    "subtitle": "Hingabe und pädagogischer Einsatz",
-    "description": "Hommage an die Schulleiter, Pädagogen, Therapeuten, Assistenten und Verwaltungskräfte, die ihr Leben und Herz der inklusiven Bildung in diesen 50 Jahren gewidmet haben.",
+    "title": "Teachers and Staff",
+    "subtitle": "Dedication and Pedagogical Care",
+    "description": "Tribute to directors, educators, therapists, assistants, and administrative staff who have dedicated their lives and hearts to inclusive education over these 50 years.",
     "icon": "heart"
   },
   {
     "id": "alumnos",
-    "title": "Schüler und Schulleben",
-    "subtitle": "Unsere Schülerinnen und Schüler",
-    "description": "Die Freude, die ständige Entwicklung und das geschwisterliche Miteinander der Kinder und Jugendlichen, die jeden Winkel der Schule mit Leben erfüllen.",
+    "title": "Students and School Life",
+    "subtitle": "Our Beloved Students",
+    "description": "The joy, perseverance, and brotherhood of the children and young adults who bring life to every corner of our school.",
     "icon": "star"
   },
   {
     "id": "teatro-danzas",
-    "title": "Aufführungen und Theater",
-    "subtitle": "Kunst, Tänze und Feste",
-    "description": "Künstlerische Darbietungen, Theaterstücke, traditionelle Folklorefestivals, Rhythmusgruppen und festliche Umzüge, die mit großer Begabung von den Schülern gestaltet wurden.",
+    "title": "Performances and Theater",
+    "subtitle": "Arts, Folk Dances, and Festivals",
+    "description": "Artistic performances, theatrical plays, folk dance festivals, rhythm bands, and traditional parades performed with exceptional talent by our students.",
     "icon": "theater"
   },
   {
     "id": "aniversarios",
-    "title": "Jubiläumsfeiern",
-    "subtitle": "Meilensteine und Silberjubiläum",
-    "description": "Institutionelle Feiern, feierliche Zeremonien und unvergessliche Momente zum Gedenken an den Weg unserer geschätzten Schule.",
+    "title": "Anniversary Celebrations",
+    "subtitle": "Milestones and Silver Jubilee",
+    "description": "Institutional festivities, ceremonies, and memorable moments commemorating the inspiring journey of our school.",
     "icon": "award"
   },
   {
     "id": "otros",
-    "title": "Weitere Erinnerungen",
-    "subtitle": "Erlebnisse und Anekdoten",
-    "description": "Alltägliche Momente, Ausflüge, Werkstätten und wertvolle Erinnerungen, die im Herzen der Schulfamilie des CEEC bewahrt werden.",
+    "title": "Other Memories",
+    "subtitle": "Experiences and Daily Life",
+    "description": "Everyday moments, field trips, vocational workshops, and cherished memories kept in the hearts of the CEEC family.",
     "icon": "image"
   }
 ],
@@ -380,7 +380,7 @@ window.GALLERY_DATA_DE = {
     "id": "teatro1",
     "categoryId": "teatro-danzas",
     "type": "image",
-    "title": "Theater- und Tanzaufführung (1)",
+    "title": "Theater and Dance Performance (1)",
     "description": "",
     "url": "ceec50/assets/teatro1.jpg",
     "year": "1992"
@@ -389,7 +389,7 @@ window.GALLERY_DATA_DE = {
     "id": "teatro2",
     "categoryId": "teatro-danzas",
     "type": "image",
-    "title": "Theater- und Tanzaufführung (2)",
+    "title": "Theater and Dance Performance (2)",
     "description": "",
     "url": "ceec50/assets/teatro2.jpg",
     "year": "1993"
@@ -398,7 +398,7 @@ window.GALLERY_DATA_DE = {
     "id": "teatro3",
     "categoryId": "teatro-danzas",
     "type": "image",
-    "title": "Theater- und Tanzaufführung (3)",
+    "title": "Theater and Dance Performance (3)",
     "description": "",
     "url": "ceec50/assets/teatro3.jpg",
     "year": "1995"
@@ -407,7 +407,7 @@ window.GALLERY_DATA_DE = {
     "id": "teatro4",
     "categoryId": "teatro-danzas",
     "type": "image",
-    "title": "Theater- und Tanzaufführung (4)",
+    "title": "Theater and Dance Performance (4)",
     "description": "",
     "url": "ceec50/assets/teatro4.jpg",
     "year": "1994"
@@ -416,7 +416,7 @@ window.GALLERY_DATA_DE = {
     "id": "teatro5",
     "categoryId": "teatro-danzas",
     "type": "image",
-    "title": "Theater- und Tanzaufführung (5)",
+    "title": "Theater and Dance Performance (5)",
     "description": "",
     "url": "ceec50/assets/teatro5.jpg",
     "year": "1996"
@@ -425,7 +425,7 @@ window.GALLERY_DATA_DE = {
     "id": "teatro6",
     "categoryId": "teatro-danzas",
     "type": "image",
-    "title": "Theater- und Tanzaufführung (6)",
+    "title": "Theater and Dance Performance (6)",
     "description": "",
     "url": "ceec50/assets/teatro6.jpg",
     "year": "1995"
@@ -434,7 +434,7 @@ window.GALLERY_DATA_DE = {
     "id": "teatro7",
     "categoryId": "teatro-danzas",
     "type": "image",
-    "title": "Theater- und Tanzaufführung (7)",
+    "title": "Theater and Dance Performance (7)",
     "description": "",
     "url": "ceec50/assets/teatro7.jpg",
     "year": "1997"
@@ -443,7 +443,7 @@ window.GALLERY_DATA_DE = {
     "id": "teatro8",
     "categoryId": "teatro-danzas",
     "type": "image",
-    "title": "Theater- und Tanzaufführung (8)",
+    "title": "Theater and Dance Performance (8)",
     "description": "",
     "url": "ceec50/assets/teatro8.jpg",
     "year": "1996"
@@ -452,7 +452,7 @@ window.GALLERY_DATA_DE = {
     "id": "teatro9",
     "categoryId": "teatro-danzas",
     "type": "image",
-    "title": "Theater- und Tanzaufführung (9)",
+    "title": "Theater and Dance Performance (9)",
     "description": "",
     "url": "ceec50/assets/teatro9.jpg",
     "year": "1997"
@@ -461,7 +461,7 @@ window.GALLERY_DATA_DE = {
     "id": "teatro10",
     "categoryId": "teatro-danzas",
     "type": "image",
-    "title": "Theater- und Tanzaufführung (10)",
+    "title": "Theater and Dance Performance (10)",
     "description": "",
     "url": "ceec50/assets/teatro10.jpg",
     "year": "1998"
@@ -470,7 +470,7 @@ window.GALLERY_DATA_DE = {
     "id": "teatro11",
     "categoryId": "teatro-danzas",
     "type": "image",
-    "title": "Theater- und Tanzaufführung (11)",
+    "title": "Theater and Dance Performance (11)",
     "description": "",
     "url": "ceec50/assets/teatro11.jpg",
     "year": "1998"
@@ -479,7 +479,7 @@ window.GALLERY_DATA_DE = {
     "id": "teatro12",
     "categoryId": "teatro-danzas",
     "type": "image",
-    "title": "Theater- und Tanzaufführung (12)",
+    "title": "Theater and Dance Performance (12)",
     "description": "",
     "url": "ceec50/assets/teatro12.jpg",
     "year": "1997"
@@ -488,7 +488,7 @@ window.GALLERY_DATA_DE = {
     "id": "teatro13",
     "categoryId": "teatro-danzas",
     "type": "image",
-    "title": "Theater- und Tanzaufführung (13)",
+    "title": "Theater and Dance Performance (13)",
     "description": "",
     "url": "ceec50/assets/teatro13.jpg",
     "year": "1999"
@@ -497,7 +497,7 @@ window.GALLERY_DATA_DE = {
     "id": "teatro14",
     "categoryId": "teatro-danzas",
     "type": "image",
-    "title": "Theater- und Tanzaufführung (14)",
+    "title": "Theater and Dance Performance (14)",
     "description": "",
     "url": "ceec50/assets/teatro14.jpg",
     "year": "1998"
@@ -506,7 +506,7 @@ window.GALLERY_DATA_DE = {
     "id": "teatro15",
     "categoryId": "teatro-danzas",
     "type": "image",
-    "title": "Theater- und Tanzaufführung (15)",
+    "title": "Theater and Dance Performance (15)",
     "description": "",
     "url": "ceec50/assets/teatro15.jpg",
     "year": "1999"
@@ -515,7 +515,7 @@ window.GALLERY_DATA_DE = {
     "id": "teatro16",
     "categoryId": "teatro-danzas",
     "type": "image",
-    "title": "Theater- und Tanzaufführung (16)",
+    "title": "Theater and Dance Performance (16)",
     "description": "",
     "url": "ceec50/assets/teatro16.jpg",
     "year": "1999"
@@ -524,7 +524,7 @@ window.GALLERY_DATA_DE = {
     "id": "teatro17",
     "categoryId": "teatro-danzas",
     "type": "image",
-    "title": "Theater- und Tanzaufführung (17)",
+    "title": "Theater and Dance Performance (17)",
     "description": "",
     "url": "ceec50/assets/teatro17.jpg",
     "year": "1998"
@@ -533,7 +533,7 @@ window.GALLERY_DATA_DE = {
     "id": "teatro18",
     "categoryId": "teatro-danzas",
     "type": "image",
-    "title": "Theater- und Tanzaufführung (18)",
+    "title": "Theater and Dance Performance (18)",
     "description": "",
     "url": "ceec50/assets/teatro18.jpg",
     "year": "1999"
@@ -542,7 +542,7 @@ window.GALLERY_DATA_DE = {
     "id": "teatro19",
     "categoryId": "teatro-danzas",
     "type": "image",
-    "title": "Theater- und Tanzaufführung (19)",
+    "title": "Theater and Dance Performance (19)",
     "description": "",
     "url": "ceec50/assets/teatro19.jpg",
     "year": "1999"
@@ -551,7 +551,7 @@ window.GALLERY_DATA_DE = {
     "id": "teatro20",
     "categoryId": "teatro-danzas",
     "type": "image",
-    "title": "Theater- und Tanzaufführung (20)",
+    "title": "Theater and Dance Performance (20)",
     "description": "",
     "url": "ceec50/assets/teatro20.jpg",
     "year": "1999"
@@ -560,7 +560,7 @@ window.GALLERY_DATA_DE = {
     "id": "aniversario1",
     "categoryId": "aniversarios",
     "type": "image",
-    "title": "Jubiläumsfeier (1)",
+    "title": "Anniversary Celebration (1)",
     "description": "",
     "url": "ceec50/assets/aniversario1.jpg",
     "year": "1995"
@@ -569,7 +569,7 @@ window.GALLERY_DATA_DE = {
     "id": "aniversario1b",
     "categoryId": "aniversarios",
     "type": "image",
-    "title": "Jubiläumsfeier (1b)",
+    "title": "Anniversary Celebration (1b)",
     "description": "",
     "url": "ceec50/assets/aniversario1b.jpg",
     "year": "1995"
@@ -578,7 +578,7 @@ window.GALLERY_DATA_DE = {
     "id": "aniversario2",
     "categoryId": "aniversarios",
     "type": "image",
-    "title": "Jubiläumsfeier (2)",
+    "title": "Anniversary Celebration (2)",
     "description": "",
     "url": "ceec50/assets/aniversario2.jpg",
     "year": "1997"
@@ -603,6 +603,6 @@ window.GALLERY_DATA_DE = {
   }
 ]
 };
-if (!window.GALLERY_DATA && "de" === "es") {
-  window.GALLERY_DATA = window.GALLERY_DATA_DE;
+if (!window.GALLERY_DATA && "en" === "es") {
+  window.GALLERY_DATA = window.GALLERY_DATA_EN;
 }
