@@ -2031,3 +2031,96 @@ textarea.form-control {
   }
 }
 
+/* Visibilidad condicional de Rundbrief: Exclusivo para idioma alemán (DE) */
+html:not([lang="de"]) .nav-item-rundbrief {
+  display: none !important;
+}
+html[lang="de"] .nav-item-rundbrief {
+  display: list-item !important;
+}
+
+/* Enlaces y botones de Facebook */
+.nav-item-facebook .nav-link {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px !important;
+  color: #fff !important;
+  transition: transform .2s ease, color .2s ease;
+}
+.nav-item-facebook .nav-link:hover {
+  transform: scale(1.15);
+  color: #1877F2 !important;
+}
+.nav-item-facebook .fb-icon-wrap {
+  width: 32px;
+  height: 32px;
+  background-color: #1877F2;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  color: #fff;
+  transition: background-color .2s ease, box-shadow .2s ease;
+}
+.nav-item-facebook .fb-icon-wrap:hover {
+  background-color: #166fe5;
+  box-shadow: 0 4px 10px rgba(24, 119, 242, 0.5);
+}
+
+.btn-facebook {
+  background-color: #1877F2;
+  color: #ffffff !important;
+  border: 1px solid #1877F2;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 10px 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none !important;
+  transition: all .25s ease;
+  box-shadow: 0 4px 14px rgba(24, 119, 242, 0.35);
+}
+.btn-facebook:hover {
+  background-color: #166fe5;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(24, 119, 242, 0.5);
+}
+
+.footer-social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #f7ca44;
+  font-weight: 600;
+  margin-top: 12px;
+  padding: 6px 14px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 20px;
+  border: 1px solid rgba(247, 202, 68, 0.3);
+  transition: all .25s ease;
+}
+.footer-social-link:hover {
+  color: #fff;
+  background: #1877F2;
+  border-color: #1877F2;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(24, 119, 242, 0.4);
+}
+
+.rundbrief-lang-notice {
+  background: #fff8e1;
+  border-left: 4px solid #f7ca44;
+  color: #5d4037;
+  border-radius: 4px;
+  padding: 16px 20px;
+  margin-bottom: 30px;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+

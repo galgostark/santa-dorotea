@@ -98,7 +98,7 @@
           <li class="nav-item "><a href="index.html" class="nav-link" data-i18n="nav_home">Inicio</a></li>
           <li class="nav-item "><a href="proyectos.html" class="nav-link" data-i18n="nav_projects">Proyectos</a></li>
           <li class="nav-item "><a href="galeria.html" class="nav-link" data-i18n="nav_gallery">Galería</a></li>
-          <li class="nav-item active"><a href="rundbrief.html" class="nav-link" data-i18n="nav_rundbrief">Rundbrief</a></li>
+          <li class="nav-item nav-item-rundbrief active"><a href="rundbrief.html" class="nav-link" data-i18n="nav_rundbrief">Rundbrief</a></li>
           <li class="nav-item "><a href="nosotros.html" class="nav-link" data-i18n="nav_about">Nosotros</a></li>
           <li class="nav-item "><a href="contactos.html" class="nav-link" data-i18n="nav_contact">Contactos</a></li>
           <li class="nav-item nav-item-donate "><a href="donar.html" class="nav-link" data-i18n="nav_donate">¡Donar!</a></li>
@@ -109,6 +109,11 @@
               <button class="site-lang-btn" data-lang="en" title="English">EN</button>
               <button class="site-lang-btn" data-lang="fr" title="Français">FR</button>
             </div>
+          </li>
+          <li class="nav-item nav-item-facebook">
+            <a href="https://www.facebook.com/people/Asociaci%C3%B3n-Santa-Dorotea/100068736834897/" target="_blank" rel="noopener noreferrer" class="nav-link" title="Facebook - Asociación Santa Dorotea" data-i18n-attr="title:nav_facebook_title">
+              <span class="fb-icon-wrap"><span class="icon icon-facebook"></span></span>
+            </a>
           </li>
         </ul>
       </div>
@@ -134,6 +139,12 @@
   
   <div class="site-section bg-light">
     <div class="container">
+      <div id="rundbrief-notice-box" class="rundbrief-lang-notice mb-4" style="display: none;">
+        <div class="d-flex align-items-center">
+          <span class="icon icon-info mr-3" style="font-size: 1.8rem; color: #F96D00;"></span>
+          <span data-i18n="rundbrief_notice">Nota informativa: Los boletines "Rundbrief" son cartas circulares redactadas y publicadas periódicamente en alemán para nuestros colaboradores, donantes y amigos en Alemania. A continuación puede acceder a la descarga de todas las ediciones en PDF.</span>
+        </div>
+      </div>
       <div class="row">
         <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0">
           <div class="post-entry">
@@ -221,45 +232,34 @@
     </div>
   </div> <!-- .section -->
 
-<div class="featured-section overlay-color-2" style="background-image: url('images/bg_2.jpg');">
-    
+  <div class="featured-section overlay-color-2" style="background-image: url('images/bg_2.jpg');">
     <div class="container">
       <div class="row">
         <div class="col-12 mb-3">
-                <h2 class="text-light">Werde als <strong>Freiwilliger</strong> (m/w/d) Teil der Asociación Santa Dorotea</h2>
-
+          <h2 class="text-light" data-i18n="volunt_title">Programa de Voluntariado</h2>
+          <p class="lead text-warning" style="font-weight: 600;" data-i18n="volunt_subtitle">Necesitamos siempre manos solidarias</p>
         </div>
-        <div class="col-md-6 mb-5 mb-md-0">
-          
-            <p>Komm‘ für ein paar Monate oder ein ganzes Jahr zu uns und mache einen Unterschied im Leben von Menschen mit Behinderung in Cajamarca, Peru.</p>
-
-          <img src="images/voluntariado.jpg" alt="Bildplatzhalter" class="img-fluid">
+        <div class="col-md-5 mb-4 mb-md-0">
+          <p class="text-light" data-i18n="volunt_intro">¡Sé voluntario en Santa Dorotea! Una experiencia formativa y humana única que transformará tu forma de ver el mundo.</p>
+          <img src="images/voluntariado.jpg" alt="Voluntarios Santa Dorotea" class="img-fluid rounded shadow-sm mb-3">
+          <p class="small text-white-50" data-i18n="volunt_partner_notice">Postula directamente con nosotros o a través de nuestra organización aliada de envío: Welthaus Bielefeld.</p>
         </div>
 
-        <div class="col-md-6 pl-md-5">
-
-          <div class="volutarios">
-            
-            <ul class="text-light">
-              <li>Bei uns lernst du nicht nur eine <strong> neue Sprache</strong>, fremdes <strong> Essen</strong> und ein anderes Klima kennen. </li>
-            
-              <li class="mt-2">Du tauchst tief in die Kultur Perus ein und lernst die Menschen vor Ort und ihre Traditionen hautnah kennen.</li>
-              <li class="mt-2">Du gewinnst einen völlig neuen Blickwinkel, der dein Denken und Handeln nachhaltig prägen wird.</li>
-              <li class="mt-2">Durch unsere Kinder und Jugendlichen lernst du die Welt mit ganz anderen Augen zu sehen.</li>
-              <li class="mt-2">Du wirst an <strong> neuen und spannenden Aufgaben </strong>wachsen, <strong> unvergessliche Erfahrungen</strong> machen und dabei <strong> viel Spaß</strong> haben.</li>
-              <li>Unterstütze unsere Kinder bei alltäglichen Aufgaben wie Essen, Waschen oder Zähne putzen. Beim gemeinsamen Spielen, Lernen, Vorlesen, Basteln oder Malen kannst du deine ganz eigenen Interessen und Begabungen einbringen.</li>
-
-            </ul> 
-            
+        <div class="col-md-7 pl-md-5">
+          <div class="voluntarios text-light">
+            <p data-i18n="volunt_p1">Con nosotros dominarás un nuevo idioma con fluidez, conocerás una cultura vibrante, nueva gastronomía y el clima andino. Te sumergirás profundamente en las tradiciones de Cajamarca y aprenderás de nuestros niños a ver la vida con otros ojos.</p>
+            <h5 class="text-warning font-weight-bold mt-3" data-i18n="volunt_tasks_title">Tus actividades cotidianas:</h5>
+            <p data-i18n="volunt_tasks_desc">Apoyarás a nuestros niños en actividades diarias como alimentación, aseo y cepillado de dientes. Podrás aportar tus talentos e intereses jugando, estudiando, leyendo cuentos, haciendo manualidades o pintando juntos. Una sonrisa, el brillo en sus ojos o un abrazo sincero son la mejor recompensa para tu labor.</p>
+            <blockquote class="text-white-50 font-italic border-left pl-3 my-3" style="border-color: #f7ca44 !important;" data-i18n="volunt_privilege_quote">
+              Regresarás con una mirada totalmente renovada. Un hogar seguro o el acceso a la educación no son evidentes en todas partes; aprenderás a valorar tus privilegios y vivirás experiencias únicas que tocarán profundamente tu corazón.
+            </blockquote>
           </div>
-          <div class="contactos text-center mt-5">
-            <div class="btn btn-light"><a href="contactos.html">Kontaktieren Sie uns</a></div>
+          <div class="contactos text-center text-md-left mt-4">
+            <div class="btn btn-light font-weight-bold"><a href="contactos.html" data-i18n="volunt_btn">Contáctenos para ser Voluntario</a></div>
           </div>
         </div>
-        
       </div>
     </div>
-
   </div> <!-- .featured-donate -->
 
 
@@ -269,7 +269,12 @@
       <div class="row pt-5">
         <div class="col-md-12 text-center">
             <span class="icon icon-mail"></span>  asd_cajamarca@yahoo.com <br/><span class="icon icon-phone"></span> <a> +51 994 752 634</a>
-            <p>Jr. Amazonas 775 <br> Cajamarca - Perú</p>
+            <p>Jr. Amazonas 775 <br> Cajamarca - Perú</p> 
+            <p class="mb-3">
+              <a href="https://www.facebook.com/people/Asociaci%C3%B3n-Santa-Dorotea/100068736834897/" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+                <span class="icon icon-facebook"></span> <span data-i18n="footer_fb">Facebook: Asociación Santa Dorotea</span>
+              </a>
+            </p>
             <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ion-ios-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>

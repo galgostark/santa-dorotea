@@ -69,6 +69,25 @@
     document.querySelectorAll('.site-lang-btn, .ceec-lang-btn').forEach(btn => {
       btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
     });
+
+    // 5. Visibilidad exclusiva de Rundbrief para idioma alemán (DE)
+    document.querySelectorAll('.nav-item-rundbrief').forEach(el => {
+      if (lang === 'de') {
+        el.style.display = '';
+      } else {
+        el.style.display = 'none';
+      }
+    });
+
+    // 6. Aviso informativo en página rundbrief.html si se elige idioma no alemán
+    const rundbriefNotice = document.getElementById('rundbrief-notice-box');
+    if (rundbriefNotice) {
+      if (lang === 'de') {
+        rundbriefNotice.style.display = 'none';
+      } else {
+        rundbriefNotice.style.display = 'block';
+      }
+    }
   }
 
   window.setSiteLanguage = function(lang) {
