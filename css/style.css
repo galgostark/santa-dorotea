@@ -2000,6 +2000,24 @@ textarea.form-control {
   color: #121110;
   box-shadow: 0 2px 5px rgba(0,0,0,0.25);
 }
+
+/* Contraste perfecto para el selector de idiomas con barra fija/scrolled blanca */
+.ftco-navbar-light.scrolled .site-lang-switcher {
+  background: #f1f3f5;
+  border: 1px solid #ced4da;
+}
+.ftco-navbar-light.scrolled .site-lang-btn {
+  color: #212529 !important;
+}
+.ftco-navbar-light.scrolled .site-lang-btn:hover {
+  background: rgba(247, 202, 68, 0.35);
+  color: #000 !important;
+}
+.ftco-navbar-light.scrolled .site-lang-btn.active {
+  background: #f7ca44 !important;
+  color: #121110 !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
 @media (max-width: 991.98px) {
   .site-lang-switcher {
     margin: 15px 0 5px 0;

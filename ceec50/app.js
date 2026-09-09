@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   // ================= 1. INICIALIZACIÓN DE LA INTERFAZ =================
-  const initApp = () => {
+  const renderCategories = () => {
     // Generar menú lateral de las 8 categorías del CEE
     categoryListContainer.innerHTML = "";
     getActiveData().categories.forEach(cat => {
@@ -205,6 +205,10 @@ document.addEventListener("DOMContentLoaded", () => {
       btn.addEventListener("click", () => switchCategory(cat.id));
       categoryListContainer.appendChild(btn);
     });
+  };
+
+  const initApp = () => {
+    renderCategories();
 
     // Activar primera categoría en el menú
     switchCategory("escuela-vieja");
@@ -700,10 +704,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const hideKioskScreen = () => {
     kioskScreen.classList.remove("active");
     resetInactivityTimer();
-    
-    if (!isPlayingMusic) {
-      toggleMusic();
-    }
   };
 
   const resetInactivityTimer = () => {
@@ -712,7 +712,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     inactivityTimeout = setTimeout(() => {
       showKioskScreen();
-    }, 60000);
+    }, 180000);
   };
 
   // ================= 8. MANEJADORES DE EVENTOS =================
@@ -734,7 +734,7 @@ document.addEventListener("DOMContentLoaded", () => {
   btnNextLightbox.addEventListener("click", () => navigateLightbox(1));
   btnLightboxPlay.addEventListener("click", toggleLightboxSlideshow);
 
-  const activityEvents = ["mousemove", "mousedown", "click", "scroll", "keydown"];
+  const activityEvents = ["mousemove", "mousedown", "click", "scroll", "keydown", "touchstart", "touchmove"];
   activityEvents.forEach(evt => {
     window.addEventListener(evt, resetInactivityTimer, { passive: true });
   });
@@ -808,6 +808,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (kHint) kHint.innerHTML = t.kioskHint;
     const kReturn = document.querySelector("#btn-kiosk-return span");
     if (kReturn) kReturn.innerHTML = t.kioskReturn;
+    const retHome = document.querySelector(".btn-return-home");
+    if (retHome) retHome.innerHTML = `<span class="icon icon-arrow-left"></span> ${t.returnHome}`;
+    const btnSlide = document.querySelector("#btn-slideshow-start span");
+    if (btnSlide) btnSlide.innerText = t.slideshowPlay;
     
     renderCategories();
     switchCategory(currentCategory);
