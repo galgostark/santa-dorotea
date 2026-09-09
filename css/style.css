@@ -2348,5 +2348,194 @@ html[lang="de"] .nav-item-rundbrief {
   text-decoration: underline;
 }
 
+/* ============================================================
+   MEJORAS FANCYBOX (CEEC 50 Y GALERÍA GENERAL)
+   Flechas de navegación visibles, controles superiores destacados
+   y botón de presentación (slideshow) garantizado en móviles
+   ============================================================ */
+.fancybox-container .fancybox-navigation .fancybox-button {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 48px !important;
+  height: 48px !important;
+  background: rgba(22, 20, 18, 0.88) !important;
+  border: 2px solid #f7ca44 !important;
+  border-radius: 50% !important;
+  color: #f7ca44 !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.6) !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 99999 !important;
+  cursor: pointer !important;
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease !important;
+}
 
+.fancybox-container .fancybox-navigation .fancybox-button:hover,
+.fancybox-container .fancybox-navigation .fancybox-button:focus,
+.fancybox-container .fancybox-navigation .fancybox-button:active {
+  background: #f7ca44 !important;
+  color: #121110 !important;
+  transform: translateY(-50%) scale(1.08) !important;
+}
 
+.fancybox-container .fancybox-navigation .fancybox-button--arrow_left {
+  left: 12px !important;
+}
+
+.fancybox-container .fancybox-navigation .fancybox-button--arrow_right {
+  right: 12px !important;
+}
+
+.fancybox-container .fancybox-navigation .fancybox-button svg {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.fancybox-container .fancybox-navigation .fancybox-button svg path {
+  stroke-width: 3.5 !important;
+}
+
+.fancybox-container .fancybox-navigation .fancybox-button.disabled {
+  display: none !important;
+}
+
+/* Barra de herramientas superior (Toolbar) */
+.fancybox-container .fancybox-toolbar {
+  opacity: 1 !important;
+  visibility: visible !important;
+  top: 0 !important;
+  right: 0 !important;
+  background: linear-gradient(180deg, rgba(12, 11, 10, 0.9) 0%, rgba(12, 11, 10, 0.5) 75%, transparent 100%) !important;
+  padding: 6px 10px !important;
+  z-index: 99999 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.fancybox-container .fancybox-toolbar .fancybox-button {
+  background: rgba(36, 34, 32, 0.75) !important;
+  color: #ffffff !important;
+  border-radius: 8px !important;
+  width: 44px !important;
+  height: 44px !important;
+  margin: 0 4px !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.2s ease !important;
+}
+
+.fancybox-container .fancybox-toolbar .fancybox-button:hover,
+.fancybox-container .fancybox-toolbar .fancybox-button:active {
+  background: #f7ca44 !important;
+  color: #121110 !important;
+  border-color: #f7ca44 !important;
+}
+
+/* Botón de Play/Pausa de presentación (slideshow) */
+.fancybox-container .fancybox-button--play,
+.fancybox-container .fancybox-button--pause {
+  color: #f7ca44 !important;
+  background: rgba(247, 202, 68, 0.2) !important;
+  border: 1.5px solid #f7ca44 !important;
+}
+
+.fancybox-container .fancybox-button--play svg path,
+.fancybox-container .fancybox-button--pause svg path {
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.fancybox-container .fancybox-button--play:hover,
+.fancybox-container .fancybox-button--pause:hover {
+  background: #f7ca44 !important;
+  color: #121110 !important;
+}
+
+/* Contador de imágenes (Infobar) */
+.fancybox-container .fancybox-infobar {
+  opacity: 1 !important;
+  visibility: visible !important;
+  mix-blend-mode: normal !important;
+  color: #f7ca44 !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  top: 6px !important;
+  left: 10px !important;
+  height: 44px !important;
+  line-height: 44px !important;
+  background: rgba(22, 20, 18, 0.82) !important;
+  padding: 0 14px !important;
+  border-radius: 22px !important;
+  border: 1px solid rgba(247, 202, 68, 0.4) !important;
+  z-index: 99999 !important;
+}
+
+/* Pie de foto (Caption) legible */
+.fancybox-container .fancybox-caption {
+  font-family: inherit !important;
+  text-align: center !important;
+  padding: 14px 20px !important;
+  font-size: 15px !important;
+  color: #f8f9fa !important;
+  background: linear-gradient(0deg, rgba(12, 11, 10, 0.95) 0%, rgba(12, 11, 10, 0.75) 75%, transparent 100%) !important;
+}
+.fancybox-container .fancybox-caption:after {
+  display: none !important;
+}
+
+/* Ajustes responsivos para tabletas y móviles */
+@media (max-width: 767.98px) {
+  .fancybox-container .fancybox-navigation .fancybox-button {
+    width: 44px !important;
+    height: 44px !important;
+    background: rgba(18, 17, 16, 0.92) !important;
+    border: 2px solid #f7ca44 !important;
+  }
+  .fancybox-container .fancybox-navigation .fancybox-button--arrow_left {
+    left: 8px !important;
+  }
+  .fancybox-container .fancybox-navigation .fancybox-button--arrow_right {
+    right: 8px !important;
+  }
+  .fancybox-container .fancybox-toolbar .fancybox-button {
+    width: 42px !important;
+    height: 42px !important;
+    margin: 0 3px !important;
+  }
+}
+
+/* Ajustes específicos para smartphones pequeños (<= 576px) */
+@media (max-width: 576px) {
+  .fancybox-container .fancybox-navigation .fancybox-button {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .fancybox-container .fancybox-navigation .fancybox-button--arrow_left {
+    left: 6px !important;
+  }
+  .fancybox-container .fancybox-navigation .fancybox-button--arrow_right {
+    right: 6px !important;
+  }
+  .fancybox-container .fancybox-toolbar .fancybox-button {
+    width: 38px !important;
+    height: 38px !important;
+    margin: 0 2px !important;
+  }
+  .fancybox-container .fancybox-infobar {
+    font-size: 12px !important;
+    padding: 0 10px !important;
+    height: 38px !important;
+    line-height: 38px !important;
+    top: 6px !important;
+    left: 6px !important;
+  }
+  .fancybox-container .fancybox-caption {
+    font-size: 13px !important;
+    padding: 10px 14px !important;
+  }
+}

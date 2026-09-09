@@ -181,8 +181,52 @@ document.addEventListener("DOMContentLoaded", () => {
     renderGrid();
   };
 
-  // Inicializar interfaz
+  // Inicialización de Fancybox para la galería con controles y flechas permanentes
+  const initFancybox = () => {
+    if (window.jQuery && typeof window.jQuery.fn.fancybox === "function") {
+      window.jQuery().fancybox({
+        selector: '[data-fancybox="ceec-gallery"]',
+        loop: true,
+        arrows: true,
+        infobar: true,
+        toolbar: true,
+        buttons: [
+          "slideShow",
+          "zoom",
+          "close"
+        ],
+        slideShow: {
+          autoStart: false,
+          speed: 3500
+        },
+        idleTime: false,
+        protect: false,
+        animationEffect: "fade",
+        transitionEffect: "slide",
+        touch: {
+          vertical: true,
+          momentum: true
+        },
+        mobile: {
+          arrows: true,
+          toolbar: true,
+          infobar: true,
+          buttons: [
+            "slideShow",
+            "zoom",
+            "close"
+          ],
+          idleTime: false,
+          clickContent: function() { return false; },
+          clickSlide: "close"
+        }
+      });
+    }
+  };
+
+  // Inicializar interfaz y Fancybox
   renderApp();
+  initFancybox();
 
   // Escuchar cambios de idioma desde la barra de navegación principal
   document.querySelectorAll(".site-lang-btn").forEach(btn => {

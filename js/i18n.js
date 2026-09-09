@@ -88,6 +88,11 @@
         rundbriefNotice.style.display = 'block';
       }
     }
+
+    // 7. Sincronizar idioma de Fancybox
+    if (window.jQuery && window.jQuery.fancybox && window.jQuery.fancybox.defaults) {
+      window.jQuery.fancybox.defaults.lang = lang;
+    }
   }
 
   window.setSiteLanguage = function(lang) {

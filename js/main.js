@@ -2,6 +2,90 @@ $(document).ready(function($) {
 
 	"use strict";
 
+	// Configuración Global de Fancybox (CEEC 50, Galería y presentaciones)
+	if ($.fancybox) {
+		$.fancybox.defaults = $.extend(true, {}, $.fancybox.defaults, {
+			loop: true,
+			arrows: true,
+			infobar: true,
+			toolbar: true,
+			buttons: [
+				"slideShow",
+				"zoom",
+				"close"
+			],
+			slideShow: {
+				autoStart: false,
+				speed: 3500
+			},
+			idleTime: false,
+			protect: false,
+			animationEffect: "fade",
+			transitionEffect: "slide",
+			touch: {
+				vertical: true,
+				momentum: true
+			},
+			mobile: {
+				arrows: true,
+				toolbar: true,
+				infobar: true,
+				buttons: [
+					"slideShow",
+					"zoom",
+					"close"
+				],
+				idleTime: false,
+				clickContent: function() { return false; },
+				clickSlide: "close"
+			}
+		});
+
+		// Diccionario de textos para controles de Fancybox
+		$.fancybox.defaults.i18n = $.fancybox.defaults.i18n || {};
+		$.fancybox.defaults.i18n.es = {
+			CLOSE: "Cerrar",
+			NEXT: "Siguiente",
+			PREV: "Anterior",
+			ERROR: "El contenido solicitado no pudo ser cargado.<br/>Por favor, intente más tarde.",
+			PLAY_START: "Iniciar presentación",
+			PLAY_STOP: "Pausar presentación",
+			FULL_SCREEN: "Pantalla completa",
+			THUMBS: "Miniaturas",
+			DOWNLOAD: "Descargar",
+			SHARE: "Compartir",
+			ZOOM: "Zoom"
+		};
+		$.fancybox.defaults.i18n.de = {
+			CLOSE: "Schließen",
+			NEXT: "Weiter",
+			PREV: "Zurück",
+			ERROR: "Die angeforderten Inhalte konnten nicht geladen werden.<br/>Bitte versuchen Sie es später noch einmal.",
+			PLAY_START: "Diashow starten",
+			PLAY_STOP: "Diashow anhalten",
+			FULL_SCREEN: "Vollbild",
+			THUMBS: "Vorschaubilder",
+			DOWNLOAD: "Herunterladen",
+			SHARE: "Teilen",
+			ZOOM: "Vergrößern"
+		};
+		$.fancybox.defaults.i18n.fr = {
+			CLOSE: "Fermer",
+			NEXT: "Suivant",
+			PREV: "Précédent",
+			ERROR: "Le contenu demandé n'a pas pu être chargé.<br/>Veuillez réessayer plus tard.",
+			PLAY_START: "Démarrer le diaporama",
+			PLAY_STOP: "Mettre en pause le diaporama",
+			FULL_SCREEN: "Plein écran",
+			THUMBS: "Vignettes",
+			DOWNLOAD: "Télécharger",
+			SHARE: "Partager",
+			ZOOM: "Zoom"
+		};
+		var currentLang = localStorage.getItem("preferred_lang") || "es";
+		$.fancybox.defaults.lang = currentLang;
+	}
+
 	$(window).stellar({
     responsive: false,
     parallaxBackgrounds: true,
