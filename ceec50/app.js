@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
         <div class="card-details">
           <h3>${item.title}</h3>
-          <p>${item.description}</p>
+          ${isVideo && item.description ? `<p>${item.description}</p>` : ""}
           ${isVideo ? `
             <div style="margin-top: 10px; display: flex; align-items: center; justify-content: space-between; gap: 8px;">
               <span style="font-size: 0.82rem; color: #f7ca44; font-weight: 700;">▶ Ver en Reproductor</span>
@@ -196,7 +196,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const currentCatObj = GALLERY_DATA.categories.find(c => c.id === item.categoryId);
     lightboxCategoryName.innerText = currentCatObj ? currentCatObj.title : "CEBE Cajamarca";
     lightboxTitle.innerText = item.title;
-    lightboxDescription.innerText = item.description;
+
+    // Ocultar descripciones de imágenes (texto de ejemplo eliminado)
+    if (lightboxDescription) {
+      if (item.type === "image" || !item.description) {
+        lightboxDescription.classList.add("hide");
+        lightboxDescription.innerText = "";
+      } else {
+        lightboxDescription.classList.remove("hide");
+        lightboxDescription.innerText = item.description;
+      }
+    }
 
     // Resetear estados visuales de medios
     lightboxImg.classList.remove("active");
