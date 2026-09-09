@@ -2141,4 +2141,212 @@ html[lang="de"] .nav-item-rundbrief {
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
+/* ================= CEEC 50 AÑOS - BADGE COMPACTO EN EL MENÚ ================= */
+.navbar-nav .nav-item.nav-item-ceec .nav-link {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  display: inline-flex;
+  align-items: center;
+}
+.badge-ceec {
+  background: rgba(247, 202, 68, 0.2);
+  color: #f7ca44;
+  border: 1px solid rgba(247, 202, 68, 0.65);
+  border-radius: 12px;
+  padding: 3px 8px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  transition: all 0.25s ease;
+  line-height: 1.3;
+}
+.navbar-nav .nav-item.nav-item-ceec .nav-link:hover .badge-ceec,
+.navbar-nav .nav-item.nav-item-ceec.active .badge-ceec {
+  background: #f7ca44;
+  color: #121110;
+  border-color: #f7ca44;
+  box-shadow: 0 2px 8px rgba(247, 202, 68, 0.45);
+}
+.ftco-navbar-light.scrolled .navbar-nav .nav-item.nav-item-ceec .badge-ceec {
+  background: rgba(247, 202, 68, 0.15);
+  color: #a86c00;
+  border-color: rgba(247, 202, 68, 0.85);
+}
+.ftco-navbar-light.scrolled .navbar-nav .nav-item.nav-item-ceec .nav-link:hover .badge-ceec,
+.ftco-navbar-light.scrolled .navbar-nav .nav-item.nav-item-ceec.active .badge-ceec {
+  background: #f7ca44;
+  color: #121110;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Ajuste fino para evitar desbordamiento del menú en pantallas medianas (992px a 1280px) */
+@media (min-width: 992px) and (max-width: 1280px) {
+  .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+    padding-left: 9px !important;
+    padding-right: 9px !important;
+    font-size: 13px !important;
+  }
+  .navbar-brand {
+    font-size: 22px !important;
+    margin-right: 6px !important;
+  }
+  .navbar-nav .nav-item.nav-item-donate .nav-link {
+    padding: 6px 14px !important;
+    margin: auto 4px !important;
+    font-size: 12px !important;
+  }
+  .site-lang-switcher {
+    margin-left: 6px !important;
+    padding: 2px 4px !important;
+  }
+  .site-lang-btn {
+    padding: 2px 5px !important;
+    font-size: 10px !important;
+  }
+}
+
+/* ================= CEEC 50 AÑOS - SECCIÓN CONMEMORATIVA ================= */
+.ceec-intro-box {
+  background: #ffffff;
+  border-radius: 12px;
+  border-left: 5px solid #f7ca44;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+  padding: 30px;
+  margin-bottom: 40px;
+}
+.ceec-filter-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+.ceec-filter-pill {
+  background: #f8f9fa;
+  color: #495057;
+  border: 1px solid #dee2e6;
+  border-radius: 25px;
+  padding: 8px 18px;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.ceec-filter-pill:hover {
+  background: rgba(247, 202, 68, 0.2);
+  border-color: #f7ca44;
+  color: #212529;
+}
+.ceec-filter-pill.active {
+  background: #f7ca44;
+  color: #121110;
+  border-color: #f7ca44;
+  box-shadow: 0 3px 10px rgba(247, 202, 68, 0.35);
+}
+.ceec-memory-card {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.ceec-memory-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+.ceec-card-media {
+  position: relative;
+  width: 100%;
+  height: 230px;
+  background: #f0f0f0;
+  overflow: hidden;
+}
+.ceec-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.ceec-memory-card:hover .ceec-card-media img {
+  transform: scale(1.06);
+}
+.ceec-card-body {
+  padding: 16px 18px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ceec-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #212529;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+.ceec-card-cat-badge {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #a86c00;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+.ceec-video-overlay-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(220, 53, 69, 0.92);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.ceec-video-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 54px;
+  height: 54px;
+  background: rgba(247, 202, 68, 0.95);
+  color: #121110;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+.ceec-memory-card:hover .ceec-video-play-btn {
+  transform: translate(-50%, -50%) scale(1.12);
+  background: #ffc107;
+}
+.ceec-card-yt-link {
+  font-size: 12px;
+  color: #dc3545;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 6px;
+}
+.ceec-card-yt-link:hover {
+  color: #bd2130;
+  text-decoration: underline;
+}
+
+
 
