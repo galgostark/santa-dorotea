@@ -20,6 +20,40 @@ document.addEventListener("DOMContentLoaded", () => {
   let ambientSynthTimer = null;
   const audioEl = document.getElementById("audio-bg-music");
 
+  // ================= IDIOMA E INTERNACIONALIZACIÓN =================
+  const currentLang = document.documentElement.lang === "de" ? "de" : "es";
+  const I18N = {
+    es: {
+      categoryBadge: "Bodas de Oro • 50 Años",
+      emptyGrid: "No hay recuerdos en esta sección por el momento.",
+      videoBadge: "Video Histórico",
+      videoPulse: "Ver Video Documental",
+      watchInViewer: "▶ Ver en Reproductor",
+      openYouTube: "Abrir en YouTube",
+      slideshowPlay: "Reproducir",
+      slideshowPause: "Pausar",
+      musicOn: "Música: Encendida",
+      musicSynth: "Música: Sintetizada",
+      musicOff: "Música Apagada",
+      defaultCategory: "CEBE Cajamarca"
+    },
+    de: {
+      categoryBadge: "Goldene Hochzeit • 50 Jahre",
+      emptyGrid: "Derzeit sind in diesem Bereich keine Erinnerungen vorhanden.",
+      videoBadge: "Historisches Video",
+      videoPulse: "Dokumentarvideo ansehen",
+      watchInViewer: "▶ Im Player ansehen",
+      openYouTube: "Auf YouTube öffnen",
+      slideshowPlay: "Abspielen",
+      slideshowPause: "Pause",
+      musicOn: "Musik: Ein",
+      musicSynth: "Musik: Synthetisiert",
+      musicOff: "Musik Aus",
+      defaultCategory: "CEEC Cajamarca"
+    }
+  };
+  const t = I18N[currentLang];
+
   // Elementos del DOM
   const kioskScreen = document.getElementById("kiosk-screen");
   const btnStartExploration = document.getElementById("btn-start-exploration");
@@ -114,7 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!catData) return;
 
     // Actualizar encabezado central
-    categoryBadge.innerText = "Bodas de Oro • 50 Años";
+    categoryBadge.innerText = t.categoryBadge;
     categoryTitle.innerText = catData.title;
     categoryDescription.innerText = catData.description;
 
@@ -130,7 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
     activeGridItems = GALLERY_DATA.items.filter(item => item.categoryId === currentCategory);
 
     if (activeGridItems.length === 0) {
-      mediaGrid.innerHTML = `<div class="empty-message">No hay recuerdos en esta sección por el momento.</div>`;
+      mediaGrid.innerHTML = `<div class="empty-message">${t.emptyGrid}</div>`;
       return;
     }
 
@@ -148,9 +182,9 @@ document.addEventListener("DOMContentLoaded", () => {
           ${isVideo ? `
             <div class="video-card-badge">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-              <span>Video Histórico</span>
+              <span>${t.videoBadge}</span>
             </div>
-            <div class="video-play-pulse" title="Ver Video Documental">
+            <div class="video-play-pulse" title="${t.videoPulse}">
               <svg viewBox="0 0 24 24" width="34" height="34">
                 <path fill="currentColor" d="M8 5v14l11-7z"/>
               </svg>
@@ -162,9 +196,9 @@ document.addEventListener("DOMContentLoaded", () => {
           ${isVideo && item.description ? `<p>${item.description}</p>` : ""}
           ${isVideo ? `
             <div style="margin-top: 10px; display: flex; align-items: center; justify-content: space-between; gap: 8px;">
-              <span style="font-size: 0.82rem; color: #f7ca44; font-weight: 700;">▶ Ver en Reproductor</span>
+              <span style="font-size: 0.82rem; color: #f7ca44; font-weight: 700;">${t.watchInViewer}</span>
               <a href="https://youtu.be/4ffiErIGYgI" target="_blank" rel="noopener noreferrer" class="video-card-direct-link" onclick="event.stopPropagation();">
-                <span>Abrir en YouTube</span>
+                <span>${t.openYouTube}</span>
                 <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
               </a>
             </div>
@@ -194,7 +228,7 @@ document.addEventListener("DOMContentLoaded", () => {
       lightboxYear.style.display = "none";
     }
     const currentCatObj = GALLERY_DATA.categories.find(c => c.id === item.categoryId);
-    lightboxCategoryName.innerText = currentCatObj ? currentCatObj.title : "CEBE Cajamarca";
+    lightboxCategoryName.innerText = currentCatObj ? currentCatObj.title : t.defaultCategory;
     lightboxTitle.innerText = item.title;
 
     // Ocultar descripciones de imágenes (texto de ejemplo eliminado)
@@ -290,7 +324,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const startLightboxSlideshow = () => {
     if (lightboxSlideshowInterval) clearInterval(lightboxSlideshowInterval);
     btnLightboxPlay.classList.add("playing");
-    slideshowStatus.innerText = "Pausar";
+    slideshowStatus.innerText = t.slideshowPause;
     slideshowIcon.innerHTML = '<svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
 
     lightboxSlideshowInterval = setInterval(() => {
@@ -304,7 +338,7 @@ document.addEventListener("DOMContentLoaded", () => {
       lightboxSlideshowInterval = null;
     }
     btnLightboxPlay.classList.remove("playing");
-    slideshowStatus.innerText = "Reproducir";
+    slideshowStatus.innerText = t.slideshowPlay;
     slideshowIcon.innerHTML = '<svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M8 5v14l11-7z"/></svg>';
   };
 
@@ -542,20 +576,20 @@ document.addEventListener("DOMContentLoaded", () => {
     if (isPlayingMusic) {
       audioEl.play()
         .then(() => {
-          musicText.innerText = "Música: Encendida";
+          musicText.innerText = t.musicOn;
           btnPlayMusic.classList.add("active");
           musicIcon.innerHTML = '<svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6zm-2 16c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>';
         })
         .catch(err => {
           startAmbientSynth();
-          musicText.innerText = "Música: Sintetizada";
+          musicText.innerText = t.musicSynth;
           btnPlayMusic.classList.add("active");
           musicIcon.innerHTML = '<svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6zm-2 16c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>';
         });
     } else {
       audioEl.pause();
       stopAmbientSynth();
-      musicText.innerText = "Música Apagada";
+      musicText.innerText = t.musicOff;
       btnPlayMusic.classList.remove("active");
       musicIcon.innerHTML = '<svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M4.27 3L3 4.27l9 9v.28c-.53-.21-1.12-.3-1.75-.25-1.78.13-3.1 1.67-2.95 3.44.14 1.76 1.7 3.07 3.48 2.94 1.54-.12 2.74-1.28 2.92-2.73l.03-.95 6 6L21 21.73 4.27 3zM21 3h-7v4.9l2 2V5h3v3h-3v1.88l2 2V3z"/></svg>';
     }

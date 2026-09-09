@@ -1793,6 +1793,24 @@ button {
   color: #121110;
 }
 
+.ceec-site-links a.lang-switch-link {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(247, 202, 68, 0.4);
+  color: #fff;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 20px;
+  padding: 5px 14px;
+}
+
+.ceec-site-links a.lang-switch-link:hover {
+  background: var(--color-gold);
+  color: #121110;
+  border-color: var(--color-gold);
+}
+
 @media (max-width: 991px) {
   .ceec-site-topbar {
     padding: 10px 15px;
