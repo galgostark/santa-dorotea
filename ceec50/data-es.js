@@ -95,6 +95,7 @@ window.GALLERY_DATA_ES = {
     "title": "Construcción de la Escuela (Video Histórico 1982)",
     "description": "",
     "url": "https://youtu.be/4ffiErIGYgI",
+    "thumbnailUrl": "ceec50/assets/video.png",
     "year": "1982"
   },
   {

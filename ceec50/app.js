@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const isVideo = item.type === "video";
       const catName = catMap[item.categoryId] || "";
-      const thumbUrl = isVideo ? (item.thumbnailUrl || "ceec50/assets/construccion1.jpg") : item.url;
+      const thumbUrl = isVideo ? (item.thumbnailUrl || "ceec50/assets/video.png") : item.url;
 
       if (isVideo) {
         col.innerHTML = `
