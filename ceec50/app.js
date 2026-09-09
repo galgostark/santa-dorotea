@@ -34,13 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
   // Elementos del Lightbox
   const lightbox = document.getElementById("lightbox-modal");
   const lightboxImg = document.getElementById("lightbox-img");
+  const lightboxYoutubeContainer = document.getElementById("lightbox-youtube-container");
+  const lightboxYoutubeIframe = document.getElementById("lightbox-youtube-iframe");
+  const lightboxYoutubeDirectLink = document.getElementById("lightbox-youtube-direct-link");
   const lightboxVideoContainer = document.getElementById("lightbox-video-container");
   const lightboxVideo = document.getElementById("lightbox-video");
-  const youtubeFallbackContainer = document.getElementById("youtube-fallback-container");
-  const btnOpenYoutubeExternal = document.getElementById("btn-open-youtube-external");
-  const videoSimulator = document.getElementById("video-simulator");
-  const btnSimulatorPlay = document.getElementById("btn-simulator-play");
-  const cinemaCanvas = document.getElementById("cinema-reel-canvas");
   const btnCloseLightbox = document.getElementById("btn-close-lightbox");
   const btnPrevLightbox = document.getElementById("btn-prev-lightbox");
   const btnNextLightbox = document.getElementById("btn-next-lightbox");
@@ -139,17 +137,21 @@ document.addEventListener("DOMContentLoaded", () => {
     // Renderizar tarjetas
     activeGridItems.forEach((item, index) => {
       const card = document.createElement("div");
-      card.className = "memory-card";
-      
       const isVideo = item.type === "video";
-      const thumbUrl = isVideo ? (item.thumbnailUrl || item.url) : item.url;
+      card.className = `memory-card ${isVideo ? "video-card" : ""}`;
+      
+      const thumbUrl = isVideo ? (item.thumbnailUrl || "ceec50/assets/construccion1.jpg") : item.url;
       
       card.innerHTML = `
         <div class="card-media-wrapper">
           <img src="${thumbUrl}" alt="${item.title}" loading="lazy">
           ${isVideo ? `
-            <div class="video-overlay-badge">
-              <svg viewBox="0 0 24 24" width="30" height="30">
+            <div class="video-card-badge">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              <span>Video Histórico</span>
+            </div>
+            <div class="video-play-pulse" title="Ver Video Documental">
+              <svg viewBox="0 0 24 24" width="34" height="34">
                 <path fill="currentColor" d="M8 5v14l11-7z"/>
               </svg>
             </div>
@@ -158,6 +160,15 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="card-details">
           <h3>${item.title}</h3>
           <p>${item.description}</p>
+          ${isVideo ? `
+            <div style="margin-top: 10px; display: flex; align-items: center; justify-content: space-between; gap: 8px;">
+              <span style="font-size: 0.82rem; color: #f7ca44; font-weight: 700;">▶ Ver en Reproductor</span>
+              <a href="https://youtu.be/4ffiErIGYgI" target="_blank" rel="noopener noreferrer" class="video-card-direct-link" onclick="event.stopPropagation();">
+                <span>Abrir en YouTube</span>
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+              </a>
+            </div>
+          ` : ""}
         </div>
       `;
       
@@ -188,58 +199,80 @@ document.addEventListener("DOMContentLoaded", () => {
     lightboxDescription.innerText = item.description;
 
     // Resetear estados visuales de medios
-    lightboxImg.classList.add("active");
-    lightboxImg.style.display = "block";
-    lightboxVideoContainer.classList.add("hide");
-    youtubeFallbackContainer.classList.add("hide");
-    stopRetroSimulator();
-    lightboxVideo.pause();
-    lightboxVideo.src = "";
-    lightboxVideo.classList.add("hide");
+    lightboxImg.classList.remove("active");
+    lightboxImg.style.display = "none";
+    if (lightboxYoutubeContainer) {
+      lightboxYoutubeContainer.classList.add("hide");
+    }
+    if (lightboxYoutubeIframe) {
+      lightboxYoutubeIframe.src = "";
+    }
+    if (lightboxVideoContainer) {
+      lightboxVideoContainer.classList.add("hide");
+    }
+    if (lightboxVideo) {
+      lightboxVideo.pause();
+      lightboxVideo.src = "";
+      lightboxVideo.classList.add("hide");
+    }
 
     if (item.type === "image") {
+      lightboxImg.style.display = "block";
+      lightboxImg.classList.add("active");
       lightboxImg.src = item.url;
       lightboxImg.alt = item.title;
+      if (btnLightboxPlay) btnLightboxPlay.style.display = "inline-flex";
     } else if (item.type === "video") {
-      lightboxImg.style.display = "none";
-      lightboxVideoContainer.classList.remove("hide");
+      // Ocultar botón de pase de diapositivas en videos
+      if (btnLightboxPlay) btnLightboxPlay.style.display = "none";
 
-      // Si es un enlace de YouTube
-      if (item.url && item.url.includes("youtube.com")) {
-        youtubeFallbackContainer.classList.remove("hide");
-        btnOpenYoutubeExternal.onclick = () => {
-          window.open("https://www.youtube.com/watch?v=4ffiErIGYgI", "_blank");
-        };
-        return;
+      const isYoutube = item.url && (item.url.includes("youtu.be") || item.url.includes("youtube.com"));
+      if (isYoutube || item.embedUrl) {
+        if (lightboxYoutubeContainer) {
+          lightboxYoutubeContainer.classList.remove("hide");
+        }
+        if (lightboxYoutubeIframe) {
+          const embedUrl = item.embedUrl || "https://www.youtube-nocookie.com/embed/4ffiErIGYgI";
+          lightboxYoutubeIframe.src = `${embedUrl}?autoplay=1&rel=0`;
+        }
+        if (lightboxYoutubeDirectLink) {
+          lightboxYoutubeDirectLink.href = item.url || "https://youtu.be/4ffiErIGYgI";
+        }
+      } else {
+        if (lightboxVideoContainer) {
+          lightboxVideoContainer.classList.remove("hide");
+        }
+        if (lightboxVideo) {
+          lightboxVideo.classList.remove("hide");
+          lightboxVideo.src = item.url;
+          lightboxVideo.poster = item.thumbnailUrl || "";
+          lightboxVideo.play().catch(e => console.log("Auto-play bloqueado: ", e));
+        }
       }
-
-      // Si es un video local MP4
-      lightboxVideo.classList.remove("hide");
-      lightboxVideo.src = item.url;
-      lightboxVideo.poster = item.thumbnailUrl || "";
-
-      lightboxVideo.onerror = () => {
-        lightboxVideo.classList.add("hide");
-        startRetroSimulator(item.title);
-      };
-
-      lightboxVideo.oncanplay = () => {
-        lightboxVideo.classList.remove("hide");
-        lightboxVideo.play().catch(e => console.log("Auto-play de video bloqueado: ", e));
-      };
     }
   };
 
   const closeLightbox = () => {
     lightbox.classList.remove("active");
-    lightboxVideo.pause();
-    lightboxVideo.src = "";
-    stopRetroSimulator();
+    if (lightboxYoutubeIframe) {
+      lightboxYoutubeIframe.src = "";
+    }
+    if (lightboxVideo) {
+      lightboxVideo.pause();
+      lightboxVideo.src = "";
+    }
     stopLightboxSlideshow();
   };
 
   const navigateLightbox = (direction) => {
     if (activeGridItems.length === 0) return;
+    if (lightboxYoutubeIframe) {
+      lightboxYoutubeIframe.src = "";
+    }
+    if (lightboxVideo) {
+      lightboxVideo.pause();
+      lightboxVideo.src = "";
+    }
     currentLightboxIndex = (currentLightboxIndex + direction + activeGridItems.length) % activeGridItems.length;
     renderLightboxItem(activeGridItems[currentLightboxIndex]);
   };

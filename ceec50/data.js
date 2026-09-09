@@ -100,9 +100,10 @@ const GALLERY_DATA = {
       id: "cee-vid",
       categoryId: "construccion",
       type: "video",
-      title: "Construcción de la Escuela (Video Digitalizado)",
+      title: "Construcción de la Escuela (Video Histórico 1982)",
       description: "El valioso registro audiovisual de los cimientos, el levantamiento de muros y el esfuerzo conjunto de la comunidad para construir las aulas del Centro de Educación Básica Especial Cajamarca.",
-      url: "https://www.youtube.com/embed/4ffiErIGYgI",
+      url: "https://youtu.be/4ffiErIGYgI",
+      embedUrl: "https://www.youtube-nocookie.com/embed/4ffiErIGYgI",
       thumbnailUrl: "ceec50/assets/construccion1.jpg",
       year: "1982"
     },
