@@ -2206,6 +2206,111 @@ html[lang="de"] .nav-item-rundbrief {
   }
 }
 
+/* ============================================================
+   RESPONSIVIDAD DE CABECERA Y NAVEGACIÓN EN MÓVILES
+   Garantiza que el nombre "Santa Dorotea" y el menú colapsado
+   estén SIEMPRE en una sola línea sin descuadrarse
+   ============================================================ */
+@media (max-width: 991.98px) {
+  .ftco-navbar-light > .container,
+  .navbar > .container {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  /* Compresión del nombre Santa Dorotea para entrar siempre con el botón */
+  .navbar-brand {
+    font-size: clamp(16px, 4.8vw, 22px) !important;
+    letter-spacing: 0.04em !important;
+    white-space: nowrap !important;
+    margin-right: 8px !important;
+    padding-top: 0.35rem !important;
+    padding-bottom: 0.35rem !important;
+    flex: 0 1 auto !important;
+    min-width: 0 !important;
+    line-height: 1.2 !important;
+  }
+
+  /* Botón de menú colapsado alineado a la derecha en la misma fila */
+  .ftco-navbar-light .navbar-toggler,
+  .ftco-navbar-light.scrolled .navbar-toggler,
+  .navbar-toggler {
+    flex: 0 0 auto !important;
+    margin-left: auto !important;
+    white-space: nowrap !important;
+    padding: 0.35rem 0 0.35rem 0.5rem !important;
+    font-size: 15px !important;
+    letter-spacing: 0.04em !important;
+  }
+
+  /* El menú desplegado se expande limpiamente en la fila inferior */
+  .ftco-navbar-light .navbar-collapse,
+  .navbar-collapse {
+    flex-basis: 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .ftco-navbar-light > .container,
+  .navbar > .container {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+  .navbar-brand {
+    font-size: clamp(15px, 4.5vw, 19px) !important;
+    letter-spacing: 0.02em !important;
+  }
+  .ftco-navbar-light .navbar-toggler,
+  .ftco-navbar-light.scrolled .navbar-toggler,
+  .navbar-toggler {
+    font-size: 14px !important;
+    letter-spacing: 0.02em !important;
+    padding: 0.25rem 0 0.25rem 0.35rem !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .ftco-navbar-light > .container,
+  .navbar > .container {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .navbar-brand {
+    font-size: 15px !important;
+    letter-spacing: 0 !important;
+  }
+  .ftco-navbar-light .navbar-toggler,
+  .ftco-navbar-light.scrolled .navbar-toggler,
+  .navbar-toggler {
+    font-size: 13px !important;
+    letter-spacing: 0 !important;
+  }
+}
+
+@media (max-width: 330px) {
+  .ftco-navbar-light > .container,
+  .navbar > .container {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+  .navbar-brand {
+    font-size: 13.5px !important;
+    letter-spacing: 0 !important;
+  }
+  .ftco-navbar-light .navbar-toggler,
+  .ftco-navbar-light.scrolled .navbar-toggler,
+  .navbar-toggler {
+    font-size: 12px !important;
+  }
+}
+
 /* ================= CEEC 50 AÑOS - SECCIÓN CONMEMORATIVA ================= */
 .ceec-intro-box {
   background: #ffffff;
