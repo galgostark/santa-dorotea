@@ -335,5 +335,24 @@ $(document).ready(function($) {
 	};
 	OnePageNav();
 
+	// Soporte para pestaña y ancla directa a Talleres Formativos (#talleres)
+	var activateTalleresTab = function() {
+		if (window.location.hash === '#talleres' || window.location.hash === '#talleres-protegidos') {
+			var tabBtn = $('#pills-talleres-tab');
+			if (tabBtn.length) {
+				tabBtn.tab('show');
+			}
+		}
+	};
+	$(window).on('hashchange', activateTalleresTab);
+	activateTalleresTab();
+
+	$(document).on('click', "a[href*='#talleres']", function() {
+		var tabBtn = $('#pills-talleres-tab');
+		if (tabBtn.length) {
+			tabBtn.tab('show');
+		}
+	});
+
 });
 

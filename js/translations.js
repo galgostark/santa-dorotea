@@ -4,6 +4,16 @@
  */
 window.SITE_TRANSLATIONS = {
   "es": {
+    "nav_talleres": "Talleres Formativos",
+    "cee_badge": "CENTRO DE EDUCACIÓN BÁSICA ESPECIAL • CAJAMARCA",
+    "cee_title": "Centro de Educación Especial y Talleres Formativos",
+    "cee_desc": "Educación básica especial, terapias y capacitación ocupacional para jóvenes y adultos con discapacidad. A través de nuestros talleres protegidos, fomentamos la autonomía, dignidad e inclusión laboral.",
+    "cee_tab_talleres": "Talleres Protegidos (17)",
+    "cee_tab_instalaciones": "Instalaciones y Aulas (17)",
+    "cee_tab_porongo": "Fundo El Porongo (5)",
+    "cee_tab_construccion": "Historia y Construcción (10)",
+    "cee_view_all_50": "Ver la Colección Completa en el Especial 50 Años (116 Fotos y Video)",
+
     "nav_brand_badge": "Bodas de Oro 1976 - 2026",
     "nav_home": "Inicio",
     "nav_projects": "Proyectos",
@@ -139,6 +149,16 @@ window.SITE_TRANSLATIONS = {
     "rundbrief_notice": "Nota informativa: Los boletines \"Rundbrief\" son cartas circulares redactadas y publicadas periódicamente en alemán para nuestros colaboradores, donantes y amigos en Alemania. A continuación puede acceder a la descarga de todas las ediciones en PDF."
   },
   "de": {
+    "nav_talleres": "Werkstätten",
+    "cee_badge": "SONDERPÄDAGOGISCHES FÖRDERZENTRUM • CAJAMARCA",
+    "cee_title": "Sonderpädagogisches Zentrum & Ausbildungswerkstätten",
+    "cee_desc": "Sonderpädagogische Förderung, Therapien und berufliche Ausbildung für Jugendliche und Erwachsene mit Behinderungen. In unseren beschützten Werkstätten fördern wir Selbstständigkeit, Würde und soziale Teilhabe.",
+    "cee_tab_talleres": "Beschützte Werkstätten (17)",
+    "cee_tab_instalaciones": "Einrichtungen & Klassen (17)",
+    "cee_tab_porongo": "Bauernhof El Porongo (5)",
+    "cee_tab_construccion": "Geschichte & Bau (10)",
+    "cee_view_all_50": "Alle 116 Erinnerungen und Video im 50-Jahre-Spezial ansehen",
+
     "nav_brand_badge": "Goldenes Jubiläum 1976 - 2026",
     "nav_home": "Startseite",
     "nav_projects": "Projekte",
@@ -274,6 +294,16 @@ window.SITE_TRANSLATIONS = {
     "rundbrief_notice": "Unsere Rundbriefe berichten regelmäßig über das Leben und die aktuellen Entwicklungen im Kinderheim Santa Dorotea und den Partnerprojekten in Cajamarca. Hier finden Sie alle Ausgaben als PDF zum Download."
   },
   "en": {
+    "nav_talleres": "Workshops",
+    "cee_badge": "SPECIAL BASIC EDUCATION CENTER • CAJAMARCA",
+    "cee_title": "Special Education Center & Training Workshops",
+    "cee_desc": "Special basic education, therapies, and vocational training for youth and adults with disabilities. Through our sheltered workshops, we foster autonomy, dignity, and job inclusion.",
+    "cee_tab_talleres": "Sheltered Workshops (17)",
+    "cee_tab_instalaciones": "Facilities & Classrooms (17)",
+    "cee_tab_porongo": "El Porongo Farm (5)",
+    "cee_tab_construccion": "History & Construction (10)",
+    "cee_view_all_50": "Explore All 116 Memories & Video in the 50-Year Special",
+
     "nav_brand_badge": "Golden Jubilee 1976 - 2026",
     "nav_home": "Home",
     "nav_projects": "Projects",
@@ -409,6 +439,16 @@ window.SITE_TRANSLATIONS = {
     "rundbrief_notice": "Information notice: The \"Rundbrief\" circular letters are published periodically in German for our international sponsors and friends. You can find and download all PDF editions below."
   },
   "fr": {
+    "nav_talleres": "Ateliers",
+    "cee_badge": "CENTRE D'ÉDUCATION SPÉCIALISÉE • CAJAMARCA",
+    "cee_title": "Centre d'Éducation Spécialisée et Ateliers de Formation",
+    "cee_desc": "Éducation spécialisée, thérapies et formation professionnelle pour jeunes et adultes en situation de handicap. Grâce à nos ateliers protégés, nous encourageons l'autonomie, la dignité et l'insertion professionnelle.",
+    "cee_tab_talleres": "Ateliers Protégés (17)",
+    "cee_tab_instalaciones": "Installations et Classes (17)",
+    "cee_tab_porongo": "Ferme El Porongo (5)",
+    "cee_tab_construccion": "Histoire et Construction (10)",
+    "cee_view_all_50": "Explorer les 116 Souvenirs et Vidéo dans le Spécial 50 Ans",
+
     "nav_brand_badge": "Noces d'Or 1976 - 2026",
     "nav_home": "Accueil",
     "nav_projects": "Projets",

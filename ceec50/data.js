@@ -1,77 +1,77 @@
 /**
- * BASE DE DATOS DE RECUERDOS CEEC (FR)
+ * BASE DE DATOS DE RECUERDOS CEEC (ES)
  * Asociación Santa Dorotea - 50° Aniversario
  */
-window.GALLERY_DATA_FR = {
+window.GALLERY_DATA = {
   "categories": [
     {
       "id": "escuela-vieja",
-      "title": "Ancienne École",
-      "subtitle": "Les Premières Années",
-      "description": "Les débuts du Centre d'Éducation Spécialisée de Cajamarca. Les premières salles de classe avant la construction du nouveau local.",
+      "title": "Escuela Antigua",
+      "subtitle": "Los Primeros Años",
+      "description": "Los inicios del Centro de Educación Básica Especial Cajamarca. Las primeras aulas e instalaciones donde comenzó esta gran misión educativa antes de la edificación del nuevo local.",
       "icon": "school"
     },
     {
       "id": "construccion",
-      "title": "Construction du Local Actuel",
-      "subtitle": "Chantier Historique",
-      "description": "Photographies et archives vidéo de la construction des locaux actuels et de l'effort communautaire.",
+      "title": "Construcción Local Actual",
+      "subtitle": "Obra Histórica y Faenas",
+      "description": "El valioso registro audiovisual y fotográfico del esfuerzo comunitario, levantamiento de muros, faenas y cimientos del local actual.",
       "icon": "tools"
     },
     {
       "id": "instalaciones",
-      "title": "Installations et Salles de Classe",
-      "subtitle": "Espaces d'Apprentissage et de Thérapie",
-      "description": "Visite des salles de classe, bibliothèque, salles de psychomotricité et espaces adaptés.",
+      "title": "Instalaciones y Aulas",
+      "subtitle": "Espacios de Aprendizaje y Estimulación",
+      "description": "Recorrido por las aulas, biblioteca, salones de psicomotricidad, patios techados y ambientes diseñados para el desarrollo integral de los alumnos.",
       "icon": "home"
     },
     {
       "id": "profesores",
-      "title": "Enseignants et Personnel",
-      "subtitle": "Dévouement Pédagogique",
-      "description": "Hommage aux directeurs, éducateurs, thérapeutes et personnel dévoués à l'enseignement inclusif.",
+      "title": "Profesores y Personal",
+      "subtitle": "Vocación y Entrega Pedagógica",
+      "description": "Homenaje a los directores, educadores, terapeutas, auxiliares y personal administrativo que han dedicado su vida a la enseñanza inclusiva.",
       "icon": "heart"
     },
     {
       "id": "alumnos",
-      "title": "Élèves et Vie Scolaire",
-      "subtitle": "Nos Élèves",
-      "description": "La joie, le dépassement et la camaraderie des enfants et adolescents du centre.",
+      "title": "Alumnos y Vida Escolar",
+      "subtitle": "Nuestros Estudiantes",
+      "description": "La alegría, superación constante y fraternidad de los niños y jóvenes que llenan de vida cada rincón del centro escolar.",
       "icon": "star"
     },
     {
       "id": "teatro-danzas",
-      "title": "Spectacles et Théâtre",
-      "subtitle": "Art, Danse et Festivités",
-      "description": "Représentations théâtrales, festivals de danse folklorique et défilés traditionnels.",
+      "title": "Actuaciones y Teatro",
+      "subtitle": "Arte, Danzas y Festivales",
+      "description": "Las presentaciones artísticas, obras teatrales, festivales de danza folclórica, bandas rítmicas y desfiles tradicionales.",
       "icon": "theater"
     },
     {
       "id": "talleres-protegidos",
-      "title": "Ateliers Protégés",
-      "subtitle": "Formation Professionnelle",
-      "description": "Formation professionnelle en boulangerie, cuisine, artisanat et compétences pour l'autonomie.",
+      "title": "Talleres Protegidos",
+      "subtitle": "Formación Ocupacional y Laboral",
+      "description": "Capacitación en panadería, cocina, costura, manualidades y habilidades para la vida autónoma e integración laboral.",
       "icon": "briefcase"
     },
     {
       "id": "porongo",
-      "title": "Ferme Écologique El Porongo",
-      "subtitle": "Nature et Apprentissage",
-      "description": "Activités à la ferme pédagogique El Porongo, contact avec les animaux et apprentissages pratiques.",
+      "title": "Fundo ecológico El Porongo",
+      "subtitle": "Naturaleza y Aprendizaje",
+      "description": "Vivencias en el fundo agroecológico donde los alumnos interactúan con la naturaleza, animales de granja y tareas agrícolas.",
       "icon": "leaf"
     },
     {
       "id": "aniversarios",
-      "title": "Célébrations d'Anniversaire",
-      "subtitle": "Étapes et Célébrations",
-      "description": "Festivités institutionnelles, cérémonies et moments mémorables commémorant le parcours de l'école.",
+      "title": "Celebraciones de Aniversario",
+      "subtitle": "Hitos y Bodas de Plata",
+      "description": "Los festejos institucionales, ceremonias protocolares y momentos memorables conmemorando la trayectoria del CEEC.",
       "icon": "award"
     },
     {
       "id": "otros",
-      "title": "Autres Souvenirs",
-      "subtitle": "Première Communion, Voyages et Archives",
-      "description": "Cérémonies de première communion, voyages scolaires et documents d'archives historiques.",
+      "title": "Otros Recuerdos",
+      "subtitle": "Primera Comunión, Viajes y Archivo",
+      "description": "Ceremonias de Primera Comunión, viajes y excursiones escolares, y valiosos documentos del archivo histórico institucional.",
       "icon": "archive"
     }
   ],
@@ -80,7 +80,7 @@ window.GALLERY_DATA_FR = {
       "id": "escuela_vieja1_jpg",
       "categoryId": "escuela-vieja",
       "type": "image",
-      "title": "Anciennes Installations de l'École (1)",
+      "title": "Instalaciones de la Escuela Antigua (1)",
       "description": "",
       "url": "ceec50/assets/escuela-vieja1.jpg",
       "year": "1978"
@@ -89,7 +89,7 @@ window.GALLERY_DATA_FR = {
       "id": "escuela_vieja2_jpg",
       "categoryId": "escuela-vieja",
       "type": "image",
-      "title": "Anciennes Installations de l'École (2)",
+      "title": "Instalaciones de la Escuela Antigua (2)",
       "description": "",
       "url": "ceec50/assets/escuela-vieja2.jpg",
       "year": "1979"
@@ -98,7 +98,7 @@ window.GALLERY_DATA_FR = {
       "id": "escuela_vieja3_jpg",
       "categoryId": "escuela-vieja",
       "type": "image",
-      "title": "Anciennes Installations de l'École (3)",
+      "title": "Instalaciones de la Escuela Antigua (3)",
       "description": "",
       "url": "ceec50/assets/escuela-vieja3.jpg",
       "year": "1978"
@@ -107,7 +107,7 @@ window.GALLERY_DATA_FR = {
       "id": "cee-vid",
       "categoryId": "construccion",
       "type": "video",
-      "title": "Construction de l'École (Vidéo Historique 1982)",
+      "title": "Construcción de la Escuela (Video Histórico 1982)",
       "description": "",
       "url": "https://youtu.be/4ffiErIGYgI",
       "thumbnailUrl": "ceec50/assets/video.png",
@@ -117,7 +117,7 @@ window.GALLERY_DATA_FR = {
       "id": "construccion1_jpg",
       "categoryId": "construccion",
       "type": "image",
-      "title": "Début des Travaux et Fondations (1)",
+      "title": "Inicio de Obras y Cimentación (1)",
       "description": "",
       "url": "ceec50/assets/construccion1.jpg",
       "year": "1981"
@@ -126,7 +126,7 @@ window.GALLERY_DATA_FR = {
       "id": "construccion2_jpg",
       "categoryId": "construccion",
       "type": "image",
-      "title": "Chantier Communautaire et Murs (2)",
+      "title": "Faena Comunitaria y Levantamiento de Muros (2)",
       "description": "",
       "url": "ceec50/assets/construccion2.jpg",
       "year": "1981"
@@ -135,7 +135,7 @@ window.GALLERY_DATA_FR = {
       "id": "construccion3_jpg",
       "categoryId": "construccion",
       "type": "image",
-      "title": "Progression des Salles de Classe (3)",
+      "title": "Avance Estructural de Aulas (3)",
       "description": "",
       "url": "ceec50/assets/construccion3.jpg",
       "year": "1982"
@@ -144,7 +144,7 @@ window.GALLERY_DATA_FR = {
       "id": "construccion4_jpg",
       "categoryId": "construccion",
       "type": "image",
-      "title": "Travaux de Toiture et Extérieurs (4)",
+      "title": "Trabajos de Techado y Exteriores (4)",
       "description": "",
       "url": "ceec50/assets/construccion4.jpg",
       "year": "1982"
@@ -153,7 +153,7 @@ window.GALLERY_DATA_FR = {
       "id": "construccion5_jpg",
       "categoryId": "construccion",
       "type": "image",
-      "title": "Coopération et Bénévoles (5)",
+      "title": "Cooperación Internacional y Voluntariado (5)",
       "description": "",
       "url": "ceec50/assets/construccion5.jpg",
       "year": "1982"
@@ -162,7 +162,7 @@ window.GALLERY_DATA_FR = {
       "id": "construccion6_jpg",
       "categoryId": "construccion",
       "type": "image",
-      "title": "Finitions et Fenêtres (6)",
+      "title": "Acabados de Ambientes y Ventanales (6)",
       "description": "",
       "url": "ceec50/assets/construccion6.jpg",
       "year": "1983"
@@ -171,7 +171,7 @@ window.GALLERY_DATA_FR = {
       "id": "construccion7_jpg",
       "categoryId": "construccion",
       "type": "image",
-      "title": "Cours et Accès du Centre (7)",
+      "title": "Patios y Accesos del Centro (7)",
       "description": "",
       "url": "ceec50/assets/construccion7.jpg",
       "year": "1983"
@@ -180,7 +180,7 @@ window.GALLERY_DATA_FR = {
       "id": "construccion8_jpg",
       "categoryId": "construccion",
       "type": "image",
-      "title": "Achèvement du Bâtiment Principal (8)",
+      "title": "Culminación del Módulo Principal (8)",
       "description": "",
       "url": "ceec50/assets/construccion8.jpg",
       "year": "1983"
@@ -189,7 +189,7 @@ window.GALLERY_DATA_FR = {
       "id": "construccion9_jpg",
       "categoryId": "construccion",
       "type": "image",
-      "title": "Inauguration des Nouveaux Locaux (9)",
+      "title": "Inauguración y Entrega del Local (9)",
       "description": "",
       "url": "ceec50/assets/construccion9.jpg",
       "year": "1983"
@@ -198,7 +198,7 @@ window.GALLERY_DATA_FR = {
       "id": "escuela1_jpg",
       "categoryId": "instalaciones",
       "type": "image",
-      "title": "Salle d'Éveil Précoce (1)",
+      "title": "Aula de Estimulación Temprana (1)",
       "description": "",
       "url": "ceec50/assets/escuela1.jpg",
       "year": "1985"
@@ -207,7 +207,7 @@ window.GALLERY_DATA_FR = {
       "id": "escuela2_jpg",
       "categoryId": "instalaciones",
       "type": "image",
-      "title": "Cour de Récréation (2)",
+      "title": "Patio de Juegos y Esparcimiento (2)",
       "description": "",
       "url": "ceec50/assets/escuela2.jpg",
       "year": "1987"
@@ -216,7 +216,7 @@ window.GALLERY_DATA_FR = {
       "id": "escuela3_jpg",
       "categoryId": "instalaciones",
       "type": "image",
-      "title": "Salle d'Activités Didactiques (3)",
+      "title": "Salón de Actividades Didácticas (3)",
       "description": "",
       "url": "ceec50/assets/escuela3.jpg",
       "year": "1988"
@@ -225,7 +225,7 @@ window.GALLERY_DATA_FR = {
       "id": "escuela3_011_jpg",
       "categoryId": "instalaciones",
       "type": "image",
-      "title": "Pavillon Central et Couloirs (3b)",
+      "title": "Pabellón Central y Pasillos (3b)",
       "description": "",
       "url": "ceec50/assets/escuela3.011.jpg",
       "year": "1991"
@@ -234,7 +234,7 @@ window.GALLERY_DATA_FR = {
       "id": "escuela3_093_jpg",
       "categoryId": "instalaciones",
       "type": "image",
-      "title": "Zone de Loisirs et Jardins (3c)",
+      "title": "Zona de Recreación y Jardines (3c)",
       "description": "",
       "url": "ceec50/assets/escuela3.093.jpg",
       "year": "1993"
@@ -243,7 +243,7 @@ window.GALLERY_DATA_FR = {
       "id": "escuela3_095_jpg",
       "categoryId": "instalaciones",
       "type": "image",
-      "title": "Salle de Psychomotricité (3d)",
+      "title": "Ambiente de Terapia Psicomotriz (3d)",
       "description": "",
       "url": "ceec50/assets/escuela3.095.jpg",
       "year": "1995"
@@ -252,7 +252,7 @@ window.GALLERY_DATA_FR = {
       "id": "escuela3_096_jpg",
       "categoryId": "instalaciones",
       "type": "image",
-      "title": "Cour Couverte Polyvalente (3e)",
+      "title": "Patio Techado Multiusos (3e)",
       "description": "",
       "url": "ceec50/assets/escuela3.096.jpg",
       "year": "1996"
@@ -261,7 +261,7 @@ window.GALLERY_DATA_FR = {
       "id": "escuela3_098_jpg",
       "categoryId": "instalaciones",
       "type": "image",
-      "title": "Façade et Entrée Principale (3f)",
+      "title": "Fachada y Acceso Principal (3f)",
       "description": "",
       "url": "ceec50/assets/escuela3.098.jpg",
       "year": "1998"
@@ -270,7 +270,7 @@ window.GALLERY_DATA_FR = {
       "id": "escuela3_099_jpg",
       "categoryId": "instalaciones",
       "type": "image",
-      "title": "Vue Panoramique du Centre (3g)",
+      "title": "Vista Panorámica del Centro (3g)",
       "description": "",
       "url": "ceec50/assets/escuela3.099.jpg",
       "year": "1999"
@@ -279,7 +279,7 @@ window.GALLERY_DATA_FR = {
       "id": "escuela4_jpg",
       "categoryId": "instalaciones",
       "type": "image",
-      "title": "Bibliothèque et Matériel Adapté (4)",
+      "title": "Biblioteca y Materiales Adaptados (4)",
       "description": "",
       "url": "ceec50/assets/escuela4.jpg",
       "year": "1989"
@@ -288,7 +288,7 @@ window.GALLERY_DATA_FR = {
       "id": "escuela5_jpg",
       "categoryId": "instalaciones",
       "type": "image",
-      "title": "Salle de Thérapie Spécialisée (5)",
+      "title": "Salón de Terapias Especializadas (5)",
       "description": "",
       "url": "ceec50/assets/escuela5.jpg",
       "year": "1990"
@@ -297,7 +297,7 @@ window.GALLERY_DATA_FR = {
       "id": "escuela6_jpg",
       "categoryId": "instalaciones",
       "type": "image",
-      "title": "Zone Sensorielle et Motrice (6)",
+      "title": "Área de Estimulación y Psicomotricidad (6)",
       "description": "",
       "url": "ceec50/assets/escuela6.jpg",
       "year": "1992"
@@ -306,7 +306,7 @@ window.GALLERY_DATA_FR = {
       "id": "escuela7_jpg",
       "categoryId": "instalaciones",
       "type": "image",
-      "title": "Cour Couverte d'Activités (7)",
+      "title": "Patio Techado de Actividades (7)",
       "description": "",
       "url": "ceec50/assets/escuela7.jpg",
       "year": "1994"
@@ -315,7 +315,7 @@ window.GALLERY_DATA_FR = {
       "id": "escuela8_jpg",
       "categoryId": "instalaciones",
       "type": "image",
-      "title": "Réfectoire Scolaire (8)",
+      "title": "Comedor Escolar y Convivencia (8)",
       "description": "",
       "url": "ceec50/assets/escuela8.jpg",
       "year": "1995"
@@ -324,7 +324,7 @@ window.GALLERY_DATA_FR = {
       "id": "escuela9_jpg",
       "categoryId": "instalaciones",
       "type": "image",
-      "title": "Infirmerie et Soins (9)",
+      "title": "Área Médica y Tópico (9)",
       "description": "",
       "url": "ceec50/assets/escuela9.jpg",
       "year": "1997"
@@ -333,7 +333,7 @@ window.GALLERY_DATA_FR = {
       "id": "escuela10_jpg",
       "categoryId": "instalaciones",
       "type": "image",
-      "title": "Salles de Primaire Adaptées (10)",
+      "title": "Aulas de Primaria Adaptada (10)",
       "description": "",
       "url": "ceec50/assets/escuela10.jpg",
       "year": "1998"
@@ -342,7 +342,7 @@ window.GALLERY_DATA_FR = {
       "id": "escuela11_jpg",
       "categoryId": "instalaciones",
       "type": "image",
-      "title": "Installations Modernisées (11)",
+      "title": "Instalaciones Renovadas del CEEC (11)",
       "description": "",
       "url": "ceec50/assets/escuela11.jpg",
       "year": "2000"
@@ -351,7 +351,7 @@ window.GALLERY_DATA_FR = {
       "id": "profesores1_jpg",
       "categoryId": "profesores",
       "type": "image",
-      "title": "Équipe Pédagogique Fondatrice (1)",
+      "title": "Equipo Docente Fundador (1)",
       "description": "",
       "url": "ceec50/assets/profesores1.jpg",
       "year": "1984"
@@ -360,7 +360,7 @@ window.GALLERY_DATA_FR = {
       "id": "profesores2_jpg",
       "categoryId": "profesores",
       "type": "image",
-      "title": "Éducatrices et Thérapeutes (2)",
+      "title": "Educadoras y Terapeutas (2)",
       "description": "",
       "url": "ceec50/assets/profesores2.jpg",
       "year": "1986"
@@ -369,7 +369,7 @@ window.GALLERY_DATA_FR = {
       "id": "profesores3_jpg",
       "categoryId": "profesores",
       "type": "image",
-      "title": "Réunion Pédagogique (3)",
+      "title": "Reunión Pedagógica y Planificación (3)",
       "description": "",
       "url": "ceec50/assets/profesores3.jpg",
       "year": "1988"
@@ -378,7 +378,7 @@ window.GALLERY_DATA_FR = {
       "id": "profesores4_jpg",
       "categoryId": "profesores",
       "type": "image",
-      "title": "Formation en Éducation Spécialisée (4)",
+      "title": "Capacitación en Educación Especial (4)",
       "description": "",
       "url": "ceec50/assets/profesores4.jpg",
       "year": "1990"
@@ -387,7 +387,7 @@ window.GALLERY_DATA_FR = {
       "id": "profesores5_jpg",
       "categoryId": "profesores",
       "type": "image",
-      "title": "Corps Enseignant dans la Cour (5)",
+      "title": "Cuerpo Docente en Patio Central (5)",
       "description": "",
       "url": "ceec50/assets/profesores5.jpg",
       "year": "1992"
@@ -396,7 +396,7 @@ window.GALLERY_DATA_FR = {
       "id": "profesores6_jpg",
       "categoryId": "profesores",
       "type": "image",
-      "title": "Enseignants et Auxiliaires (6)",
+      "title": "Profesoras y Auxiliares (6)",
       "description": "",
       "url": "ceec50/assets/profesores6.jpg",
       "year": "1994"
@@ -405,7 +405,7 @@ window.GALLERY_DATA_FR = {
       "id": "profesores7_jpg",
       "categoryId": "profesores",
       "type": "image",
-      "title": "Éducatrices d'Éveil Précoce (7)",
+      "title": "Educadoras de Estimulación Temprana (7)",
       "description": "",
       "url": "ceec50/assets/profesores7.jpg",
       "year": "1996"
@@ -414,7 +414,7 @@ window.GALLERY_DATA_FR = {
       "id": "profesores8_jpg",
       "categoryId": "profesores",
       "type": "image",
-      "title": "Personnel de Soutien et d'Entretien (8)",
+      "title": "Personal Auxiliar y de Soporte (8)",
       "description": "",
       "url": "ceec50/assets/profesores8.jpg",
       "year": "1992"
@@ -423,7 +423,7 @@ window.GALLERY_DATA_FR = {
       "id": "profesores9_jpg",
       "categoryId": "profesores",
       "type": "image",
-      "title": "Directrice Fondatrice et Premières Enseignantes (9)",
+      "title": "Directora Fundadora y Primeras Docentes (9)",
       "description": "",
       "url": "ceec50/assets/profesores9.jpg",
       "year": "1980"
@@ -432,7 +432,7 @@ window.GALLERY_DATA_FR = {
       "id": "profesores10_jpg",
       "categoryId": "profesores",
       "type": "image",
-      "title": "Corps Enseignant Noces d'Argent (10)",
+      "title": "Cuerpo Docente Bodas de Plata (10)",
       "description": "",
       "url": "ceec50/assets/profesores10.jpg",
       "year": "1999"
@@ -441,7 +441,7 @@ window.GALLERY_DATA_FR = {
       "id": "profesores_jpg",
       "categoryId": "profesores",
       "type": "image",
-      "title": "Portrait Officiel des Enseignants",
+      "title": "Retrato Institucional de Profesores",
       "description": "",
       "url": "ceec50/assets/profesores.jpg",
       "year": "1991"
@@ -450,7 +450,7 @@ window.GALLERY_DATA_FR = {
       "id": "profesores_1_jpg",
       "categoryId": "profesores",
       "type": "image",
-      "title": "Enseignants en Fête Institutionnelle (1)",
+      "title": "Docentes en Celebración Institucional (1)",
       "description": "",
       "url": "ceec50/assets/profesores (1).jpg",
       "year": "1993"
@@ -459,7 +459,7 @@ window.GALLERY_DATA_FR = {
       "id": "profesores_2_jpg",
       "categoryId": "profesores",
       "type": "image",
-      "title": "Équipe de Thérapie et Rééducation (2)",
+      "title": "Equipo de Terapia y Rehabilitación (2)",
       "description": "",
       "url": "ceec50/assets/profesores (2).jpg",
       "year": "1995"
@@ -468,7 +468,7 @@ window.GALLERY_DATA_FR = {
       "id": "profesores_3_jpg",
       "categoryId": "profesores",
       "type": "image",
-      "title": "Formatrices des Ateliers Professionnels (3)",
+      "title": "Profesoras de Talleres Ocupacionales (3)",
       "description": "",
       "url": "ceec50/assets/profesores (3).jpg",
       "year": "1997"
@@ -477,7 +477,7 @@ window.GALLERY_DATA_FR = {
       "id": "profesores_4_jpg",
       "categoryId": "profesores",
       "type": "image",
-      "title": "Journée de Convivialité des Enseignants (4)",
+      "title": "Jornada de Convivencia Docente (4)",
       "description": "",
       "url": "ceec50/assets/profesores (4).jpg",
       "year": "1998"
@@ -486,7 +486,7 @@ window.GALLERY_DATA_FR = {
       "id": "profesores_5_jpg",
       "categoryId": "profesores",
       "type": "image",
-      "title": "Équipe Multidisciplinaire du CEEC (5)",
+      "title": "Equipo Multidisciplinario del CEEC (5)",
       "description": "",
       "url": "ceec50/assets/profesores (5).jpg",
       "year": "2001"
@@ -495,7 +495,7 @@ window.GALLERY_DATA_FR = {
       "id": "alumnos_1_jpg",
       "categoryId": "alumnos",
       "type": "image",
-      "title": "Élèves en Classe Interactive (1)",
+      "title": "Alumnos en Clase Dinámica (1)",
       "description": "",
       "url": "ceec50/assets/alumnos (1).jpg",
       "year": "1989"
@@ -504,7 +504,7 @@ window.GALLERY_DATA_FR = {
       "id": "alumnos_2_jpg",
       "categoryId": "alumnos",
       "type": "image",
-      "title": "Camaraderie et Récréation (2)",
+      "title": "Compañerismo y Recreación en el Patio (2)",
       "description": "",
       "url": "ceec50/assets/alumnos (2).jpg",
       "year": "1991"
@@ -513,7 +513,7 @@ window.GALLERY_DATA_FR = {
       "id": "alumnos_3_jpg",
       "categoryId": "alumnos",
       "type": "image",
-      "title": "Apprentissages en Classe (3)",
+      "title": "Desarrollo de Habilidades en Aula (3)",
       "description": "",
       "url": "ceec50/assets/alumnos (3).jpg",
       "year": "1993"
@@ -522,7 +522,7 @@ window.GALLERY_DATA_FR = {
       "id": "alumnos_4_jpg",
       "categoryId": "alumnos",
       "type": "image",
-      "title": "Sourires et Travail d'Équipe (4)",
+      "title": "Sonrisas y Trabajo en Equipo (4)",
       "description": "",
       "url": "ceec50/assets/alumnos (4).jpg",
       "year": "1995"
@@ -531,7 +531,7 @@ window.GALLERY_DATA_FR = {
       "id": "alumnos_5_jpg",
       "categoryId": "alumnos",
       "type": "image",
-      "title": "Journée Sportive et Jeux Adaptés (5)",
+      "title": "Jornada Deportiva y Juegos Adaptados (5)",
       "description": "",
       "url": "ceec50/assets/alumnos (5).jpg",
       "year": "1997"
@@ -540,7 +540,7 @@ window.GALLERY_DATA_FR = {
       "id": "alumnos_6_jpg",
       "categoryId": "alumnos",
       "type": "image",
-      "title": "Diplôme et Épanouissement Scolaire (6)",
+      "title": "Graduación y Superación Escolar (6)",
       "description": "",
       "url": "ceec50/assets/alumnos (6).jpg",
       "year": "2000"
@@ -549,7 +549,7 @@ window.GALLERY_DATA_FR = {
       "id": "teatro1_jpg",
       "categoryId": "teatro-danzas",
       "type": "image",
-      "title": "Danse Traditionnelle (1)",
+      "title": "Danza Típica en Patio de Honor (1)",
       "description": "",
       "url": "ceec50/assets/teatro1.jpg",
       "year": "1992"
@@ -558,7 +558,7 @@ window.GALLERY_DATA_FR = {
       "id": "teatro2_jpg",
       "categoryId": "teatro-danzas",
       "type": "image",
-      "title": "Pièce de Théâtre Déguisée (2)",
+      "title": "Obra Teatral Infantil con Disfraces (2)",
       "description": "",
       "url": "ceec50/assets/teatro2.jpg",
       "year": "1993"
@@ -567,7 +567,7 @@ window.GALLERY_DATA_FR = {
       "id": "teatro3_jpg",
       "categoryId": "teatro-danzas",
       "type": "image",
-      "title": "Dramatisation sur la Nature (3)",
+      "title": "Dramatización sobre la Naturaleza (3)",
       "description": "",
       "url": "ceec50/assets/teatro3.jpg",
       "year": "1995"
@@ -576,7 +576,7 @@ window.GALLERY_DATA_FR = {
       "id": "teatro4_jpg",
       "categoryId": "teatro-danzas",
       "type": "image",
-      "title": "Danse Andine des Fêtes Nationales (4)",
+      "title": "Danza Andina en Fiestas Patrias (4)",
       "description": "",
       "url": "ceec50/assets/teatro4.jpg",
       "year": "1994"
@@ -585,7 +585,7 @@ window.GALLERY_DATA_FR = {
       "id": "teatro5_jpg",
       "categoryId": "teatro-danzas",
       "type": "image",
-      "title": "Festival de Musique et Talents (5)",
+      "title": "Festival de Música y Talentos (5)",
       "description": "",
       "url": "ceec50/assets/teatro5.jpg",
       "year": "1996"
@@ -594,7 +594,7 @@ window.GALLERY_DATA_FR = {
       "id": "teatro6_jpg",
       "categoryId": "teatro-danzas",
       "type": "image",
-      "title": "Pièce du Petit Chaperon Rouge (6)",
+      "title": "Cuento de Caperucita Roja (6)",
       "description": "",
       "url": "ceec50/assets/teatro6.jpg",
       "year": "1995"
@@ -603,7 +603,7 @@ window.GALLERY_DATA_FR = {
       "id": "teatro7_jpg",
       "categoryId": "teatro-danzas",
       "type": "image",
-      "title": "Fanfare aux Jeux Spéciaux (7)",
+      "title": "Banda Rítmica en Olimpiadas Especiales (7)",
       "description": "",
       "url": "ceec50/assets/teatro7.jpg",
       "year": "1997"
@@ -612,7 +612,7 @@ window.GALLERY_DATA_FR = {
       "id": "teatro8_jpg",
       "categoryId": "teatro-danzas",
       "type": "image",
-      "title": "Danse Côtière des Élèves (8)",
+      "title": "Danza Costeña Estudiantil (8)",
       "description": "",
       "url": "ceec50/assets/teatro8.jpg",
       "year": "1996"
@@ -621,7 +621,7 @@ window.GALLERY_DATA_FR = {
       "id": "teatro9_jpg",
       "categoryId": "teatro-danzas",
       "type": "image",
-      "title": "Chants et Conte de Noël (9)",
+      "title": "Pastorela y Villancicos Navideños (9)",
       "description": "",
       "url": "ceec50/assets/teatro9.jpg",
       "year": "1997"
@@ -630,7 +630,7 @@ window.GALLERY_DATA_FR = {
       "id": "teatro10_jpg",
       "categoryId": "teatro-danzas",
       "type": "image",
-      "title": "Drame Historique Scolaire (10)",
+      "title": "Dramatización Histórica del CEEC (10)",
       "description": "",
       "url": "ceec50/assets/teatro10.jpg",
       "year": "1998"
@@ -639,7 +639,7 @@ window.GALLERY_DATA_FR = {
       "id": "teatro11_jpg",
       "categoryId": "teatro-danzas",
       "type": "image",
-      "title": "Danse Traditionnelle Marinera (11)",
+      "title": "Marinera Norteña Tradicional (11)",
       "description": "",
       "url": "ceec50/assets/teatro11.jpg",
       "year": "1998"
@@ -648,7 +648,7 @@ window.GALLERY_DATA_FR = {
       "id": "teatro12_jpg",
       "categoryId": "teatro-danzas",
       "type": "image",
-      "title": "Récital Poétique Fête des Mères (12)",
+      "title": "Recital Poético por el Día de la Madre (12)",
       "description": "",
       "url": "ceec50/assets/teatro12.jpg",
       "year": "1997"
@@ -657,7 +657,7 @@ window.GALLERY_DATA_FR = {
       "id": "teatro13_jpg",
       "categoryId": "teatro-danzas",
       "type": "image",
-      "title": "Chorégraphie de Clôture Sportive (13)",
+      "title": "Coreografía en Clausura Deportiva (13)",
       "description": "",
       "url": "ceec50/assets/teatro13.jpg",
       "year": "1999"
@@ -666,7 +666,7 @@ window.GALLERY_DATA_FR = {
       "id": "teatro14_jpg",
       "categoryId": "teatro-danzas",
       "type": "image",
-      "title": "Spectacle sur les Traditions Locales (14)",
+      "title": "Obra sobre Tradiciones Locales (14)",
       "description": "",
       "url": "ceec50/assets/teatro14.jpg",
       "year": "1998"
@@ -675,7 +675,7 @@ window.GALLERY_DATA_FR = {
       "id": "teatro15_jpg",
       "categoryId": "teatro-danzas",
       "type": "image",
-      "title": "Défilé Écologique de Costumes (15)",
+      "title": "Desfile de Trajes con Material Reciclado (15)",
       "description": "",
       "url": "ceec50/assets/teatro15.jpg",
       "year": "1999"
@@ -684,7 +684,7 @@ window.GALLERY_DATA_FR = {
       "id": "teatro16_jpg",
       "categoryId": "teatro-danzas",
       "type": "image",
-      "title": "Ensemble Musical de Percussions (16)",
+      "title": "Ensamble de Instrumentos de Percusión (16)",
       "description": "",
       "url": "ceec50/assets/teatro16.jpg",
       "year": "1999"
@@ -693,7 +693,7 @@ window.GALLERY_DATA_FR = {
       "id": "teatro17_jpg",
       "categoryId": "teatro-danzas",
       "type": "image",
-      "title": "Danse Festive de Fin d'Année (17)",
+      "title": "Danza Festiva de Fin de Año (17)",
       "description": "",
       "url": "ceec50/assets/teatro17.jpg",
       "year": "1998"
@@ -702,7 +702,7 @@ window.GALLERY_DATA_FR = {
       "id": "teatro18_jpg",
       "categoryId": "teatro-danzas",
       "type": "image",
-      "title": "Spectacle Interactif de Marionnettes (18)",
+      "title": "Función de Títeres Interactiva (18)",
       "description": "",
       "url": "ceec50/assets/teatro18.jpg",
       "year": "1999"
@@ -711,7 +711,7 @@ window.GALLERY_DATA_FR = {
       "id": "teatro19_jpg",
       "categoryId": "teatro-danzas",
       "type": "image",
-      "title": "Danse de l'Amazonie Péruvienne (19)",
+      "title": "Danza de la Selva Peruana (19)",
       "description": "",
       "url": "ceec50/assets/teatro19.jpg",
       "year": "1999"
@@ -720,7 +720,7 @@ window.GALLERY_DATA_FR = {
       "id": "teatro20_jpg",
       "categoryId": "teatro-danzas",
       "type": "image",
-      "title": "Grand Chœur de Noël de l'École (20)",
+      "title": "Gran Coro Navideño Institucional (20)",
       "description": "",
       "url": "ceec50/assets/teatro20.jpg",
       "year": "1999"
@@ -729,7 +729,7 @@ window.GALLERY_DATA_FR = {
       "id": "teatro_jpg",
       "categoryId": "teatro-danzas",
       "type": "image",
-      "title": "Grande Pièce sur Scène Centrale",
+      "title": "Obra Principal en Escenario Central",
       "description": "",
       "url": "ceec50/assets/teatro.jpg",
       "year": "1994"
@@ -738,7 +738,7 @@ window.GALLERY_DATA_FR = {
       "id": "teatro_1_jpg",
       "categoryId": "teatro-danzas",
       "type": "image",
-      "title": "Troupe Théâtrale Scolaire (1b)",
+      "title": "Elenco Escolar de Actuación (1b)",
       "description": "",
       "url": "ceec50/assets/teatro 1.jpg",
       "year": "1993"
@@ -747,7 +747,7 @@ window.GALLERY_DATA_FR = {
       "id": "teatro_2_jpg",
       "categoryId": "teatro-danzas",
       "type": "image",
-      "title": "Festival Folklorique Interscolaire (2b)",
+      "title": "Festival Folclórico Interescolar (2b)",
       "description": "",
       "url": "ceec50/assets/teatro (2).jpg",
       "year": "1996"
@@ -756,7 +756,7 @@ window.GALLERY_DATA_FR = {
       "id": "teatro_3_jpg",
       "categoryId": "teatro-danzas",
       "type": "image",
-      "title": "Chant et Expression Scénique (3b)",
+      "title": "Presentación de Canto y Expresión (3b)",
       "description": "",
       "url": "ceec50/assets/teatro (3).jpg",
       "year": "1998"
@@ -765,7 +765,7 @@ window.GALLERY_DATA_FR = {
       "id": "talleres_protegidos_1_jpg",
       "categoryId": "talleres-protegidos",
       "type": "image",
-      "title": "Atelier de Boulangerie et Pâtisserie (1)",
+      "title": "Taller Protegido de Panadería y Repostería (1)",
       "description": "",
       "url": "ceec50/assets/Talleres-protegidos (1).jpg",
       "year": "1990"
@@ -774,7 +774,7 @@ window.GALLERY_DATA_FR = {
       "id": "talleres_protegidos_2_jpg",
       "categoryId": "talleres-protegidos",
       "type": "image",
-      "title": "Fabrication Artisanale (2)",
+      "title": "Elaboración Artesanal de Productos (2)",
       "description": "",
       "url": "ceec50/assets/Talleres-protegidos (2).jpg",
       "year": "1991"
@@ -783,7 +783,7 @@ window.GALLERY_DATA_FR = {
       "id": "talleres_protegidos_3_jpg",
       "categoryId": "talleres-protegidos",
       "type": "image",
-      "title": "Formation Culinaire Pratique (3)",
+      "title": "Capacitación Ocupacional en Cocina (3)",
       "description": "",
       "url": "ceec50/assets/Talleres-protegidos (3).jpg",
       "year": "1992"
@@ -792,7 +792,7 @@ window.GALLERY_DATA_FR = {
       "id": "talleres_protegidos_4_jpg",
       "categoryId": "talleres-protegidos",
       "type": "image",
-      "title": "Atelier de Couture et Textiles (4)",
+      "title": "Taller de Costura y Confección Textil (4)",
       "description": "",
       "url": "ceec50/assets/Talleres-protegidos (4).jpg",
       "year": "1993"
@@ -801,7 +801,7 @@ window.GALLERY_DATA_FR = {
       "id": "talleres_protegidos_5_jpg",
       "categoryId": "talleres-protegidos",
       "type": "image",
-      "title": "Reliure et Travail du Papier (5)",
+      "title": "Trabajos de Encuadernación y Papel (5)",
       "description": "",
       "url": "ceec50/assets/Talleres-protegidos (5).jpg",
       "year": "1994"
@@ -810,7 +810,7 @@ window.GALLERY_DATA_FR = {
       "id": "talleres_protegidos_6_jpg",
       "categoryId": "talleres-protegidos",
       "type": "image",
-      "title": "Tissage et Travaux Manuels (6)",
+      "title": "Producción de Tejidos y Manualidades (6)",
       "description": "",
       "url": "ceec50/assets/Talleres-protegidos (6).jpg",
       "year": "1995"
@@ -819,7 +819,7 @@ window.GALLERY_DATA_FR = {
       "id": "talleres_protegidos_7_jpg",
       "categoryId": "talleres-protegidos",
       "type": "image",
-      "title": "Menuiserie et Travail du Bois (7)",
+      "title": "Aprendizaje de Técnicas de Carpintería (7)",
       "description": "",
       "url": "ceec50/assets/Talleres-protegidos (7).jpg",
       "year": "1996"
@@ -828,7 +828,7 @@ window.GALLERY_DATA_FR = {
       "id": "talleres_protegidos_8_jpg",
       "categoryId": "talleres-protegidos",
       "type": "image",
-      "title": "Formation Pratique pour Jeunes Adultes (8)",
+      "title": "Formación Práctica de Jóvenes Adultos (8)",
       "description": "",
       "url": "ceec50/assets/Talleres-protegidos (8).jpg",
       "year": "1997"
@@ -837,7 +837,7 @@ window.GALLERY_DATA_FR = {
       "id": "talleres_protegidos_9_jpg",
       "categoryId": "talleres-protegidos",
       "type": "image",
-      "title": "Compétences Professionnelles (9)",
+      "title": "Habilidades Ocupacionales para el Empleo (9)",
       "description": "",
       "url": "ceec50/assets/Talleres-protegidos (9).jpg",
       "year": "1998"
@@ -846,7 +846,7 @@ window.GALLERY_DATA_FR = {
       "id": "talleres_protegidos_10_jpg",
       "categoryId": "talleres-protegidos",
       "type": "image",
-      "title": "Atelier de Jardinage et Pépinière (10)",
+      "title": "Taller de Jardinería y Vivero (10)",
       "description": "",
       "url": "ceec50/assets/Talleres-protegidos (10).jpg",
       "year": "1999"
@@ -855,7 +855,7 @@ window.GALLERY_DATA_FR = {
       "id": "talleres_protegidos_11_jpg",
       "categoryId": "talleres-protegidos",
       "type": "image",
-      "title": "Atelier de Bougies Artisanales (11)",
+      "title": "Elaboración de Velas y Cerería (11)",
       "description": "",
       "url": "ceec50/assets/Talleres-protegidos (11).jpg",
       "year": "2000"
@@ -864,7 +864,7 @@ window.GALLERY_DATA_FR = {
       "id": "talleres_protegidos_12_jpg",
       "categoryId": "talleres-protegidos",
       "type": "image",
-      "title": "Peinture et Décoration (12)",
+      "title": "Taller de Pintura y Decoración (12)",
       "description": "",
       "url": "ceec50/assets/Talleres-protegidos (12).jpg",
       "year": "2001"
@@ -873,7 +873,7 @@ window.GALLERY_DATA_FR = {
       "id": "talleres_protegidos_13_jpg",
       "categoryId": "talleres-protegidos",
       "type": "image",
-      "title": "Vente des Produits aux Marchés (13)",
+      "title": "Venta de Productos Elaborados en Ferias (13)",
       "description": "",
       "url": "ceec50/assets/Talleres-protegidos (13).jpg",
       "year": "2002"
@@ -882,7 +882,7 @@ window.GALLERY_DATA_FR = {
       "id": "talleres_protegidos_14_jpg",
       "categoryId": "talleres-protegidos",
       "type": "image",
-      "title": "Apprentissage du Service Client (14)",
+      "title": "Práctica de Atención al Cliente (14)",
       "description": "",
       "url": "ceec50/assets/Talleres-protegidos (14).jpg",
       "year": "2003"
@@ -891,7 +891,7 @@ window.GALLERY_DATA_FR = {
       "id": "talleres_protegidos_15_jpg",
       "categoryId": "talleres-protegidos",
       "type": "image",
-      "title": "Travail d'Équipe en Atelier (15)",
+      "title": "Equipo de Trabajo en Taller Productivo (15)",
       "description": "",
       "url": "ceec50/assets/Talleres-protegidos (15).jpg",
       "year": "2004"
@@ -900,7 +900,7 @@ window.GALLERY_DATA_FR = {
       "id": "talleres_protegidos_16_jpg",
       "categoryId": "talleres-protegidos",
       "type": "image",
-      "title": "Progrès Vers l'Autonomie (16)",
+      "title": "Logros y Superación en Autonomía (16)",
       "description": "",
       "url": "ceec50/assets/Talleres-protegidos (16).jpg",
       "year": "2005"
@@ -909,7 +909,7 @@ window.GALLERY_DATA_FR = {
       "id": "talleres_protegidos_17_jpg",
       "categoryId": "talleres-protegidos",
       "type": "image",
-      "title": "Exposition des Travaux de Fin d'Études (17)",
+      "title": "Exhibición de Trabajos de Graduación (17)",
       "description": "",
       "url": "ceec50/assets/Talleres-protegidos (17).jpg",
       "year": "2006"
@@ -918,7 +918,7 @@ window.GALLERY_DATA_FR = {
       "id": "porongo_1_jpg",
       "categoryId": "porongo",
       "type": "image",
-      "title": "Arrivée à la Ferme El Porongo (1)",
+      "title": "Llegada y Vista del Fundo El Porongo (1)",
       "description": "",
       "url": "ceec50/assets/porongo (1).jpg",
       "year": "1995"
@@ -927,7 +927,7 @@ window.GALLERY_DATA_FR = {
       "id": "porongo_2_jpg",
       "categoryId": "porongo",
       "type": "image",
-      "title": "Soins et Nourrissage des Animaux (2)",
+      "title": "Cuidado y Alimentación de Animales (2)",
       "description": "",
       "url": "ceec50/assets/porongo (2).jpg",
       "year": "1996"
@@ -936,7 +936,7 @@ window.GALLERY_DATA_FR = {
       "id": "porongo_3_jpg",
       "categoryId": "porongo",
       "type": "image",
-      "title": "Travaux Agricoles au Potager (3)",
+      "title": "Labores Agrícolas en el Huerto (3)",
       "description": "",
       "url": "ceec50/assets/porongo (3).jpg",
       "year": "1998"
@@ -945,7 +945,7 @@ window.GALLERY_DATA_FR = {
       "id": "porongo_4_jpg",
       "categoryId": "porongo",
       "type": "image",
-      "title": "Promenade en Plein Air (4)",
+      "title": "Paseo al Aire Libre y Convivencia (4)",
       "description": "",
       "url": "ceec50/assets/porongo (4).jpg",
       "year": "2000"
@@ -954,7 +954,7 @@ window.GALLERY_DATA_FR = {
       "id": "porongo_5_jpg",
       "categoryId": "porongo",
       "type": "image",
-      "title": "Habitations Écologiques de la Ferme (5)",
+      "title": "Viviendas y Cabañas Ecológicas (5)",
       "description": "",
       "url": "ceec50/assets/porongo (5).jpg",
       "year": "2002"
@@ -963,7 +963,7 @@ window.GALLERY_DATA_FR = {
       "id": "aniversario1_jpg",
       "categoryId": "aniversarios",
       "type": "image",
-      "title": "Cérémonie Solennelle dans la Cour (1)",
+      "title": "Acto Solemne de Aniversario en Patio (1)",
       "description": "",
       "url": "ceec50/assets/aniversario1.jpg",
       "year": "1995"
@@ -972,7 +972,7 @@ window.GALLERY_DATA_FR = {
       "id": "aniversario1b_jpg",
       "categoryId": "aniversarios",
       "type": "image",
-      "title": "Toast d'Honneur avec la Communauté (1b)",
+      "title": "Brindis de Honor con la Comunidad (1b)",
       "description": "",
       "url": "ceec50/assets/aniversario1b.jpg",
       "year": "1995"
@@ -981,7 +981,7 @@ window.GALLERY_DATA_FR = {
       "id": "aniversario2_jpg",
       "categoryId": "aniversarios",
       "type": "image",
-      "title": "Gâteau Commémoratif et Fête (2)",
+      "title": "Torta Conmemorativa y Celebración (2)",
       "description": "",
       "url": "ceec50/assets/aniversario2.jpg",
       "year": "1997"
@@ -990,7 +990,7 @@ window.GALLERY_DATA_FR = {
       "id": "aniversario_1_jpg",
       "categoryId": "aniversarios",
       "type": "image",
-      "title": "Célébration des Noces d'Argent (25 Ans) (3)",
+      "title": "Ceremonia de Bodas de Plata (25 Años) (3)",
       "description": "",
       "url": "ceec50/assets/aniversario (1).jpg",
       "year": "2001"
@@ -999,7 +999,7 @@ window.GALLERY_DATA_FR = {
       "id": "aniversario_2_jpg",
       "categoryId": "aniversarios",
       "type": "image",
-      "title": "Défilé Commémoratif d'Anniversaire (4)",
+      "title": "Desfile Conmemorativo por Aniversario (4)",
       "description": "",
       "url": "ceec50/assets/aniversario (2).jpg",
       "year": "2006"
@@ -1008,7 +1008,7 @@ window.GALLERY_DATA_FR = {
       "id": "primera_comunion_1_jpg",
       "categoryId": "otros",
       "type": "image",
-      "title": "Cérémonie de Première Communion (1)",
+      "title": "Ceremonia de Primera Comunión (1)",
       "description": "",
       "url": "ceec50/assets/primera-comunion (1).jpg",
       "year": "1992"
@@ -1017,7 +1017,7 @@ window.GALLERY_DATA_FR = {
       "id": "primera_comunion_2_jpg",
       "categoryId": "otros",
       "type": "image",
-      "title": "Bénédiction des Élèves (2)",
+      "title": "Bendición de Alumnos en Comunión (2)",
       "description": "",
       "url": "ceec50/assets/primera-comunion (2).jpg",
       "year": "1995"
@@ -1026,7 +1026,7 @@ window.GALLERY_DATA_FR = {
       "id": "primera_comunion_3_jpg",
       "categoryId": "otros",
       "type": "image",
-      "title": "Souvenir de Première Communion (3)",
+      "title": "Recuerdo Familiar de Primera Comunión (3)",
       "description": "",
       "url": "ceec50/assets/primera-comunion (3).jpg",
       "year": "1998"
@@ -1035,7 +1035,7 @@ window.GALLERY_DATA_FR = {
       "id": "viajes_1_jpg",
       "categoryId": "otros",
       "type": "image",
-      "title": "Excursion et Voyage Scolaire (1)",
+      "title": "Viaje y Excursión Escolar de Integración (1)",
       "description": "",
       "url": "ceec50/assets/viajes (1).jpg",
       "year": "1993"
@@ -1044,7 +1044,7 @@ window.GALLERY_DATA_FR = {
       "id": "viajes_2_jpg",
       "categoryId": "otros",
       "type": "image",
-      "title": "Visite Culturelle et Récréative (2)",
+      "title": "Visita Cultural y Recreativa (2)",
       "description": "",
       "url": "ceec50/assets/viajes (2).jpg",
       "year": "1996"
@@ -1053,7 +1053,7 @@ window.GALLERY_DATA_FR = {
       "id": "viajes_3_jpg",
       "categoryId": "otros",
       "type": "image",
-      "title": "Sortie en Pleine Nature (3)",
+      "title": "Campamento y Paseo al Campo (3)",
       "description": "",
       "url": "ceec50/assets/viajes (3).jpg",
       "year": "1999"
@@ -1062,7 +1062,7 @@ window.GALLERY_DATA_FR = {
       "id": "ceec_78_jpg",
       "categoryId": "otros",
       "type": "image",
-      "title": "Document Historique Fondateur (1978)",
+      "title": "Memoria Histórica Fundacional CEEC (1978)",
       "description": "",
       "url": "ceec50/assets/CEEC.78.jpg",
       "year": "1978"
@@ -1071,7 +1071,7 @@ window.GALLERY_DATA_FR = {
       "id": "ceec_81_jpg",
       "categoryId": "otros",
       "type": "image",
-      "title": "Registre des Activités Éducatives (1981)",
+      "title": "Registro de Actividades Educativas (1981)",
       "description": "",
       "url": "ceec50/assets/CEEC.81.jpg",
       "year": "1981"
@@ -1080,7 +1080,7 @@ window.GALLERY_DATA_FR = {
       "id": "ceec_90_04_jpg",
       "categoryId": "otros",
       "type": "image",
-      "title": "Archives: Élèves et Classe (1990 - 1)",
+      "title": "Archivo Histórico CEEC: Alumnos y Aula (1990 - 1)",
       "description": "",
       "url": "ceec50/assets/CEEC.90.04.jpg",
       "year": "1990"
@@ -1089,7 +1089,7 @@ window.GALLERY_DATA_FR = {
       "id": "ceec_90_29_jpg",
       "categoryId": "otros",
       "type": "image",
-      "title": "Archives: Cour de Récréation (1990 - 2)",
+      "title": "Archivo Histórico CEEC: Patio y Recreo (1990 - 2)",
       "description": "",
       "url": "ceec50/assets/CEEC.90.29.jpg",
       "year": "1990"
@@ -1098,7 +1098,7 @@ window.GALLERY_DATA_FR = {
       "id": "ceec_90_31_jpg",
       "categoryId": "otros",
       "type": "image",
-      "title": "Archives: Activités Pratiques (1990 - 3)",
+      "title": "Archivo Histórico CEEC: Actividades Prácticas (1990 - 3)",
       "description": "",
       "url": "ceec50/assets/CEEC.90.31.jpg",
       "year": "1990"
@@ -1107,7 +1107,7 @@ window.GALLERY_DATA_FR = {
       "id": "ceec_90_37_jpg",
       "categoryId": "otros",
       "type": "image",
-      "title": "Archives: Groupe d'Éveil (1990 - 4)",
+      "title": "Archivo Histórico CEEC: Taller de Estimulación (1990 - 4)",
       "description": "",
       "url": "ceec50/assets/CEEC.90.37.jpg",
       "year": "1990"
@@ -1116,7 +1116,7 @@ window.GALLERY_DATA_FR = {
       "id": "ceec_90_47_jpg",
       "categoryId": "otros",
       "type": "image",
-      "title": "Archives: Orthophonie (1990 - 5)",
+      "title": "Archivo Histórico CEEC: Terapia del Lenguaje (1990 - 5)",
       "description": "",
       "url": "ceec50/assets/CEEC.90.47.jpg",
       "year": "1990"
@@ -1125,7 +1125,7 @@ window.GALLERY_DATA_FR = {
       "id": "ceec_90_48_jpg",
       "categoryId": "otros",
       "type": "image",
-      "title": "Archives: Vie Scolaire Quotidienne (1990 - 6)",
+      "title": "Archivo Histórico CEEC: Vida Escolar Diaria (1990 - 6)",
       "description": "",
       "url": "ceec50/assets/CEEC.90.48.jpg",
       "year": "1990"

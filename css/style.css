@@ -2183,26 +2183,63 @@ html[lang="de"] .nav-item-rundbrief {
 /* Ajuste fino para evitar desbordamiento del menú en pantallas medianas (992px a 1280px) */
 @media (min-width: 992px) and (max-width: 1280px) {
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-    padding-left: 9px !important;
-    padding-right: 9px !important;
-    font-size: 13px !important;
-  }
-  .navbar-brand {
-    font-size: 22px !important;
-    margin-right: 6px !important;
-  }
-  .navbar-nav .nav-item.nav-item-donate .nav-link {
-    padding: 6px 14px !important;
-    margin: auto 4px !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
     font-size: 12px !important;
   }
+  .navbar-brand {
+    font-size: 19px !important;
+    margin-right: 4px !important;
+  }
+  .navbar-nav .nav-item.nav-item-donate .nav-link {
+    padding: 5px 11px !important;
+    margin: auto 3px !important;
+    font-size: 11px !important;
+  }
   .site-lang-switcher {
-    margin-left: 6px !important;
-    padding: 2px 4px !important;
+    margin-left: 4px !important;
+    padding: 2px 3px !important;
   }
   .site-lang-btn {
-    padding: 2px 5px !important;
-    font-size: 10px !important;
+    padding: 2px 4px !important;
+    font-size: 9.5px !important;
+  }
+}
+
+/* ================= PESTAÑAS SECCIÓN CEE & TALLERES FORMATIVOS ================= */
+.cee-nav-pills {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  justify-content: center !important;
+}
+.cee-nav-pills .nav-link {
+  border-radius: 25px !important;
+  padding: 8px 18px !important;
+  font-weight: 600 !important;
+  font-size: 0.9rem !important;
+  color: #495057 !important;
+  background: #ffffff !important;
+  border: 1.5px solid #e2ddd3 !important;
+  transition: all 0.25s ease !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04) !important;
+}
+.cee-nav-pills .nav-link:hover {
+  background: #fff8e1 !important;
+  border-color: #f7ca44 !important;
+  color: #121110 !important;
+  transform: translateY(-2px) !important;
+}
+.cee-nav-pills .nav-link.active {
+  background: #f7ca44 !important;
+  color: #121110 !important;
+  border-color: #f7ca44 !important;
+  box-shadow: 0 4px 12px rgba(247, 202, 68, 0.35) !important;
+}
+@media (max-width: 767.98px) {
+  .cee-nav-pills .nav-link {
+    font-size: 0.82rem !important;
+    padding: 6px 12px !important;
   }
 }
 
