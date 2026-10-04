@@ -82,7 +82,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Altes Schulgebäude (1)",
       "description": "",
-      "url": "ceec50/assets/escuela-vieja1.jpg",
+      "url": "ceec50/assets/escuela-vieja1.webp",
       "year": "1978"
     },
     {
@@ -91,7 +91,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Altes Schulgebäude (2)",
       "description": "",
-      "url": "ceec50/assets/escuela-vieja2.jpg",
+      "url": "ceec50/assets/escuela-vieja2.webp",
       "year": "1979"
     },
     {
@@ -100,7 +100,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Altes Schulgebäude (3)",
       "description": "",
-      "url": "ceec50/assets/escuela-vieja3.jpg",
+      "url": "ceec50/assets/escuela-vieja3.webp",
       "year": "1978"
     },
     {
@@ -110,7 +110,7 @@ window.GALLERY_DATA_DE = {
       "title": "Bau der Schule (Historisches Video 1982)",
       "description": "",
       "url": "https://youtu.be/4ffiErIGYgI",
-      "thumbnailUrl": "ceec50/assets/video.png",
+      "thumbnailUrl": "ceec50/assets/video.webp",
       "year": "1982"
     },
     {
@@ -119,7 +119,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Baubeginn und Fundamente (1)",
       "description": "",
-      "url": "ceec50/assets/construccion1.jpg",
+      "url": "ceec50/assets/construccion1.webp",
       "year": "1981"
     },
     {
@@ -128,7 +128,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Gemeinschaftlicher Bau und Mauern (2)",
       "description": "",
-      "url": "ceec50/assets/construccion2.jpg",
+      "url": "ceec50/assets/construccion2.webp",
       "year": "1981"
     },
     {
@@ -137,7 +137,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Strukturfortschritt der Klassenräume (3)",
       "description": "",
-      "url": "ceec50/assets/construccion3.jpg",
+      "url": "ceec50/assets/construccion3.webp",
       "year": "1982"
     },
     {
@@ -146,7 +146,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Dacharbeiten und Außenbereich (4)",
       "description": "",
-      "url": "ceec50/assets/construccion4.jpg",
+      "url": "ceec50/assets/construccion4.webp",
       "year": "1982"
     },
     {
@@ -155,7 +155,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Internationale Zusammenarbeit (5)",
       "description": "",
-      "url": "ceec50/assets/construccion5.jpg",
+      "url": "ceec50/assets/construccion5.webp",
       "year": "1982"
     },
     {
@@ -164,7 +164,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Fertigstellung und Fensterfronten (6)",
       "description": "",
-      "url": "ceec50/assets/construccion6.jpg",
+      "url": "ceec50/assets/construccion6.webp",
       "year": "1983"
     },
     {
@@ -173,7 +173,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Innenhöfe und Schulwege (7)",
       "description": "",
-      "url": "ceec50/assets/construccion7.jpg",
+      "url": "ceec50/assets/construccion7.webp",
       "year": "1983"
     },
     {
@@ -182,7 +182,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Fertigstellung des Hauptgebäudes (8)",
       "description": "",
-      "url": "ceec50/assets/construccion8.jpg",
+      "url": "ceec50/assets/construccion8.webp",
       "year": "1983"
     },
     {
@@ -191,7 +191,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Einweihung des Neubaus (9)",
       "description": "",
-      "url": "ceec50/assets/construccion9.jpg",
+      "url": "ceec50/assets/construccion9.webp",
       "year": "1983"
     },
     {
@@ -200,7 +200,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Klassenzimmer für Frühförderung (1)",
       "description": "",
-      "url": "ceec50/assets/escuela1.jpg",
+      "url": "ceec50/assets/escuela1.webp",
       "year": "1985"
     },
     {
@@ -209,7 +209,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Pausenhof und Spielbereich (2)",
       "description": "",
-      "url": "ceec50/assets/escuela2.jpg",
+      "url": "ceec50/assets/escuela2.webp",
       "year": "1987"
     },
     {
@@ -218,7 +218,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Raum für didaktische Förderung (3)",
       "description": "",
-      "url": "ceec50/assets/escuela3.jpg",
+      "url": "ceec50/assets/escuela3.webp",
       "year": "1988"
     },
     {
@@ -227,7 +227,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Zentraler Pavillon und Gänge (3b)",
       "description": "",
-      "url": "ceec50/assets/escuela3.011.jpg",
+      "url": "ceec50/assets/escuela3.011.webp",
       "year": "1991"
     },
     {
@@ -236,7 +236,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Grünflächen und Spielbereich (3c)",
       "description": "",
-      "url": "ceec50/assets/escuela3.093.jpg",
+      "url": "ceec50/assets/escuela3.093.webp",
       "year": "1993"
     },
     {
@@ -245,7 +245,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Psychomotorik-Therapieraum (3d)",
       "description": "",
-      "url": "ceec50/assets/escuela3.095.jpg",
+      "url": "ceec50/assets/escuela3.095.webp",
       "year": "1995"
     },
     {
@@ -254,7 +254,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Überdachter Mehrzweckhof (3e)",
       "description": "",
-      "url": "ceec50/assets/escuela3.096.jpg",
+      "url": "ceec50/assets/escuela3.096.webp",
       "year": "1996"
     },
     {
@@ -263,7 +263,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Hauptfassade und Eingang (3f)",
       "description": "",
-      "url": "ceec50/assets/escuela3.098.jpg",
+      "url": "ceec50/assets/escuela3.098.webp",
       "year": "1998"
     },
     {
@@ -272,7 +272,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Panoramablick auf das Zentrum (3g)",
       "description": "",
-      "url": "ceec50/assets/escuela3.099.jpg",
+      "url": "ceec50/assets/escuela3.099.webp",
       "year": "1999"
     },
     {
@@ -281,7 +281,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Bibliothek und Lernmaterialien (4)",
       "description": "",
-      "url": "ceec50/assets/escuela4.jpg",
+      "url": "ceec50/assets/escuela4.webp",
       "year": "1989"
     },
     {
@@ -290,7 +290,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Spezialisierter Therapieraum (5)",
       "description": "",
-      "url": "ceec50/assets/escuela5.jpg",
+      "url": "ceec50/assets/escuela5.webp",
       "year": "1990"
     },
     {
@@ -299,7 +299,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Förder- und Bewegungsbereich (6)",
       "description": "",
-      "url": "ceec50/assets/escuela6.jpg",
+      "url": "ceec50/assets/escuela6.webp",
       "year": "1992"
     },
     {
@@ -308,7 +308,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Überdachter Aktivitätsbereich (7)",
       "description": "",
-      "url": "ceec50/assets/escuela7.jpg",
+      "url": "ceec50/assets/escuela7.webp",
       "year": "1994"
     },
     {
@@ -317,7 +317,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Schulspeisesaal (8)",
       "description": "",
-      "url": "ceec50/assets/escuela8.jpg",
+      "url": "ceec50/assets/escuela8.webp",
       "year": "1995"
     },
     {
@@ -326,7 +326,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Medizinischer Behandlungsraum (9)",
       "description": "",
-      "url": "ceec50/assets/escuela9.jpg",
+      "url": "ceec50/assets/escuela9.webp",
       "year": "1997"
     },
     {
@@ -335,7 +335,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Förderklassen der Grundstufe (10)",
       "description": "",
-      "url": "ceec50/assets/escuela10.jpg",
+      "url": "ceec50/assets/escuela10.webp",
       "year": "1998"
     },
     {
@@ -344,7 +344,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Erweiterte Schulanlagen (11)",
       "description": "",
-      "url": "ceec50/assets/escuela11.jpg",
+      "url": "ceec50/assets/escuela11.webp",
       "year": "2000"
     },
     {
@@ -353,7 +353,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Gründer-Lehrerteam (1)",
       "description": "",
-      "url": "ceec50/assets/profesores1.jpg",
+      "url": "ceec50/assets/profesores1.webp",
       "year": "1984"
     },
     {
@@ -362,7 +362,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Pädagoginnen und Therapeutinnen (2)",
       "description": "",
-      "url": "ceec50/assets/profesores2.jpg",
+      "url": "ceec50/assets/profesores2.webp",
       "year": "1986"
     },
     {
@@ -371,7 +371,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Pädagogische Konferenz (3)",
       "description": "",
-      "url": "ceec50/assets/profesores3.jpg",
+      "url": "ceec50/assets/profesores3.webp",
       "year": "1988"
     },
     {
@@ -380,7 +380,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Fortbildung in Sonderpädagogik (4)",
       "description": "",
-      "url": "ceec50/assets/profesores4.jpg",
+      "url": "ceec50/assets/profesores4.webp",
       "year": "1990"
     },
     {
@@ -389,7 +389,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Lehrerkollegium im Innenhof (5)",
       "description": "",
-      "url": "ceec50/assets/profesores5.jpg",
+      "url": "ceec50/assets/profesores5.webp",
       "year": "1992"
     },
     {
@@ -398,7 +398,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Lehrkräfte und Assistenten (6)",
       "description": "",
-      "url": "ceec50/assets/profesores6.jpg",
+      "url": "ceec50/assets/profesores6.webp",
       "year": "1994"
     },
     {
@@ -407,7 +407,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Frühförderinnen in ihrem Klassenraum (7)",
       "description": "",
-      "url": "ceec50/assets/profesores7.jpg",
+      "url": "ceec50/assets/profesores7.webp",
       "year": "1996"
     },
     {
@@ -416,7 +416,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Betreuungs- und Hilfspersonal (8)",
       "description": "",
-      "url": "ceec50/assets/profesores8.jpg",
+      "url": "ceec50/assets/profesores8.webp",
       "year": "1992"
     },
     {
@@ -425,7 +425,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Gründungsleiterin und erste Lehrerinnen (9)",
       "description": "",
-      "url": "ceec50/assets/profesores9.jpg",
+      "url": "ceec50/assets/profesores9.webp",
       "year": "1980"
     },
     {
@@ -434,7 +434,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Festfoto Silberjubiläum der Lehrerschaft (10)",
       "description": "",
-      "url": "ceec50/assets/profesores10.jpg",
+      "url": "ceec50/assets/profesores10.webp",
       "year": "1999"
     },
     {
@@ -443,7 +443,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Offizielles Lehrerporträt",
       "description": "",
-      "url": "ceec50/assets/profesores.jpg",
+      "url": "ceec50/assets/profesores.webp",
       "year": "1991"
     },
     {
@@ -452,7 +452,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Lehrkräfte bei der Schulfeier (1)",
       "description": "",
-      "url": "ceec50/assets/profesores (1).jpg",
+      "url": "ceec50/assets/profesores (1).webp",
       "year": "1993"
     },
     {
@@ -461,7 +461,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Therapie- und Rehabilitationsteam (2)",
       "description": "",
-      "url": "ceec50/assets/profesores (2).jpg",
+      "url": "ceec50/assets/profesores (2).webp",
       "year": "1995"
     },
     {
@@ -470,7 +470,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Lehrkräfte der Ausbildungswerkstätten (3)",
       "description": "",
-      "url": "ceec50/assets/profesores (3).jpg",
+      "url": "ceec50/assets/profesores (3).webp",
       "year": "1997"
     },
     {
@@ -479,7 +479,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Lehrerausflug und Gemeinschaftstag (4)",
       "description": "",
-      "url": "ceec50/assets/profesores (4).jpg",
+      "url": "ceec50/assets/profesores (4).webp",
       "year": "1998"
     },
     {
@@ -488,7 +488,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Multidisziplinäres Förderteam (5)",
       "description": "",
-      "url": "ceec50/assets/profesores (5).jpg",
+      "url": "ceec50/assets/profesores (5).webp",
       "year": "2001"
     },
     {
@@ -497,7 +497,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Schüler im aktiven Unterricht (1)",
       "description": "",
-      "url": "ceec50/assets/alumnos (1).jpg",
+      "url": "ceec50/assets/alumnos (1).webp",
       "year": "1989"
     },
     {
@@ -506,7 +506,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Freundschaft und Spiel im Schulhof (2)",
       "description": "",
-      "url": "ceec50/assets/alumnos (2).jpg",
+      "url": "ceec50/assets/alumnos (2).webp",
       "year": "1991"
     },
     {
@@ -515,7 +515,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Förderung im Klassenraum (3)",
       "description": "",
-      "url": "ceec50/assets/alumnos (3).jpg",
+      "url": "ceec50/assets/alumnos (3).webp",
       "year": "1993"
     },
     {
@@ -524,7 +524,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Freude und Gruppenarbeit (4)",
       "description": "",
-      "url": "ceec50/assets/alumnos (4).jpg",
+      "url": "ceec50/assets/alumnos (4).webp",
       "year": "1995"
     },
     {
@@ -533,7 +533,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Sportfest und Bewegungsspiele (5)",
       "description": "",
-      "url": "ceec50/assets/alumnos (5).jpg",
+      "url": "ceec50/assets/alumnos (5).webp",
       "year": "1997"
     },
     {
@@ -542,7 +542,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Schulabschluss und persönliche Erfolge (6)",
       "description": "",
-      "url": "ceec50/assets/alumnos (6).jpg",
+      "url": "ceec50/assets/alumnos (6).webp",
       "year": "2000"
     },
     {
@@ -551,7 +551,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Folkloretanz im Ehrenhof (1)",
       "description": "",
-      "url": "ceec50/assets/teatro1.jpg",
+      "url": "ceec50/assets/teatro1.webp",
       "year": "1992"
     },
     {
@@ -560,7 +560,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Kindertheaterstück mit Kostümen (2)",
       "description": "",
-      "url": "ceec50/assets/teatro2.jpg",
+      "url": "ceec50/assets/teatro2.webp",
       "year": "1993"
     },
     {
@@ -569,7 +569,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Theaterstück zum Thema Natur (3)",
       "description": "",
-      "url": "ceec50/assets/teatro3.jpg",
+      "url": "ceec50/assets/teatro3.webp",
       "year": "1995"
     },
     {
@@ -578,7 +578,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Andentanz zum Nationalfeiertag (4)",
       "description": "",
-      "url": "ceec50/assets/teatro4.jpg",
+      "url": "ceec50/assets/teatro4.webp",
       "year": "1994"
     },
     {
@@ -587,7 +587,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Musik- und Talentfestival (5)",
       "description": "",
-      "url": "ceec50/assets/teatro5.jpg",
+      "url": "ceec50/assets/teatro5.webp",
       "year": "1996"
     },
     {
@@ -596,7 +596,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Rotkäppchen-Theater (6)",
       "description": "",
-      "url": "ceec50/assets/teatro6.jpg",
+      "url": "ceec50/assets/teatro6.webp",
       "year": "1995"
     },
     {
@@ -605,7 +605,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Rhythmusband bei Special Olympics (7)",
       "description": "",
-      "url": "ceec50/assets/teatro7.jpg",
+      "url": "ceec50/assets/teatro7.webp",
       "year": "1997"
     },
     {
@@ -614,7 +614,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Küstentanz der Schülerschaft (8)",
       "description": "",
-      "url": "ceec50/assets/teatro8.jpg",
+      "url": "ceec50/assets/teatro8.webp",
       "year": "1996"
     },
     {
@@ -623,7 +623,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Krippenspiel und Weihnachtslieder (9)",
       "description": "",
-      "url": "ceec50/assets/teatro9.jpg",
+      "url": "ceec50/assets/teatro9.webp",
       "year": "1997"
     },
     {
@@ -632,7 +632,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Historisches Schultheater (10)",
       "description": "",
-      "url": "ceec50/assets/teatro10.jpg",
+      "url": "ceec50/assets/teatro10.webp",
       "year": "1998"
     },
     {
@@ -641,7 +641,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Traditioneller Marinera-Tanz (11)",
       "description": "",
-      "url": "ceec50/assets/teatro11.jpg",
+      "url": "ceec50/assets/teatro11.webp",
       "year": "1998"
     },
     {
@@ -650,7 +650,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Gedichtvortrag zum Muttertag (12)",
       "description": "",
-      "url": "ceec50/assets/teatro12.jpg",
+      "url": "ceec50/assets/teatro12.webp",
       "year": "1997"
     },
     {
@@ -659,7 +659,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Tanzchoreografie zum Sportabschluss (13)",
       "description": "",
-      "url": "ceec50/assets/teatro13.jpg",
+      "url": "ceec50/assets/teatro13.webp",
       "year": "1999"
     },
     {
@@ -668,7 +668,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Theaterstück zu lokalen Bräuchen (14)",
       "description": "",
-      "url": "ceec50/assets/teatro14.jpg",
+      "url": "ceec50/assets/teatro14.webp",
       "year": "1998"
     },
     {
@@ -677,7 +677,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Öko-Modenschau mit Recyclingstoffen (15)",
       "description": "",
-      "url": "ceec50/assets/teatro15.jpg",
+      "url": "ceec50/assets/teatro15.webp",
       "year": "1999"
     },
     {
@@ -686,7 +686,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Schlaginstrumenten-Ensemble (16)",
       "description": "",
-      "url": "ceec50/assets/teatro16.jpg",
+      "url": "ceec50/assets/teatro16.webp",
       "year": "1999"
     },
     {
@@ -695,7 +695,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Jahresabschluss-Tanzfest (17)",
       "description": "",
-      "url": "ceec50/assets/teatro17.jpg",
+      "url": "ceec50/assets/teatro17.webp",
       "year": "1998"
     },
     {
@@ -704,7 +704,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Mitmach-Puppentheater (18)",
       "description": "",
-      "url": "ceec50/assets/teatro18.jpg",
+      "url": "ceec50/assets/teatro18.webp",
       "year": "1999"
     },
     {
@@ -713,7 +713,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Dschungeltanz aus dem peruanischen Urwald (19)",
       "description": "",
-      "url": "ceec50/assets/teatro19.jpg",
+      "url": "ceec50/assets/teatro19.webp",
       "year": "1999"
     },
     {
@@ -722,7 +722,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Großer Weihnachtschor der Schule (20)",
       "description": "",
-      "url": "ceec50/assets/teatro20.jpg",
+      "url": "ceec50/assets/teatro20.webp",
       "year": "1999"
     },
     {
@@ -731,7 +731,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Haupttheaterstück auf der Bühne",
       "description": "",
-      "url": "ceec50/assets/teatro.jpg",
+      "url": "ceec50/assets/teatro.webp",
       "year": "1994"
     },
     {
@@ -740,7 +740,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Schultheatergruppe (1b)",
       "description": "",
-      "url": "ceec50/assets/teatro 1.jpg",
+      "url": "ceec50/assets/teatro 1.webp",
       "year": "1993"
     },
     {
@@ -749,7 +749,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Schulübergreifendes Folklorefestival (2b)",
       "description": "",
-      "url": "ceec50/assets/teatro (2).jpg",
+      "url": "ceec50/assets/teatro (2).webp",
       "year": "1996"
     },
     {
@@ -758,7 +758,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Gesangs- und Ausdrucksaufführung (3b)",
       "description": "",
-      "url": "ceec50/assets/teatro (3).jpg",
+      "url": "ceec50/assets/teatro (3).webp",
       "year": "1998"
     },
     {
@@ -767,7 +767,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Back- und Konditorwerkstatt (1)",
       "description": "",
-      "url": "ceec50/assets/Talleres-protegidos (1).jpg",
+      "url": "ceec50/assets/Talleres-protegidos (1).webp",
       "year": "1990"
     },
     {
@@ -776,7 +776,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Herstellung von Backwaren (2)",
       "description": "",
-      "url": "ceec50/assets/Talleres-protegidos (2).jpg",
+      "url": "ceec50/assets/Talleres-protegidos (2).webp",
       "year": "1991"
     },
     {
@@ -785,7 +785,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Berufliche Küchenausbildung (3)",
       "description": "",
-      "url": "ceec50/assets/Talleres-protegidos (3).jpg",
+      "url": "ceec50/assets/Talleres-protegidos (3).webp",
       "year": "1992"
     },
     {
@@ -794,7 +794,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Näherei- und Textilwerkstatt (4)",
       "description": "",
-      "url": "ceec50/assets/Talleres-protegidos (4).jpg",
+      "url": "ceec50/assets/Talleres-protegidos (4).webp",
       "year": "1993"
     },
     {
@@ -803,7 +803,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Buchbinderei und Papierarbeiten (5)",
       "description": "",
-      "url": "ceec50/assets/Talleres-protegidos (5).jpg",
+      "url": "ceec50/assets/Talleres-protegidos (5).webp",
       "year": "1994"
     },
     {
@@ -812,7 +812,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Strick- und Handwerkskunst (6)",
       "description": "",
-      "url": "ceec50/assets/Talleres-protegidos (6).jpg",
+      "url": "ceec50/assets/Talleres-protegidos (6).webp",
       "year": "1995"
     },
     {
@@ -821,7 +821,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Holzbearbeitung und Schreinerarbeit (7)",
       "description": "",
-      "url": "ceec50/assets/Talleres-protegidos (7).jpg",
+      "url": "ceec50/assets/Talleres-protegidos (7).webp",
       "year": "1996"
     },
     {
@@ -830,7 +830,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Praktische Ausbildung für junge Erwachsene (8)",
       "description": "",
-      "url": "ceec50/assets/Talleres-protegidos (8).jpg",
+      "url": "ceec50/assets/Talleres-protegidos (8).webp",
       "year": "1997"
     },
     {
@@ -839,7 +839,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Berufsfähigkeiten für den Arbeitsmarkt (9)",
       "description": "",
-      "url": "ceec50/assets/Talleres-protegidos (9).jpg",
+      "url": "ceec50/assets/Talleres-protegidos (9).webp",
       "year": "1998"
     },
     {
@@ -848,7 +848,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Gärtnerei- und Pflanzwerkstatt (10)",
       "description": "",
-      "url": "ceec50/assets/Talleres-protegidos (10).jpg",
+      "url": "ceec50/assets/Talleres-protegidos (10).webp",
       "year": "1999"
     },
     {
@@ -857,7 +857,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Kerzenzieherei und Wachsarbeiten (11)",
       "description": "",
-      "url": "ceec50/assets/Talleres-protegidos (11).jpg",
+      "url": "ceec50/assets/Talleres-protegidos (11).webp",
       "year": "2000"
     },
     {
@@ -866,7 +866,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Malerei- und Dekorationswerkstatt (12)",
       "description": "",
-      "url": "ceec50/assets/Talleres-protegidos (12).jpg",
+      "url": "ceec50/assets/Talleres-protegidos (12).webp",
       "year": "2001"
     },
     {
@@ -875,7 +875,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Verkauf auf lokalen Handwerksmärkten (13)",
       "description": "",
-      "url": "ceec50/assets/Talleres-protegidos (13).jpg",
+      "url": "ceec50/assets/Talleres-protegidos (13).webp",
       "year": "2002"
     },
     {
@@ -884,7 +884,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Training für Kundenservice und Verkauf (14)",
       "description": "",
-      "url": "ceec50/assets/Talleres-protegidos (14).jpg",
+      "url": "ceec50/assets/Talleres-protegidos (14).webp",
       "year": "2003"
     },
     {
@@ -893,7 +893,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Gemeinsames Arbeiten in der Werkstatt (15)",
       "description": "",
-      "url": "ceec50/assets/Talleres-protegidos (15).jpg",
+      "url": "ceec50/assets/Talleres-protegidos (15).webp",
       "year": "2004"
     },
     {
@@ -902,7 +902,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Erfolge auf dem Weg zur Selbstständigkeit (16)",
       "description": "",
-      "url": "ceec50/assets/Talleres-protegidos (16).jpg",
+      "url": "ceec50/assets/Talleres-protegidos (16).webp",
       "year": "2005"
     },
     {
@@ -911,7 +911,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Ausstellung der Ausbildungsarbeiten (17)",
       "description": "",
-      "url": "ceec50/assets/Talleres-protegidos (17).jpg",
+      "url": "ceec50/assets/Talleres-protegidos (17).webp",
       "year": "2006"
     },
     {
@@ -920,7 +920,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Ankunft auf dem Bauernhof El Porongo (1)",
       "description": "",
-      "url": "ceec50/assets/porongo (1).jpg",
+      "url": "ceec50/assets/porongo (1).webp",
       "year": "1995"
     },
     {
@@ -929,7 +929,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Tierpflege und Fütterung (2)",
       "description": "",
-      "url": "ceec50/assets/porongo (2).jpg",
+      "url": "ceec50/assets/porongo (2).webp",
       "year": "1996"
     },
     {
@@ -938,7 +938,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Garten- und Feldarbeit (3)",
       "description": "",
-      "url": "ceec50/assets/porongo (3).jpg",
+      "url": "ceec50/assets/porongo (3).webp",
       "year": "1998"
     },
     {
@@ -947,7 +947,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Gemeinsamer Spaziergang in der Natur (4)",
       "description": "",
-      "url": "ceec50/assets/porongo (4).jpg",
+      "url": "ceec50/assets/porongo (4).webp",
       "year": "2000"
     },
     {
@@ -956,7 +956,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Wohnhäuser auf dem Landgut (5)",
       "description": "",
-      "url": "ceec50/assets/porongo (5).jpg",
+      "url": "ceec50/assets/porongo (5).webp",
       "year": "2002"
     },
     {
@@ -965,7 +965,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Festakt im Schulhof zum Jubiläum (1)",
       "description": "",
-      "url": "ceec50/assets/aniversario1.jpg",
+      "url": "ceec50/assets/aniversario1.webp",
       "year": "1995"
     },
     {
@@ -974,7 +974,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Ehrentoast mit der Schulgemeinschaft (1b)",
       "description": "",
-      "url": "ceec50/assets/aniversario1b.jpg",
+      "url": "ceec50/assets/aniversario1b.webp",
       "year": "1995"
     },
     {
@@ -983,7 +983,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Jubiläumstorte und Feierstunde (2)",
       "description": "",
-      "url": "ceec50/assets/aniversario2.jpg",
+      "url": "ceec50/assets/aniversario2.webp",
       "year": "1997"
     },
     {
@@ -992,7 +992,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Silberjubiläum: 25 Jahre CEEC (3)",
       "description": "",
-      "url": "ceec50/assets/aniversario (1).jpg",
+      "url": "ceec50/assets/aniversario (1).webp",
       "year": "2001"
     },
     {
@@ -1001,7 +1001,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Festumzug zum Schuljubiläum (4)",
       "description": "",
-      "url": "ceec50/assets/aniversario (2).jpg",
+      "url": "ceec50/assets/aniversario (2).webp",
       "year": "2006"
     },
     {
@@ -1010,7 +1010,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Feier der Erstkommunion (1)",
       "description": "",
-      "url": "ceec50/assets/primera-comunion (1).jpg",
+      "url": "ceec50/assets/primera-comunion (1).webp",
       "year": "1992"
     },
     {
@@ -1019,7 +1019,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Segen der Kommunionkinder (2)",
       "description": "",
-      "url": "ceec50/assets/primera-comunion (2).jpg",
+      "url": "ceec50/assets/primera-comunion (2).webp",
       "year": "1995"
     },
     {
@@ -1028,7 +1028,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Familienfoto zur Erstkommunion (3)",
       "description": "",
-      "url": "ceec50/assets/primera-comunion (3).jpg",
+      "url": "ceec50/assets/primera-comunion (3).webp",
       "year": "1998"
     },
     {
@@ -1037,7 +1037,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Gemeinsame Schulfahrt und Ausflug (1)",
       "description": "",
-      "url": "ceec50/assets/viajes (1).jpg",
+      "url": "ceec50/assets/viajes (1).webp",
       "year": "1993"
     },
     {
@@ -1046,7 +1046,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Kultur- und Freizeitausflug (2)",
       "description": "",
-      "url": "ceec50/assets/viajes (2).jpg",
+      "url": "ceec50/assets/viajes (2).webp",
       "year": "1996"
     },
     {
@@ -1055,7 +1055,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Schulausflug ins Grüne (3)",
       "description": "",
-      "url": "ceec50/assets/viajes (3).jpg",
+      "url": "ceec50/assets/viajes (3).webp",
       "year": "1999"
     },
     {
@@ -1064,7 +1064,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Historisches Archivdokument (1978)",
       "description": "",
-      "url": "ceec50/assets/CEEC.78.jpg",
+      "url": "ceec50/assets/CEEC.78.webp",
       "year": "1978"
     },
     {
@@ -1073,7 +1073,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Archivfoto der Schulaktivitäten (1981)",
       "description": "",
-      "url": "ceec50/assets/CEEC.81.jpg",
+      "url": "ceec50/assets/CEEC.81.webp",
       "year": "1981"
     },
     {
@@ -1082,7 +1082,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Historisches Archiv: Schüler & Klasse (1990 - 1)",
       "description": "",
-      "url": "ceec50/assets/CEEC.90.04.jpg",
+      "url": "ceec50/assets/CEEC.90.04.webp",
       "year": "1990"
     },
     {
@@ -1091,7 +1091,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Historisches Archiv: Schulhof (1990 - 2)",
       "description": "",
-      "url": "ceec50/assets/CEEC.90.29.jpg",
+      "url": "ceec50/assets/CEEC.90.29.webp",
       "year": "1990"
     },
     {
@@ -1100,7 +1100,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Historisches Archiv: Praktische Arbeit (1990 - 3)",
       "description": "",
-      "url": "ceec50/assets/CEEC.90.31.jpg",
+      "url": "ceec50/assets/CEEC.90.31.webp",
       "year": "1990"
     },
     {
@@ -1109,7 +1109,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Historisches Archiv: Fördergruppe (1990 - 4)",
       "description": "",
-      "url": "ceec50/assets/CEEC.90.37.jpg",
+      "url": "ceec50/assets/CEEC.90.37.webp",
       "year": "1990"
     },
     {
@@ -1118,7 +1118,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Historisches Archiv: Sprachtherapie (1990 - 5)",
       "description": "",
-      "url": "ceec50/assets/CEEC.90.47.jpg",
+      "url": "ceec50/assets/CEEC.90.47.webp",
       "year": "1990"
     },
     {
@@ -1127,7 +1127,7 @@ window.GALLERY_DATA_DE = {
       "type": "image",
       "title": "Historisches Archiv: Schulalltag (1990 - 6)",
       "description": "",
-      "url": "ceec50/assets/CEEC.90.48.jpg",
+      "url": "ceec50/assets/CEEC.90.48.webp",
       "year": "1990"
     }
   ]
