@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
         : (Array.isArray(item.categoryId)
             ? item.categoryId.map(c => catMap[c]).filter(Boolean).join(" • ")
             : (catMap[item.categoryId] || ""));
-      const thumbUrl = isVideo ? (item.thumbnailUrl || "ceec50/assets/video.webp") : item.url;
+      const thumbUrl = isVideo ? (item.thumbnailUrl || "assets/cee/video.webp") : item.url;
 
       if (isVideo) {
         col.innerHTML = `
