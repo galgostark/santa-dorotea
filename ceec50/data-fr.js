@@ -1,7 +1,3 @@
-/**
- * BASE DE DATOS DE RECUERDOS CEEC (FR)
- * Asociación Santa Dorotea - 50° Aniversario
- */
 window.GALLERY_DATA_FR = {
   "categories": [
     {
@@ -123,6 +119,15 @@ window.GALLERY_DATA_FR = {
       "year": "1981"
     },
     {
+      "id": "construccion6_jpg",
+      "categoryId": "construccion",
+      "type": "image",
+      "title": "Finitions et Fenêtres (6)",
+      "description": "",
+      "url": "ceec50/assets/construccion6.webp",
+      "year": "1983"
+    },
+    {
       "id": "construccion2_jpg",
       "categoryId": "construccion",
       "type": "image",
@@ -157,15 +162,6 @@ window.GALLERY_DATA_FR = {
       "description": "",
       "url": "ceec50/assets/construccion5.webp",
       "year": "1982"
-    },
-    {
-      "id": "construccion6_jpg",
-      "categoryId": "construccion",
-      "type": "image",
-      "title": "Finitions et Fenêtres (6)",
-      "description": "",
-      "url": "ceec50/assets/construccion6.webp",
-      "year": "1983"
     },
     {
       "id": "construccion7_jpg",
@@ -238,24 +234,6 @@ window.GALLERY_DATA_FR = {
       "description": "",
       "url": "ceec50/assets/escuela3.093.webp",
       "year": "1993"
-    },
-    {
-      "id": "escuela3_095_jpg",
-      "categoryId": "instalaciones",
-      "type": "image",
-      "title": "Salle de Psychomotricité (3d)",
-      "description": "",
-      "url": "ceec50/assets/escuela3.095.webp",
-      "year": "1995"
-    },
-    {
-      "id": "escuela3_096_jpg",
-      "categoryId": "instalaciones",
-      "type": "image",
-      "title": "Cour Couverte Polyvalente (3e)",
-      "description": "",
-      "url": "ceec50/assets/escuela3.096.webp",
-      "year": "1996"
     },
     {
       "id": "escuela3_098_jpg",
@@ -502,39 +480,67 @@ window.GALLERY_DATA_FR = {
     },
     {
       "id": "alumnos_2_jpg",
-      "categoryId": "alumnos",
+      "categoryId": [
+        "alumnos",
+        "escuela-vieja"
+      ],
       "type": "image",
       "title": "Camaraderie et Récréation (2)",
       "description": "",
       "url": "ceec50/assets/alumnos (2).webp",
-      "year": "1991"
+      "year": "1978",
+      "categories": [
+        "alumnos",
+        "escuela-vieja"
+      ]
     },
     {
       "id": "alumnos_3_jpg",
-      "categoryId": "alumnos",
+      "categoryId": [
+        "alumnos",
+        "escuela-vieja"
+      ],
       "type": "image",
       "title": "Apprentissages en Classe (3)",
       "description": "",
       "url": "ceec50/assets/alumnos (3).webp",
-      "year": "1993"
+      "year": "1979",
+      "categories": [
+        "alumnos",
+        "escuela-vieja"
+      ]
     },
     {
       "id": "alumnos_4_jpg",
-      "categoryId": "alumnos",
+      "categoryId": [
+        "alumnos",
+        "escuela-vieja"
+      ],
       "type": "image",
       "title": "Sourires et Travail d'Équipe (4)",
       "description": "",
       "url": "ceec50/assets/alumnos (4).webp",
-      "year": "1995"
+      "year": "1980",
+      "categories": [
+        "alumnos",
+        "escuela-vieja"
+      ]
     },
     {
       "id": "alumnos_5_jpg",
-      "categoryId": "alumnos",
+      "categoryId": [
+        "alumnos",
+        "escuela-vieja"
+      ],
       "type": "image",
       "title": "Journée Sportive et Jeux Adaptés (5)",
       "description": "",
       "url": "ceec50/assets/alumnos (5).webp",
-      "year": "1997"
+      "year": "1980",
+      "categories": [
+        "alumnos",
+        "escuela-vieja"
+      ]
     },
     {
       "id": "alumnos_6_jpg",
@@ -913,6 +919,30 @@ window.GALLERY_DATA_FR = {
       "description": "",
       "url": "ceec50/assets/Talleres-protegidos (17).webp",
       "year": "2006"
+    },
+    {
+      "id": "escuela3_095_jpg",
+      "categoryId": "talleres-protegidos",
+      "type": "image",
+      "title": "Groupe des Jeunes des Ateliers Protégés",
+      "description": "Rassemblement de jeunes et travailleurs des ateliers professionnels dans la cour du centre.",
+      "url": "ceec50/assets/escuela3.095.webp",
+      "year": "1995",
+      "categories": [
+        "talleres-protegidos"
+      ]
+    },
+    {
+      "id": "escuela3_096_jpg",
+      "categoryId": "talleres-protegidos",
+      "type": "image",
+      "title": "Membres des Ateliers Protégés en Excursion",
+      "description": "Voyage éducatif et de fraternité sur la Place d'Armes avec éducateurs et bénévoles.",
+      "url": "ceec50/assets/escuela3.096.webp",
+      "year": "1996",
+      "categories": [
+        "talleres-protegidos"
+      ]
     },
     {
       "id": "porongo_1_jpg",

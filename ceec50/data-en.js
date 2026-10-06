@@ -1,7 +1,3 @@
-/**
- * BASE DE DATOS DE RECUERDOS CEEC (EN)
- * Asociación Santa Dorotea - 50° Aniversario
- */
 window.GALLERY_DATA_EN = {
   "categories": [
     {
@@ -123,6 +119,15 @@ window.GALLERY_DATA_EN = {
       "year": "1981"
     },
     {
+      "id": "construccion6_jpg",
+      "categoryId": "construccion",
+      "type": "image",
+      "title": "Finishing and Windows (6)",
+      "description": "",
+      "url": "ceec50/assets/construccion6.webp",
+      "year": "1983"
+    },
+    {
       "id": "construccion2_jpg",
       "categoryId": "construccion",
       "type": "image",
@@ -157,15 +162,6 @@ window.GALLERY_DATA_EN = {
       "description": "",
       "url": "ceec50/assets/construccion5.webp",
       "year": "1982"
-    },
-    {
-      "id": "construccion6_jpg",
-      "categoryId": "construccion",
-      "type": "image",
-      "title": "Finishing and Windows (6)",
-      "description": "",
-      "url": "ceec50/assets/construccion6.webp",
-      "year": "1983"
     },
     {
       "id": "construccion7_jpg",
@@ -238,24 +234,6 @@ window.GALLERY_DATA_EN = {
       "description": "",
       "url": "ceec50/assets/escuela3.093.webp",
       "year": "1993"
-    },
-    {
-      "id": "escuela3_095_jpg",
-      "categoryId": "instalaciones",
-      "type": "image",
-      "title": "Psychomotor Therapy Room (3d)",
-      "description": "",
-      "url": "ceec50/assets/escuela3.095.webp",
-      "year": "1995"
-    },
-    {
-      "id": "escuela3_096_jpg",
-      "categoryId": "instalaciones",
-      "type": "image",
-      "title": "Covered Multi-purpose Yard (3e)",
-      "description": "",
-      "url": "ceec50/assets/escuela3.096.webp",
-      "year": "1996"
     },
     {
       "id": "escuela3_098_jpg",
@@ -502,39 +480,67 @@ window.GALLERY_DATA_EN = {
     },
     {
       "id": "alumnos_2_jpg",
-      "categoryId": "alumnos",
+      "categoryId": [
+        "alumnos",
+        "escuela-vieja"
+      ],
       "type": "image",
       "title": "Friendship and Recreation in Courtyard (2)",
       "description": "",
       "url": "ceec50/assets/alumnos (2).webp",
-      "year": "1991"
+      "year": "1978",
+      "categories": [
+        "alumnos",
+        "escuela-vieja"
+      ]
     },
     {
       "id": "alumnos_3_jpg",
-      "categoryId": "alumnos",
+      "categoryId": [
+        "alumnos",
+        "escuela-vieja"
+      ],
       "type": "image",
       "title": "Skill Building in the Classroom (3)",
       "description": "",
       "url": "ceec50/assets/alumnos (3).webp",
-      "year": "1993"
+      "year": "1979",
+      "categories": [
+        "alumnos",
+        "escuela-vieja"
+      ]
     },
     {
       "id": "alumnos_4_jpg",
-      "categoryId": "alumnos",
+      "categoryId": [
+        "alumnos",
+        "escuela-vieja"
+      ],
       "type": "image",
       "title": "Joy and Teamwork (4)",
       "description": "",
       "url": "ceec50/assets/alumnos (4).webp",
-      "year": "1995"
+      "year": "1980",
+      "categories": [
+        "alumnos",
+        "escuela-vieja"
+      ]
     },
     {
       "id": "alumnos_5_jpg",
-      "categoryId": "alumnos",
+      "categoryId": [
+        "alumnos",
+        "escuela-vieja"
+      ],
       "type": "image",
       "title": "Sports Day and Adapted Games (5)",
       "description": "",
       "url": "ceec50/assets/alumnos (5).webp",
-      "year": "1997"
+      "year": "1980",
+      "categories": [
+        "alumnos",
+        "escuela-vieja"
+      ]
     },
     {
       "id": "alumnos_6_jpg",
@@ -913,6 +919,30 @@ window.GALLERY_DATA_EN = {
       "description": "",
       "url": "ceec50/assets/Talleres-protegidos (17).webp",
       "year": "2006"
+    },
+    {
+      "id": "escuela3_095_jpg",
+      "categoryId": "talleres-protegidos",
+      "type": "image",
+      "title": "Youth Group of Sheltered Workshops",
+      "description": "Gathering of youth and workers from the occupational workshops in the center's courtyard.",
+      "url": "ceec50/assets/escuela3.095.webp",
+      "year": "1995",
+      "categories": [
+        "talleres-protegidos"
+      ]
+    },
+    {
+      "id": "escuela3_096_jpg",
+      "categoryId": "talleres-protegidos",
+      "type": "image",
+      "title": "Sheltered Workshops Members on Excursion",
+      "description": "Educational and fraternity trip to the Main Square with educators and volunteers.",
+      "url": "ceec50/assets/escuela3.096.webp",
+      "year": "1996",
+      "categories": [
+        "talleres-protegidos"
+      ]
     },
     {
       "id": "porongo_1_jpg",

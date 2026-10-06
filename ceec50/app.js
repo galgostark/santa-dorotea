@@ -104,10 +104,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const t = getTranslations();
     gridEl.innerHTML = "";
 
-    // Filtrar elementos
+    // Filtrar elementos (soporta categorías múltiples)
     let items = data.items;
     if (currentCategory !== "all") {
-      items = items.filter(item => item.categoryId === currentCategory);
+      items = items.filter(item => {
+        if (Array.isArray(item.categoryId)) {
+          return item.categoryId.includes(currentCategory);
+        }
+        if (Array.isArray(item.categories)) {
+          return item.categories.includes(currentCategory);
+        }
+        return item.categoryId === currentCategory;
+      });
     }
 
     if (!items || items.length === 0) {
@@ -128,7 +136,11 @@ document.addEventListener("DOMContentLoaded", () => {
       col.className = "col-12 col-sm-6 col-lg-4 mb-4";
 
       const isVideo = item.type === "video";
-      const catName = catMap[item.categoryId] || "";
+      const catName = currentCategory !== "all" && catMap[currentCategory]
+        ? catMap[currentCategory]
+        : (Array.isArray(item.categoryId)
+            ? item.categoryId.map(c => catMap[c]).filter(Boolean).join(" • ")
+            : (catMap[item.categoryId] || ""));
       const thumbUrl = isVideo ? (item.thumbnailUrl || "ceec50/assets/video.webp") : item.url;
 
       if (isVideo) {

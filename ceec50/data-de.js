@@ -1,7 +1,3 @@
-/**
- * BASE DE DATOS DE RECUERDOS CEEC (DE)
- * Asociación Santa Dorotea - 50° Aniversario
- */
 window.GALLERY_DATA_DE = {
   "categories": [
     {
@@ -123,6 +119,15 @@ window.GALLERY_DATA_DE = {
       "year": "1981"
     },
     {
+      "id": "construccion6_jpg",
+      "categoryId": "construccion",
+      "type": "image",
+      "title": "Fertigstellung und Fensterfronten (6)",
+      "description": "",
+      "url": "ceec50/assets/construccion6.webp",
+      "year": "1983"
+    },
+    {
       "id": "construccion2_jpg",
       "categoryId": "construccion",
       "type": "image",
@@ -157,15 +162,6 @@ window.GALLERY_DATA_DE = {
       "description": "",
       "url": "ceec50/assets/construccion5.webp",
       "year": "1982"
-    },
-    {
-      "id": "construccion6_jpg",
-      "categoryId": "construccion",
-      "type": "image",
-      "title": "Fertigstellung und Fensterfronten (6)",
-      "description": "",
-      "url": "ceec50/assets/construccion6.webp",
-      "year": "1983"
     },
     {
       "id": "construccion7_jpg",
@@ -238,24 +234,6 @@ window.GALLERY_DATA_DE = {
       "description": "",
       "url": "ceec50/assets/escuela3.093.webp",
       "year": "1993"
-    },
-    {
-      "id": "escuela3_095_jpg",
-      "categoryId": "instalaciones",
-      "type": "image",
-      "title": "Psychomotorik-Therapieraum (3d)",
-      "description": "",
-      "url": "ceec50/assets/escuela3.095.webp",
-      "year": "1995"
-    },
-    {
-      "id": "escuela3_096_jpg",
-      "categoryId": "instalaciones",
-      "type": "image",
-      "title": "Überdachter Mehrzweckhof (3e)",
-      "description": "",
-      "url": "ceec50/assets/escuela3.096.webp",
-      "year": "1996"
     },
     {
       "id": "escuela3_098_jpg",
@@ -502,39 +480,67 @@ window.GALLERY_DATA_DE = {
     },
     {
       "id": "alumnos_2_jpg",
-      "categoryId": "alumnos",
+      "categoryId": [
+        "alumnos",
+        "escuela-vieja"
+      ],
       "type": "image",
       "title": "Freundschaft und Spiel im Schulhof (2)",
       "description": "",
       "url": "ceec50/assets/alumnos (2).webp",
-      "year": "1991"
+      "year": "1978",
+      "categories": [
+        "alumnos",
+        "escuela-vieja"
+      ]
     },
     {
       "id": "alumnos_3_jpg",
-      "categoryId": "alumnos",
+      "categoryId": [
+        "alumnos",
+        "escuela-vieja"
+      ],
       "type": "image",
       "title": "Förderung im Klassenraum (3)",
       "description": "",
       "url": "ceec50/assets/alumnos (3).webp",
-      "year": "1993"
+      "year": "1979",
+      "categories": [
+        "alumnos",
+        "escuela-vieja"
+      ]
     },
     {
       "id": "alumnos_4_jpg",
-      "categoryId": "alumnos",
+      "categoryId": [
+        "alumnos",
+        "escuela-vieja"
+      ],
       "type": "image",
       "title": "Freude und Gruppenarbeit (4)",
       "description": "",
       "url": "ceec50/assets/alumnos (4).webp",
-      "year": "1995"
+      "year": "1980",
+      "categories": [
+        "alumnos",
+        "escuela-vieja"
+      ]
     },
     {
       "id": "alumnos_5_jpg",
-      "categoryId": "alumnos",
+      "categoryId": [
+        "alumnos",
+        "escuela-vieja"
+      ],
       "type": "image",
       "title": "Sportfest und Bewegungsspiele (5)",
       "description": "",
       "url": "ceec50/assets/alumnos (5).webp",
-      "year": "1997"
+      "year": "1980",
+      "categories": [
+        "alumnos",
+        "escuela-vieja"
+      ]
     },
     {
       "id": "alumnos_6_jpg",
@@ -913,6 +919,30 @@ window.GALLERY_DATA_DE = {
       "description": "",
       "url": "ceec50/assets/Talleres-protegidos (17).webp",
       "year": "2006"
+    },
+    {
+      "id": "escuela3_095_jpg",
+      "categoryId": "talleres-protegidos",
+      "type": "image",
+      "title": "Jugendgruppe der beschützenden Werkstätten",
+      "description": "Treffen von Jugendlichen und Mitarbeitern der Ausbildungswerkstätten im Innenhof des Zentrums.",
+      "url": "ceec50/assets/escuela3.095.webp",
+      "year": "1995",
+      "categories": [
+        "talleres-protegidos"
+      ]
+    },
+    {
+      "id": "escuela3_096_jpg",
+      "categoryId": "talleres-protegidos",
+      "type": "image",
+      "title": "Ausflugsgruppe der beschützenden Werkstätten",
+      "description": "Bildungs- und Gemeinschaftsausflug zum Hauptplatz mit Erziehern und Freiwilligen.",
+      "url": "ceec50/assets/escuela3.096.webp",
+      "year": "1996",
+      "categories": [
+        "talleres-protegidos"
+      ]
     },
     {
       "id": "porongo_1_jpg",
