@@ -147,13 +147,13 @@ document.addEventListener("DOMContentLoaded", () => {
         col.innerHTML = `
           <div class="ceec-memory-card">
             <div class="ceec-card-media">
-              <a href="https://www.youtube.com/watch?v=4ffiErIGYgI" data-fancybox="ceec-gallery" data-caption="${item.title} - ${item.description || ''}">
+              <a href="https://www.youtube.com/watch?v=4ffiErIGYgI" data-fancybox="ceec-gallery" data-caption="">
                 <img src="${thumbUrl}" alt="${item.title}" loading="lazy">
                 <div class="ceec-video-overlay-badge"><span class="icon icon-play"></span> ${t.videoLabel}</div>
                 <div class="ceec-video-play-btn"><span class="icon icon-play" style="font-size: 1.4rem; margin-left: 3px;"></span></div>
               </a>
             </div>
-            <div class="ceec-card-body">
+            <div class="ceec-card-body ceec-video-card-body">
               <div>
                 <span class="ceec-card-cat-badge">${catName}</span>
                 <h4 class="ceec-card-title">${item.title}</h4>
@@ -169,15 +169,9 @@ document.addEventListener("DOMContentLoaded", () => {
         col.innerHTML = `
           <div class="ceec-memory-card">
             <div class="ceec-card-media">
-              <a href="${item.url}" data-fancybox="ceec-gallery" data-caption="${item.title}">
+              <a href="${item.url}" data-fancybox="ceec-gallery" data-caption="">
                 <img src="${thumbUrl}" alt="${item.title}" loading="lazy">
               </a>
-            </div>
-            <div class="ceec-card-body">
-              <div>
-                <span class="ceec-card-cat-badge">${catName}</span>
-                <h4 class="ceec-card-title">${item.title}</h4>
-              </div>
             </div>
           </div>
         `;

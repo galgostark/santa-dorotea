@@ -326,13 +326,20 @@ window.GALLERY_DATA_DE = {
       "year": "2000"
     },
     {
-      "id": "profesores1_jpg",
-      "categoryId": "profesores",
+      "id": "profesores_2_jpg",
+      "categoryId": [
+        "profesores",
+        "escuela-vieja"
+      ],
       "type": "image",
-      "title": "Gründer-Lehrerteam (1)",
+      "title": "Gründer-Lehrerinnen an der alten Schule (2)",
       "description": "",
-      "url": "ceec50/assets/profesores1.webp",
-      "year": "1984"
+      "url": "ceec50/assets/profesores (2).webp",
+      "year": "1978",
+      "categories": [
+        "profesores",
+        "escuela-vieja"
+      ]
     },
     {
       "id": "profesores2_jpg",
@@ -432,15 +439,6 @@ window.GALLERY_DATA_DE = {
       "description": "",
       "url": "ceec50/assets/profesores (1).webp",
       "year": "1993"
-    },
-    {
-      "id": "profesores_2_jpg",
-      "categoryId": "profesores",
-      "type": "image",
-      "title": "Therapie- und Rehabilitationsteam (2)",
-      "description": "",
-      "url": "ceec50/assets/profesores (2).webp",
-      "year": "1995"
     },
     {
       "id": "profesores_3_jpg",
@@ -550,6 +548,15 @@ window.GALLERY_DATA_DE = {
       "description": "",
       "url": "ceec50/assets/alumnos (6).webp",
       "year": "2000"
+    },
+    {
+      "id": "profesores1_jpg",
+      "categoryId": "teatro-danzas",
+      "type": "image",
+      "title": "Theateraufführung und Künstlerische Jonglage",
+      "description": "",
+      "url": "ceec50/assets/profesores1.webp",
+      "year": "1984"
     },
     {
       "id": "teatro1_jpg",

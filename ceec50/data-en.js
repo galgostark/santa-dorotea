@@ -326,13 +326,20 @@ window.GALLERY_DATA_EN = {
       "year": "2000"
     },
     {
-      "id": "profesores1_jpg",
-      "categoryId": "profesores",
+      "id": "profesores_2_jpg",
+      "categoryId": [
+        "profesores",
+        "escuela-vieja"
+      ],
       "type": "image",
-      "title": "Founding Teaching Team (1)",
+      "title": "Founding Teachers at Old School (2)",
       "description": "",
-      "url": "ceec50/assets/profesores1.webp",
-      "year": "1984"
+      "url": "ceec50/assets/profesores (2).webp",
+      "year": "1978",
+      "categories": [
+        "profesores",
+        "escuela-vieja"
+      ]
     },
     {
       "id": "profesores2_jpg",
@@ -432,15 +439,6 @@ window.GALLERY_DATA_EN = {
       "description": "",
       "url": "ceec50/assets/profesores (1).webp",
       "year": "1993"
-    },
-    {
-      "id": "profesores_2_jpg",
-      "categoryId": "profesores",
-      "type": "image",
-      "title": "Therapy & Rehabilitation Team (2)",
-      "description": "",
-      "url": "ceec50/assets/profesores (2).webp",
-      "year": "1995"
     },
     {
       "id": "profesores_3_jpg",
@@ -550,6 +548,15 @@ window.GALLERY_DATA_EN = {
       "description": "",
       "url": "ceec50/assets/alumnos (6).webp",
       "year": "2000"
+    },
+    {
+      "id": "profesores1_jpg",
+      "categoryId": "teatro-danzas",
+      "type": "image",
+      "title": "Theater Performance and Artistic Juggling",
+      "description": "",
+      "url": "ceec50/assets/profesores1.webp",
+      "year": "1984"
     },
     {
       "id": "teatro1_jpg",
