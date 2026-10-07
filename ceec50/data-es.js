@@ -396,6 +396,15 @@ window.GALLERY_DATA_ES = {
       "year": "1996"
     },
     {
+      "id": "otras_webp",
+      "categoryId": "profesores",
+      "type": "image",
+      "title": "Capacitación Docente y Encuentro Institucional",
+      "description": "",
+      "url": "assets/cee/otras.webp",
+      "year": "2001"
+    },
+    {
       "id": "profesores8_jpg",
       "categoryId": "profesores",
       "type": "image",

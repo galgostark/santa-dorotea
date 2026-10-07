@@ -396,6 +396,15 @@ window.GALLERY_DATA_EN = {
       "year": "1996"
     },
     {
+      "id": "otras_webp",
+      "categoryId": "profesores",
+      "type": "image",
+      "title": "Teacher Training and Institutional Meeting",
+      "description": "",
+      "url": "assets/cee/otras.webp",
+      "year": "2001"
+    },
+    {
       "id": "profesores8_jpg",
       "categoryId": "profesores",
       "type": "image",
